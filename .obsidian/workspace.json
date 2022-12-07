@@ -1,0 +1,145 @@
+{
+  "main": {
+    "id": "664ecc1a6eaf0a53",
+    "type": "split",
+    "children": [
+      {
+        "id": "622443c8a69730ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8f2672a0c0fd02c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/OS/Windows.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4ddb7d14e24331bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "15c67c9dc8c53a85",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7fb94193a2dbe7b2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d632306152799091",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "73a8e594e72d39a5",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1b34bab71917387e",
+    "type": "split",
+    "children": [
+      {
+        "id": "c53567bb80e1c0bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "557f0afc6c48bc30",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "MyWiki/OS/Windows.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "939893439b04f79e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "MyWiki/OS/Windows.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "91ae6e25c7b04ac1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "65841d70c5103a89",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "MyWiki/OS/Windows.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8f2672a0c0fd02c6",
+  "lastOpenFiles": [
+    "MyWiki/OS/Linux/Linux.md",
+    "MyWiki/OS/Windows.md",
+    "MyWiki/OS/Linux/GitHub.md"
+  ]
+}

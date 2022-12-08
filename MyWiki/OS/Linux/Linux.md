@@ -204,4 +204,15 @@ Lors d'une connexion ssh à un serveur, l'hôte sauvegarde la clé publique du s
 ### MySQL
 ```bash
 mysql -e 'show databases'    // commande MySQL sans entrer dans MySQL
+
+a2ensite xwiki.conf   // enable site xwiki (activer un vhost)
+
+systemctl reload apache2    // reload apache
+
+systemctl status apache2    // status
+
+nano /etc/apache2/sites-available/xwiki.conf     // conf de xwiki
 ```
+
+Mettre un nom sur une adresse IP sur windows :
+- Disque local C > Windows > System32 > drivers > etc > editer le fichier hosts

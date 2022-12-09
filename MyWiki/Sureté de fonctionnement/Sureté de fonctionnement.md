@@ -1,3 +1,4 @@
+**Mode promiscuité** : dans un pont cela permet de laisser tout le trafic passer et pas seulement celui qui nous est destiné
 
 Fail over service = 1 qui tombe = 1 autre qui prend le relai
 

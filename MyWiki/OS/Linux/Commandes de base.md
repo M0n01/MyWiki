@@ -3,10 +3,10 @@
 
 CTRL + R    // rechercher dans l’historique de commande (dans terminal)
 
-# Astuces
+# Astuces et Bonnes Pratiques
 
 - Ajouter «  | grep mot  »  après une commande pour trouver un mot. Le «  |  » permet de concaténer plusieurs commande (passer le résultat d’une commande à une autre).
-
+- Quand on  ne connait pas la taille du fichier -> cat, grep, less... mais pas nano ou vim. Pour fichier compressé (gzip) -> zcat, zgrep, zless
 
 # Commandes
 
@@ -87,7 +87,7 @@ getfacl /repertoire  // liste les acl de repertoire
 ```
 
 ### Stockage
-[[Mémoire]]
+voir [[Mémoire]]
 ```bash
 lsblk      // info disques et partitions
 
@@ -113,14 +113,8 @@ mount -a -o remount    // remonte tout ce qui est déclaré dans le fstab
 
 mount -o remount chemin    // remonte la partition chemin
 ```
-##### Disques virtuels
-**LVM** = créé des disques virtuel dans un disque physique (permet d'augmenter la taille des partitions à chaud)
-
-**PV** = Physical Volume (disque/partition). Ne peut contenir que 1 VG.
-
-**VG** = Virtual Group. Contient des LV et peut être sur plusieur PV.
-
-**LV** = Logical Volume.
+#### Disques virtuels
+voir [[Démarrage Système#Disques virtuels|Disques virtuels]]
 ```bash
 pvs   // liste les PV
 
@@ -139,10 +133,6 @@ pvresize /dev/sda2      // adapte la taille de pv à l’espace disponible
 lvextend -L 2G -r /dev/systemvol/home      // 2Go pour le LV home
 lvextend -L +2G -r /dev/systemvol/home     // augmente le LV de 2Go
 ```
-**MBR** = Master Boot Record. Système de table de partition. Vieux. Avec des disques de 2To max.
-
-**GPT** = GUID Partition Table. Système de table de partition (obligatoire sur UEFI)
-
 
 ### Système
 ```bash
@@ -161,22 +151,10 @@ cat /etc/systemd/logind.conf   // inittab
 
 systemctl list-timers    // liste les timers
 ```
-**Cron** = Programme pour exécuter automatiquement des scripts, des commandes ou des logiciels à une date et une heure spécifiée précise, ou selon un cycle défini à l’avance.
-Chaque utilisateur a un fichier crontab, lui permettant d'indiquer les actions à exécuter.
-
-Par défaut, l'OS utilise les Timers plutôt que les Crons.
-
-**Timer** = Fichier de programmation qui va se charger de lancer des services à intervalles réguliers.
-
-**Service** = Programme qui est exécuté en tâche de fond (sans interaction directe avec l'utilisateur). A noter qu'un service peut être appelé également démon.
-
-Chez systemd, on ne parle pas de service, mais d'unité.
 
 ### Réseaux
 ```bash
 wget adress_web    // récupère index.html
-
-ssh-audit IP    // fait un audit ssh de la machine (apt install ssh-audit)
 
 iptables-save   // sauvegarder iptables et affiche le contenu du Firewall
 
@@ -195,24 +173,26 @@ ss -laputen     // nouveau netstat (plus info)
 route -n      // affiche les ip et leur passerelles et autres info
 
 ```
-Pour le RSA prendre RSA 4096 car 2048 trop juste.
 
-Lors d'une connexion ssh à un serveur, l'hôte sauvegarde la clé publique du serveur. Si elle vient à changer (dans le cas d'un Man In The Middle ou d'un changement sur le serveur) alors on sera prévenu de ce changement avant de se connecter par sécurité.
+#### Partitionnement
 
-**Bonne pratique** = Désactiver la connexion via SSH à root avec un mot de passe. Donc obligation de se connecter via une clé.
 
-### MySQL
-```bash
-mysql -e 'show databases'    // commande MySQL sans entrer dans MySQL
 
-a2ensite xwiki.conf   // enable site xwiki (activer un vhost)
+### SSH
 
-systemctl reload apache2    // reload apache
 
-systemctl status apache2    // status
 
-nano /etc/apache2/sites-available/xwiki.conf     // conf de xwiki
-```
+### PHP
 
-Mettre un nom sur une adresse IP sur windows :
-- Disque local C > Windows > System32 > drivers > etc > editer le fichier hosts
+
+
+### MariaDB
+
+
+
+### FTP
+
+
+
+### WordPress
+

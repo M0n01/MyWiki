@@ -1,21 +1,3 @@
-Quand on  ne connait pas la taille du fichier -> cat, grep, less... mais pas nano
-Pour fichier compressé (gzip) -> zcat, zgrep, zless
-
-500 premiers octets < secteur de démarrage < le MBR (GRUB par exemple)
-
-En MBR -> 4 partitions max
-
-En EFI -> Plein de partitions primaire possible
-
-Le BIOS va chercher le MBR pour trouver le disque de démarrage.
-
-GRUB va ensuite chercher le /boot
-
-initrd.img = première image de démarrage. C'est le noyau
-
-Première chose que démarre Linux après le noyau -> /sbin/init
-
-init = binaire fournit par systemd
 
 ## TP partie 4
 

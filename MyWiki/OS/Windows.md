@@ -18,4 +18,6 @@ Copier la clé publique et la coller dans authorized_keys. Voir  [[Sys linux]]
 	- Open
 
 **Mettre un nom sur une adresse IP** :
-- Disque local C > Windows > System32 > drivers > etc > editer le fichier hosts
+Ouvrir en admin
+- Disque local C > Windows > System32 > drivers > etc > editer le fichier hosts 
+- Bombarder le CTRL+S

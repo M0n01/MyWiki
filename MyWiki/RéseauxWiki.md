@@ -8,6 +8,8 @@ Pour le RSA prendre RSA 4096 car 2048 trop juste.
 Lors d'une connexion ssh à un serveur, l'hôte sauvegarde la clé publique du serveur. Si elle vient à changer (dans le cas d'un Man In The Middle ou d'un changement sur le serveur) alors on sera prévenu de ce changement avant de se connecter par sécurité.
 
 **Bonne pratique** = Désactiver la connexion via SSH à root avec un mot de passe. Donc obligation de se connecter via une clé.
+
+
 #### VNC
 #### RDP
 #### NoVNC

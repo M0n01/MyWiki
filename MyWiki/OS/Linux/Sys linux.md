@@ -20,6 +20,7 @@ systemctl start ssh.service   // démarrer
 nano /etc/ssh/sshd_config     // fichier de conf de ssh (pour modifier le port par exemple ou activer authentification par mdp)
 
 systemctl restart ssh    // redémarrer ssh
+systemctl restart ssh.service 
 
 ls -lh .ssh/authorized_keys   // voir les droits sur le fichier ssh (important)
 

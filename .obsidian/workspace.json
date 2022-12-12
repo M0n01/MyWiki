@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md",
+                "file": "MyWiki/OS/Windows.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Solutions",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md",
+                "file": "MyWiki/OS/Windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md",
+                "file": "MyWiki/OS/Windows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md"
+                "file": "MyWiki/OS/Windows.md"
               }
             }
           }
@@ -163,15 +163,15 @@
   },
   "active": "0ef659df49cb821b",
   "lastOpenFiles": [
-    "MyWiki/OS/Linux/Sys linux.md",
+    "MyWiki/RéseauxWiki.md",
+    "MyWiki/TP Systèmes Libres.md",
     "Test_Linux.md",
     "MyWiki/OS/Windows.md",
-    "MyWiki/TP Systèmes Libres.md",
     "MyWiki/OS/Linux/Commandes de base.md",
+    "MyWiki/OS/Linux/Sys linux.md",
     "MyWiki/OS/Linux/Stéganographie.md",
     "MyWiki/OS/Linux/XWiki.md",
     "MyWiki/OS/Linux/MySQL.md",
-    "MyWiki/OS/Linux/GitHub.md",
-    "MyWiki/OS/Linux/SSH.md"
+    "MyWiki/OS/Linux/GitHub.md"
   ]
 }

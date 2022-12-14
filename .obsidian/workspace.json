@@ -139,14 +139,14 @@
   "active": "0ef659df49cb821b",
   "lastOpenFiles": [
     "MyWiki/OS/Linux/GitHub.md",
-    "MyWiki/OS/Linux/Commandes de base.md",
-    "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
-    "MyWiki/OS/Linux/LinuxWiki/Système.md",
     "MyWiki/OS/Linux/phpMyAdmin.md",
-    "MyWiki/OS/Linux/XWiki.md",
+    "MyWiki/OS/Linux/Sys linux.md",
+    "MyWiki/Sureté de fonctionnement/TP LXC Dockeur.md",
+    "MyWiki/Sureté de fonctionnement/TP Virtualisation et Proxmox.md",
+    "MyWiki/Documentation_Obsidian.md",
     "MyWiki/RéseauxWiki.md",
     "MyWiki/TP Systèmes Libres.md",
-    "MyWiki/Sureté de fonctionnement/TP LXC Dockeur.md",
-    "Test_Linux.md"
+    "Test_Linux.md",
+    "MyWiki/OS/Linux/Commandes de base.md"
   ]
 }

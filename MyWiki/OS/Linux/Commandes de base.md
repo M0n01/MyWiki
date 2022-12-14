@@ -17,6 +17,7 @@ history    // affiche historique de commande
 ls -l      // liste en mode détaillé (droits etc)
 ls -l *.conf | sort    // liste et trie avec détails les fichiers .conf
 ls -lah                // liste et trie en plus lisible
+ls -a         // liste les fichiers cachés
 
 who     // liste des terminaux ouverts
 

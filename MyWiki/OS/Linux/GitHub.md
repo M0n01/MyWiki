@@ -46,5 +46,8 @@ git pull : récupération des commits depuis un dépôt distant
 git push : envoi de commits vers un dépôt distant
 git blame : 
 
+
+FAIRE des branches pour chaque user
+
 FAIRE authentification ssh par clé pour github
 comme ça pas besoin de retapper user et mdp

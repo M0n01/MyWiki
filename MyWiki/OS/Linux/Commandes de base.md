@@ -18,6 +18,7 @@ ls -l      // liste en mode détaillé (droits etc)
 ls -l *.conf | sort    // liste et trie avec détails les fichiers .conf
 ls -lah                // liste et trie en plus lisible
 ls -a         // liste les fichiers cachés
+dump      // info au format hexa
 
 who     // liste des terminaux ouverts
 

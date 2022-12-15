@@ -39,6 +39,38 @@ Dockeur utilise LXC.
 
 Voir [[RéseauxWiki#Connexion à distance| Connexion à distance]]
 
+## RAID
+
+**RAID 0** : Plusieurs disques qui ne font qu'un --> vitesse de lecture ecriture x4 (pour les HDD) mais même principe pour SSD.
+
+**RAID 1** : Chaque données sur un disque est clonné sur un autre.
+
+**RAID 1 0** : Des grappes (RAID 0) en double (RAID 1)
+
+**RAID 5** : Un disque en "checksum" qui va additionner les valeurs des autres. Le problème c'est que le disque en checksum va recevoire bcp de lecture/ecriture. Donc on réparti l'espace de checksum sur les différents disques.
+- Hot Spare
+- Hot Plug
+
+
+## Partitions
+
+Bien pour séparer l'OS des données.
+
+Partitions Statiques 
+
+Partitions Dynamiques (mieux) : 1 seule partition dans laquelle on fait des partitions virtuelles (LVM).
+
+
+Système de fichier : permet de décoder les données et les présenter sous forme de répertoires.
+
+Hyperconvergence : un serveur qui gère un cluster de machine pour faire du RAID avec.
+
+Une machine sans disque, qui utilise un disque sur un serveur via un cable réseaux = plus rapide qu'un disque directement installé sur une machine
+
+AD
+
+Base de données (BDD)
+
 ## Test Revoir
 
 - Serveur ESX
@@ -51,3 +83,4 @@ Voir [[RéseauxWiki#Connexion à distance| Connexion à distance]]
 	- Conteneurs
 
 - OVA, ISO
+- 

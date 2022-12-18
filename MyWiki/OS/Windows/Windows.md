@@ -2,37 +2,21 @@
 
 # Commandes
 
-### SSH
-
-Exemple, une machine windows se connecte en ssh à une machine linux :
-- Dans PuttyGen:
-	- Générer une clé privé 
-	- Charger la clé privé
-	- Récupérer la clé publqiue correspondante
-
-Copier la clé publique et la coller dans authorized_keys. Voir  [[Sys linux]]
-(Par exemple se connecter en ssh sans clé pour faire le copier coller)
-- Dans Putty:
-	- Session > rentrer ip de la machine cible
-	- SSH > Auth > Browse > prendre la clé privé
-	- Open
-
-**Mettre un nom sur une adresse IP** :
-Ouvrir en admin
-- Disque local C > Windows > System32 > drivers > etc > editer le fichier hosts 
-- Bombarder le CTRL+S
 
 ## Bureau à distance
 
-wind + R : SystemPropertiesAdvanced.exe
+wind + R : 
+- SystemPropertiesAdvanced.exe
 
 Utilisation à distance > autoriser > autoriser les connexions > ajouter 1 user
 
-Wind + R : lusrmgr.msc
+Wind + R : 
+- lusrmgr.msc
 
 Utilisateur Bureaux à distance -> ajouter -> User
 
-Wind + R : firewall.cpl | sysdm.cpl
+Wind + R : 
+- firewall.cpl | sysdm.cpl
 
 traffic entrant / sortant
 
@@ -46,30 +30,26 @@ traffic entrant / sortant
 			- P
 
 
-## Dossier partagé
-
-
-
-
 ## GPO
 
 bloquer cmd...
 
-- Gestion de stratégie de groupe
-	- créer stratégie dans Objet de stratégie de groupe
-		- clique droit sur Objet de stratégie... > nouveau
-		- clique droit sur GPO > modifier
-		- Préférences : propose à l'utilisateur
-		- Parametre Windows > mappage de lecteurs
-		- clique droit fenêtre > nouveau mappage
-			- Action : mettre à jour
-			- emplacement : chemin dossier partage
-			- libeller (nom)
-			- Pas de droits particulier
-			- Appliquer
-			- Commun > ciblage > groupe de secu (option pour condition)
-			- (un mappage ciblé l'autre non)
-	- clique droit sur OU > lier stratégie
+#### Gestion de stratégie de groupe
+
+Créer stratégie dans Objet de stratégie de groupe :
+- clique droit sur Objet de stratégie... > nouveau
+- clique droit sur GPO > modifier
+- Préférences : propose à l'utilisateur
+- Parametre Windows > mappage de lecteurs
+- clique droit fenêtre > nouveau mappage
+- Action : mettre à jour
+- Emplacement : chemin dossier partage
+- libeller (nom)
+- Pas de droits particulier
+- Appliquer
+	- Commun > ciblage > groupe de secu (option pour condition)
+	- (un mappage ciblé l'autre non)
+- Clique droit sur OU > lier stratégie
 
 - Paramètres :
 	- Ordinateur (s'applique au démarrage de la machine)

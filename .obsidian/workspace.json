@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TP-act-2-Réseaux-centr.md",
+                "file": "MyWiki/OS/Windows/Windows.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d75e60792693f138",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/OS/Windows/SSH.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TP-act-2-Réseaux-centr.md",
+                "file": "MyWiki/OS/Windows/SSH.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TP-act-2-Réseaux-centr.md",
+                "file": "MyWiki/OS/Windows/SSH.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TP-act-2-Réseaux-centr.md"
+                "file": "MyWiki/OS/Windows/SSH.md"
               }
             }
           }
@@ -136,17 +149,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "72ea7272021a53ac",
+  "active": "d75e60792693f138",
   "lastOpenFiles": [
+    "MyWiki/OS/Windows/Windows.md",
+    "MyWiki/OS/Windows/SSH.md",
+    "MyWiki/OS/MacOS.md",
+    "TP-act-2-Réseaux-centr.md",
+    "Test_Linux.md",
+    "MyWiki/RéseauxWiki.md",
+    "MyWiki/Documentation_Obsidian.md",
     "Réseaux sans fils.md",
     "MyWiki/Sureté de fonctionnement/Sureté de fonctionnement.md",
-    "MyWiki/Sureté de fonctionnement/TP NAS.md",
-    "MyWiki/OS/Linux/Commandes de base.md",
-    "MyWiki/TP Systèmes Libres.md",
-    "MyWiki/Sureté de fonctionnement/TP Virtualisation et Proxmox.md",
-    "MyWiki/Sureté de fonctionnement/TP LXC Dockeur.md",
-    "Test_Linux.md",
-    "MyWiki/OS/Linux/GitHub.md",
-    "MyWiki/OS/Linux/phpMyAdmin.md"
+    "MyWiki/Sureté de fonctionnement/TP NAS.md"
   ]
 }

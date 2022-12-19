@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Windows/SSH.md",
+                "file": "MyWiki/OS/Windows/Windows.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "68a5eea204a8a69e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/OS/Windows/Windows.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Windows/SSH.md",
+                "file": "MyWiki/OS/Windows/Windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Windows/SSH.md",
+                "file": "MyWiki/OS/Windows/Windows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Windows/SSH.md"
+                "file": "MyWiki/OS/Windows/Windows.md"
               }
             }
           }
@@ -149,8 +161,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d75e60792693f138",
+  "active": "68a5eea204a8a69e",
   "lastOpenFiles": [
+    "MyWiki/OS/Windows/GPO.md",
     "MyWiki/OS/Windows/Windows.md",
     "MyWiki/OS/Windows/SSH.md",
     "MyWiki/OS/MacOS.md",
@@ -159,7 +172,6 @@
     "MyWiki/RéseauxWiki.md",
     "MyWiki/Documentation_Obsidian.md",
     "Réseaux sans fils.md",
-    "MyWiki/Sureté de fonctionnement/Sureté de fonctionnement.md",
-    "MyWiki/Sureté de fonctionnement/TP NAS.md"
+    "MyWiki/Sureté de fonctionnement/Sureté de fonctionnement.md"
   ]
 }

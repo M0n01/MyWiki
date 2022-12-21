@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Windows/Windows.md",
+                "file": "TP-act-2-Réseaux-centr.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Windows/Windows.md",
+                "file": "TP-act-2-Réseaux-centr.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Windows/Windows.md",
+                "file": "TP-act-2-Réseaux-centr.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Windows/Windows.md"
+                "file": "TP-act-2-Réseaux-centr.md"
               }
             }
           }
@@ -161,10 +161,20 @@
     "width": 300,
     "collapsed": true
   },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false
+    }
+  },
   "active": "68a5eea204a8a69e",
   "lastOpenFiles": [
-    "MyWiki/OS/Windows/GPO.md",
     "MyWiki/OS/Windows/Windows.md",
+    "MyWiki/OS/Windows/GPO.md",
     "MyWiki/OS/Windows/SSH.md",
     "MyWiki/OS/MacOS.md",
     "TP-act-2-Réseaux-centr.md",

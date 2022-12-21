@@ -12,5 +12,3 @@ WLC dégage tout pour récup trame avec en tete de couche 2
 
 LAP gère couche 1
 WLC gère couche 2
-
-coucou

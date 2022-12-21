@@ -5,7 +5,7 @@ CTRL + R    // rechercher dans l’historique de commande (dans terminal)
 
 # Astuces et Bonnes Pratiques
 
-- Ajouter «  | grep mot  »  après une commande pour trouver un mot. Le «  |  » permet de concaténer plusieurs commande (passer le résultat d’une commande à une autre).
+- Ajouter « | grep mot »  après une commande pour trouver un mot. Le «  |  » permet de concaténer plusieurs commande (passer le résultat d’une commande à une autre).
 - Quand on  ne connait pas la taille du fichier -> cat, grep, less... mais pas nano ou vim. Pour fichier compressé (gzip) -> zcat, zgrep, zless
 
 # Commandes
@@ -131,7 +131,7 @@ Pour mettre un dossier existant dans une nouvelle partition :
 - Créer un nouveau dossier
 - Le monter dans une nouvelle partition
 #### Disques virtuels
-voir [[Démarrage Système#Disques virtuels|Disques virtuels]]
+voir [[Système#Disques virtuels|Wiki]]
 ```bash
 pvs   // liste les PV
 

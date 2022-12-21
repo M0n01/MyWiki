@@ -20,9 +20,10 @@ Wind + R :
 
 traffic entrant / sortant
 
-## AD
+## Active Directory
 
-- Utilisateur 
+Dans Windows Server.
+C'est une base de données et un ensemble de services qui permettent de mettre en lien les utilisateurs avec les ressources réseau dont ils ont besoin pour mener à bien leurs missions.
 
 - A
 	- G

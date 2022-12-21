@@ -33,12 +33,3 @@ cat /var/log/tomcat9/catalina.out      // fichier important dans tomcat
 journalctl -xe      // affiche la fin et avec des explications
 
 ```
-
-## Exam
-
-- Apache
-- MySQL
-- Tomcat
-- Xwiki
-- PHPmyadmin
-- Wordpress

@@ -160,7 +160,7 @@ a2ensite wordpress.conf '// Activer le VirtualHost'
 systemctl restart apache2.service '// Relance du service'
 apachectl configtest '// Test de configuration'
 ```
-- Ajout d'un override DNS dans le fichier hosts sur l'hôte (C:\Windows\System32\drivers\etc\hosts pour Windows, /etc/hosts pour Linux)
+- Ajout d'un override DNS dans le fichier hosts sur l'hôte (C:\ Windows\ System32\ drivers\ etc\ hosts pour Windows, /etc/hosts pour Linux)
 ```bash
 192.168.XX.XX wordpress.lan
 ```

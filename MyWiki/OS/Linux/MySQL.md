@@ -1,11 +1,14 @@
+
+### MariaDB
 ```bash
-mysql -e 'show databases'    // commande MySQL sans entrer dans MySQL
-
-a2ensite xwiki.conf   // enable site xwiki (activer un vhost)
-
-systemctl reload apache2    // reload apache
-
-systemctl status apache2    // status
-
-nano /etc/apache2/sites-available/xwiki.conf     // conf de xwiki
+apt install mariadb-server '// Installation du serveur SQL'
+mysql -u root -p '// Connexion console MySQL'
+```
+- Créer la BDD wpdb, ainsi qu'un utilisateur
+```bash
+CREATE DATABASE wpdb;
+CREATE USER 'wordpressadmin'@'localhost' IDENTIFIED BY 'Toptop=22';
+GRANT ALL PRIVILEGES ON wpdb.* TO wordpressadmin@localhost;
+FLUSH PRIVILEGES;
+exit
 ```

@@ -38,6 +38,8 @@ commande >> fichier   // ajouter résultat dans un fichier (écrase pas)
 commande > fichier    // ajouter résultat dans un fichier (écrase)
 
 apt purge mon_paquet    // en cas de problèmes de installation
+
+env | grep proxy // vérifier proxy
 ```
 
 ### Répertoires
@@ -127,9 +129,8 @@ mount -a -o remount    // remonte tout ce qui est déclaré dans le fstab
 
 mount -o remount chemin    // remonte la partition chemin
 ```
-Pour mettre un dossier existant dans une nouvelle partition :
-- Créer un nouveau dossier
-- Le monter dans une nouvelle partition
+- **Pour déplacer un dossier existant dans une nouvelle partition voir [[Déplacé dossier dans nouvelle partition|procédure]].**
+
 #### Disques virtuels
 voir [[Système#Disques virtuels|Wiki]]
 ```bash
@@ -143,10 +144,10 @@ pvdisplay /dev/sda2          // plus de détails sur le PV
 vgdisplay systemvol          // plus de détails sur le VG
 lvdisplay /dev/systemvol/<LV au choix>     // plus de détails sur le LV
 
+'Procédure partitionnement virtuel :'
+
 growpart /dev/sda 2     // met le reste d’espace disque dans la partition sda2
-
 pvresize /dev/sda2      // adapte la taille de pv à l’espace disponible
-
 lvextend -L 2G -r /dev/systemvol/home      // 2Go pour le LV home
 lvextend -L +2G -r /dev/systemvol/home     // augmente le LV de 2Go
 ```

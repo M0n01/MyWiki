@@ -5,7 +5,7 @@ Exemple, une machine windows se connecte en ssh à une machine linux :
 	- Charger la clé privé
 	- Récupérer la clé publqiue correspondante
 
-Copier la clé publique et la coller dans authorized_keys. Voir  [[Sys linux]]
+Copier la clé publique et la coller dans authorized_keys. Voir  [[MyWiki/OS/Linux/SSH#Connexion SSH par clés|ssh linux]]
 (Par exemple se connecter en ssh sans clé pour faire le copier coller)
 - Dans Putty:
 	- Session > rentrer ip de la machine cible

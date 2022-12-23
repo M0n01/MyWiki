@@ -132,7 +132,7 @@ mount -o remount chemin    // remonte la partition chemin
 - **Pour déplacer un dossier existant dans une nouvelle partition voir [[Déplacé dossier dans nouvelle partition|procédure]].**
 
 #### Disques virtuels
-voir [[Système#Disques virtuels|Wiki]]
+voir [[Disques et partitions#Volumes logiques|Wiki]]
 ```bash
 pvs   // liste les PV
 

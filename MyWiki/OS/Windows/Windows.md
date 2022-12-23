@@ -1,7 +1,5 @@
 ![[logoWindows.png|500]]
 
-# Commandes
-
 
 ## Bureau à distance
 

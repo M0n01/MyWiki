@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Réseaux/SSH.md",
+                "file": "MyWiki/OS/Linux/SSH.md",
                 "mode": "preview",
                 "source": false
               }
@@ -37,19 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Réseaux/RéseauxWiki.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9fcb8b872405cff9",
+            "id": "2001621f77c2478c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test_Linux 1.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Système.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Test_Linux 1.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Système.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Test_Linux 1.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Système.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Test_Linux 1.md"
+                "file": "MyWiki/OS/Linux/LinuxWiki/Système.md"
               }
             }
           }
@@ -184,17 +184,17 @@
       "command-palette:Ouvrir la palette de commandes": false
     }
   },
-  "active": "9fcb8b872405cff9",
+  "active": "2001621f77c2478c",
   "lastOpenFiles": [
+    "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
+    "MyWiki/OS/Linux/LinuxWiki/Système.md",
+    "MyWiki/OS/Linux/FTP.md",
+    "MyWiki/Réseaux/Protocoles.md",
+    "MyWiki/OS/Linux/SSH.md",
+    "TP-act-2-Réseaux-centr.md",
     "Test_Linux 1.md",
-    "Test_Linux.md",
-    "MyWiki/OS/Linux/WordPress.md",
-    "MyWiki/Réseaux/FTP.md",
-    "MyWiki/Réseaux/RéseauxWiki.md",
-    "MyWiki/Réseaux/SSH.md",
-    "MyWiki/OS/Linux/Commandes de base.md",
-    "MyWiki/OS/Linux/MySQL.md",
-    "MyWiki/OS/Linux/Apache.md",
-    "MyWiki/OS/Linux/PHP.md"
+    "MyWiki/Documentation_Obsidian.md",
+    "MyWiki/Sureté de fonctionnement/Sureté de fonctionnement.md",
+    "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md"
   ]
 }

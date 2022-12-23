@@ -1,11 +1,12 @@
 
-## Protocoles 
 
 ![[model_TCP_Protocol.PNG]]
 
 #### DNS 
+
 - Système de noms de domaine. Traduit les noms de domaine tels que cisco.com, en adresses IP.
 - *Port 53*
+
 #### DHCPv4
 
 - Protocole de configuration dynamique des hôtes pour IPv4. Un serveur DHCPv4 affecte dynamiquement les informations d'adressage IPv4 aux clients DHCPv4 au démarrage et permet de réutiliser les adresses lorsqu'elles ne sont plus nécessaires.
@@ -151,7 +152,7 @@ Pour le RSA prendre RSA 4096 car 2048 trop juste.
 
 ## Connexion à distance
 
-### [[RéseauxWiki#SSH|SSH]]
+### [[Protocoles#SSH|SSH]]
 
 #### VNC
 
@@ -161,4 +162,4 @@ Pour le RSA prendre RSA 4096 car 2048 trop juste.
 
 Le RDP (Remote Desktop Protocol) permet d'utiliser un ordinateur de bureau à distance. C'est le plus couramment utilisé. Le protocole RDP a été initialement publié par Microsoft. Il est disponible pour la plupart des systèmes d'exploitation Windows, mais il peut également être utilisé avec les systèmes d'exploitation Mac.
 
-#### [[RéseauxWiki#HTTP|HTTP (HTTPS)]]
+#### [[Protocoles#HTTP|HTTP (HTTPS)]]

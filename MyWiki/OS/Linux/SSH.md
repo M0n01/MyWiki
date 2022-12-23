@@ -1,4 +1,4 @@
-voir [[RéseauxWiki#SSH|SSH]]
+voir [[Protocoles#SSH|SSH]]
 
 ### Connexion SSH classique
 

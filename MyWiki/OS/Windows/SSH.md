@@ -1,4 +1,4 @@
-Voir [[RéseauxWiki#SSH|ssh]] 
+Voir [[Protocoles#SSH|ssh]] 
 Exemple, une machine windows se connecte en ssh à une machine linux :
 - Dans PuttyGen:
 	- Générer une clé privé 

@@ -191,3 +191,8 @@ ss -laputen     // nouveau netstat (plus info)
 route -n      // affiche les ip et leur passerelles et autres info
 
 ```
+
+### Metadata image
+```bash
+exiftool image.png
+```

@@ -136,3 +136,15 @@ Pour vérifier que les mdp sont bien chiffrés
 ```
 Sw-Floor-1(config)# show running-config
 ```
+
+### OSPF
+
+1) Définir IP sur interfaces
+2) Mettre en place OSPF
+```
+router(config)#router ospf 1  
+router(config-router)#network ip_voisin1 masque_inversé area 0  
+router(config-router)#network ip_voisin2 masque_inversé area 0  
+router(config-router)#end
+```
+

@@ -1,10 +1,25 @@
+# Bond-LVS-Fail_Over_Service-Web-RAID1 Sous VirtualBox
 Agrégation de lien, avec répartition de charge du service Monkey Web
 
 - Prérequis :
+
+- LB1 :
 - 3 cartes réseau (Bridge, Bridge, Lan Segment)
 - 3 Disques (20Go, 1Go, 1Go)
 - Un peu de neurones
-- 2 machines DSL
+
+- lB2 :
+- 3 cartes réseau (Bridge, Bridge, Lan Segment)
+- 3 Disques (20Go, 1Go, 1Go)
+- Un peu de neurones
+
+- 1 machines DSL
+
+# Schéma (IPs différente selon votre réseau)
+![Untitled](https://user-images.githubusercontent.com/73076854/210636887-a64912a7-2a5e-4c95-8e87-edee4746c98a.png)
+
+
+# TOUTES LES MANIPULATIONS SONT A FAIRE EN DOUBLE SUR LB1 & LB2
 
 #### Agrégation de lien
 
@@ -41,7 +56,98 @@ reboot
 cat /proc/net/bonding/bond0
 ip -br ad
 ```
+#### Mise en place FAIL OVER SERVICE
+```bash
+apt install keepalived
+```
+- modifier la configuration
+```bash
+nano /etc/keepalived/keepalived.conf
 
+ vrrp_instance VI_1 {
+ state MASTER
+ interface bond0
+ virtual_router_id 51
+ priority 255
+ advert_int 1
+ authentication {
+ auth_type PASS
+ auth_pass 12345
+ }
+ virtual_ipaddress {
+ 192.168.2.100/21 dev bond0
+'Cette IP doit avoir le meme format+CIDR que bond0'
+ }
+}
+
+ vrrp_instance VI_2 {
+ state MASTER
+ interface enp0s9
+ virtual_router_id 52
+ priority 255
+ advert_int 1
+ authentication {
+ auth_type PASS
+ auth_pass 12345
+ }
+ virtual_ipaddress {
+ 192.168.56.100/24 dev enp0s9
+'Cette IP doit avoir le meme format+CIDR que enp0s9'
+ }
+}
+```
+- Redémarrer le service keepalived
+```bash
+systemctl restart keepalived
+systemctl enable keepalived
+```
+- Cloner la VM en LB2, modifier priority 254
+- Ceci est la configuration pour LB2 :
+```bash
+nano /etc/keepalived/keepalived.conf
+
+ vrrp_instance VI_1 {
+ state MASTER
+ interface bond0
+ virtual_router_id 51
+ priority 254
+ advert_int 1
+ authentication {
+ auth_type PASS
+ auth_pass 12345
+ }
+ virtual_ipaddress {
+ 192.168.2.100/24 dev bond0
+ 'Cette IP doit avoir le meme format+CIDR que bond0'
+ }
+}
+
+ vrrp_instance VI_2 {
+ state MASTER
+ interface enp0s9
+ virtual_router_id 52
+ priority 254
+ advert_int 1
+ authentication {
+ auth_type PASS
+ auth_pass 12345
+ }
+ virtual_ipaddress {
+ 192.168.56.100/24 dev enp0s9
+ 'Cette IP doit avoir le meme format+CIDR que enp0s9'
+ }
+}
+```
+- Redémarrer le service keepalived
+```bash
+systemctl restart keepalived
+systemctl enable keepalived
+```
+-Vérifier le basculement ( adresse ip de bond0 ) en cas de coupure de bond0 sur LB1, puis LB2
+```bash
+ip a show dev bond0
+ip a show dev enp0s9
+```
 #### Répartition de charge LVS/Serveur Web
 - Ajouter une troisieme carte réseau (en LAN Segment) (Adapter le nom de la carte réseau)
 ```bash
@@ -50,7 +156,15 @@ auto enp0s9
 iface enp0s9 inet static
 address 192.168.56.1
 netmask 255.255.255.0
-'Cette IP est la passerelle pour les machines DSL'
+```
+- Sur la deuxieme machine
+- Ajouter une troisieme carte réseau (en LAN Segment) (Adapter le nom de la carte réseau)
+```bash
+nano /etc/network/interfaces
+auto enp0s9
+iface enp0s9 inet static
+address 192.168.56.2
+netmask 255.255.255.0
 ```
 - Rédémarrage du service
 ```bash
@@ -58,8 +172,7 @@ netmask 255.255.255.0
 ```
 - Définir les IPs sur les machine DSL
 
-![image](https://user-images.githubusercontent.com/73076854/208649588-5a670e60-ac6e-46e7-bf1a-c74c293e7ea1.png)
-![image](https://user-images.githubusercontent.com/73076854/208649638-3360df0e-f5e6-4c5b-b1ee-3cab56b60661.png)
+![image](https://user-images.githubusercontent.com/73076854/210634058-9aa6bf9e-1ebc-499a-bcc3-ee00ff2046ea.png)
 
 - Lancer le service Monkey Web
 
@@ -92,10 +205,9 @@ reboot
 ```
 - Créer un service virtuel
 ```bash
-'XX = Machine Hote, YY/ZZ = Machines DSL'
+'XX = Machine Hote IP Virtuel (keepAlived), YY = Machines DSL'
 ipvsadm -A -t 192.168.XX.XXX:80 -s rr
 ipvsadm -a -t 192.168.XX.XXX:80 -r 192.168.YY.YYY -m
-ipvsadm -a -t 192.168.XX.XXX:80 -r 192.168.ZZ.ZZZ -m
 ipvsadm -L
 ```
 - Vérification
@@ -108,12 +220,8 @@ http://192.168.XX.XXX
 
 ![image](https://user-images.githubusercontent.com/73076854/208654898-56884b7f-ccf9-4194-b065-5c00422ac0a4.png)
 
-### Stockage RAID 1 (ne fonctionne pas sous VMWare)
+#### Stockage RAID 1 (NE FONCTIONNE PAS SOUS VMWARE)
 #### NE SURTOUT PAS REBOOT LA MACHINE PENDANT LA MANIPULATION
-
-- Prérequis :
-- 3 Disques (20Go, 1Go, 1Go)
-- Un peu de neurones
 
 -Il est nécéssaire que vos disques soit branchable à chaud
 
@@ -193,4 +301,3 @@ mdadm --stop /dev/md127
 mdadm -A --force /dev/md127
 mdadm --manage /dev/md1 --add /dev/sdc
 mdadm --detail /dev/md127
-```

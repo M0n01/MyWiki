@@ -8,7 +8,6 @@
 - Robin Robin
 - En fonction de la puissance CPU (1 à 50%, 1 à 25%...)
 - En fonction du nombre de requête 
-**[Keepalived](https://keepalived.readthedocs.io/en/latest/introduction.html)** : permet de faire basculer une adresse IP à un autre équipement si le premier tombe.
 
 ## VM
 
@@ -73,6 +72,7 @@ Base de données (BDD)
 
 ## Fail over service
 
+**[Keepalived](https://keepalived.readthedocs.io/en/latest/introduction.html)** : permet de faire basculer une adresse IP à un autre équipement si le premier tombe.
 
 ## Test Revoir
 

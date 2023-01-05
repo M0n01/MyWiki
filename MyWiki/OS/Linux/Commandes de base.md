@@ -184,7 +184,7 @@ nslookup www.site.com    // affiche le serveur DNS configuré par défaut (cette
 
 lshw -C network   // info carte réseaux
 
-ip -br ad
+ip -br ad    // afficher adresse des cartes réseaux
 
 netstat -laputen    // liste toute les connexions active
 

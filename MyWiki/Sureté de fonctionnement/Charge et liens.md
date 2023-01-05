@@ -143,7 +143,7 @@ nano /etc/keepalived/keepalived.conf
 systemctl restart keepalived
 systemctl enable keepalived
 ```
--Vérifier le basculement ( adresse ip de bond0 ) en cas de coupure de bond0 sur LB1, puis LB2
+- Vérifier le basculement ( adresse ip de bond0 ) en cas de coupure de bond0 sur LB1, puis LB2
 ```bash
 ip a show dev bond0
 ip a show dev enp0s9
@@ -199,7 +199,7 @@ iptables-save > /etc/iptables/rules.v4
 nano /etc/sysctl.conf
 net.ipv4.ip_forward=1
 ```
--Rédémarrer votre machine pour appliquer le routage
+- Rédémarrer votre machine pour appliquer le routage
 ```bash
 reboot
 ```
@@ -223,7 +223,7 @@ http://192.168.XX.XXX
 #### Stockage RAID 1 (NE FONCTIONNE PAS SOUS VMWARE)
 #### NE SURTOUT PAS REBOOT LA MACHINE PENDANT LA MANIPULATION
 
--Il est nécéssaire que vos disques soit branchable à chaud
+- Il est nécéssaire que vos disques soit branchable à chaud
 
 ![image](https://user-images.githubusercontent.com/73076854/208864749-dc000b05-e5ea-4ba5-ab88-fb54c326eaa1.png)
 
@@ -301,3 +301,4 @@ mdadm --stop /dev/md127
 mdadm -A --force /dev/md127
 mdadm --manage /dev/md1 --add /dev/sdc
 mdadm --detail /dev/md127
+```

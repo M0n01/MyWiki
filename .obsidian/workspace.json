@@ -138,25 +138,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "canvas:Create new canvas": false
     }
   },
   "active": "bf17640618a8a7ef",
   "lastOpenFiles": [
+    "MyWiki/Composants_PC/Mémoire.md",
+    "MyWiki/OS/Linux/Commandes de base.md",
+    "MyWiki/Réseaux/Cisco.md",
     "MyWiki/Réseaux/Protocoles.md",
-    "MyWiki/Sécurité/TP1 Sécurité.md",
     "MyWiki/Sureté de fonctionnement/Charge et liens.md",
+    "MyWiki/Sécurité/TP1 Sécurité.md",
+    "MyWiki/Réseaux sans fils/TP-act-2-Réseaux-centr.md",
     "MyWiki/Sureté de fonctionnement/Sureté de fonctionnement.md",
     "MyWiki/Sureté de fonctionnement/TP Virtualisation et Proxmox.md",
-    "MyWiki/Sureté de fonctionnement/TP NAS.md",
-    "MyWiki/Sureté de fonctionnement/RAID 1.md",
-    "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
-    "TP-act-2-Réseaux-centr.md",
-    "MyWiki/Sureté de fonctionnement/TP LXC Dockeur.md"
+    "MyWiki/Sureté de fonctionnement/TP NAS.md"
   ]
 }

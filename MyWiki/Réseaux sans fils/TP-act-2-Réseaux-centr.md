@@ -2,8 +2,8 @@
 ## Config du switch
 
 - vlan 2 : port 8 : communication sur le réseau LanRT
-- vlan 10 : port 2 : 
-- vlan 11 : port 3 :
+- vlan 10 : port 2 :  LAP
+- vlan 11 : port 3 :  WAP
 
 Client envoi trame wifi au LAP
 LAP retire en tete de couche 1, il reste donc en tete couche 2

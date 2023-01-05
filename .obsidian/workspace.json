@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md",
+                "file": "MyWiki/Sureté de fonctionnement/TP NAS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md",
+                "file": "MyWiki/Sureté de fonctionnement/TP NAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md",
+                "file": "MyWiki/Sureté de fonctionnement/TP NAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md"
+                "file": "MyWiki/Sureté de fonctionnement/TP NAS.md"
               }
             }
           }
@@ -148,15 +148,15 @@
   },
   "active": "bf17640618a8a7ef",
   "lastOpenFiles": [
+    "MyWiki/Sureté de fonctionnement/TP LXC Dockeur.md",
+    "MyWiki/Sureté de fonctionnement/Sureté de fonctionnement.md",
+    "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
     "MyWiki/Sureté de fonctionnement/Charge et liens.md",
-    "MyWiki/OS/Linux/Commandes de base.md",
-    "MyWiki/Réseaux/Cisco.md",
-    "MyWiki/Composants_PC/Mémoire.md",
-    "MyWiki/Réseaux/Protocoles.md",
     "MyWiki/Sécurité/TP1 Sécurité.md",
     "MyWiki/Réseaux sans fils/TP-act-2-Réseaux-centr.md",
-    "MyWiki/Sureté de fonctionnement/Sureté de fonctionnement.md",
-    "MyWiki/Sureté de fonctionnement/TP Virtualisation et Proxmox.md",
-    "MyWiki/Sureté de fonctionnement/TP NAS.md"
+    "MyWiki/Réseaux/Cisco.md",
+    "MyWiki/Réseaux/Protocoles.md",
+    "MyWiki/OS/Windows/SSH.md",
+    "MyWiki/OS/Windows/GPO.md"
   ]
 }

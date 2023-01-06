@@ -40,6 +40,8 @@ commande > fichier    // ajouter résultat dans un fichier (écrase)
 apt purge mon_paquet    // en cas de problèmes de installation
 
 env | grep proxy // vérifier proxy
+
+voir LOG JOURNALCTL
 ```
 
 ### Répertoires

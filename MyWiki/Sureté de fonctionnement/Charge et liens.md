@@ -8,12 +8,13 @@ Agrégation de lien, avec répartition de charge du service Monkey Web
 - 3 Disques (20Go, 1Go, 1Go)
 - Un peu de neurones
 
-- lB2 :
+- LB2 :
 - 3 cartes réseau (Bridge, Bridge, Lan Segment)
 - 3 Disques (20Go, 1Go, 1Go)
 - Un peu de neurones
 
 - 1 machines DSL
+- Carte en réseau interne (Lan segment, le même que LB1 et LB2)
 
 # Schéma (IPs différente selon votre réseau)
 ![Untitled](https://user-images.githubusercontent.com/73076854/210636887-a64912a7-2a5e-4c95-8e87-edee4746c98a.png)

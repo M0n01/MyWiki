@@ -23,6 +23,12 @@ Agrégation de lien, avec répartition de charge du service Monkey Web
 
 #### Agrégation de lien
 
+- Conf réseau
+	- clique droit décocher activer réseau
+```
+dhclient //obtenir ip
+```
+
 - Installer le paquet ifsenslave
 ```bash
 apt-get install ifenslave
@@ -187,7 +193,7 @@ apt install ipvsadm
 - Mettre en place le NAT sur les paquets sortants vers internet (Adapter selon votre carte réseau)
 ```bash
 iptables -t nat -A POSTROUTING -o bond0 -j MASQUERADE
-iptables-save > /etc/iptables/rules.v4
+iptables-save > /etc/iptables/rules.v4   // pour sauvegarder
 ```
 - Autorisation du port 80
 ```bash
@@ -206,8 +212,8 @@ reboot
 - Créer un service virtuel
 ```bash
 'XX = Machine Hote IP Virtuel (keepAlived), YY = Machines DSL'
-ipvsadm -A -t 192.168.XX.XXX:80 -s rr
-ipvsadm -a -t 192.168.XX.XXX:80 -r 192.168.YY.YYY -m
+ipvsadm -A -t 192.168.7.120:80 -s rr
+ipvsadm -a -t 192.168.7.120:80 -r 192.168.YY.YYY -m
 ipvsadm -L
 ```
 - Vérification
@@ -217,6 +223,7 @@ curl 192.168.XX.XXX
 ou
 http://192.168.XX.XXX
 ```
+CTRL + F5 pour refresh sans cache
 
 ![image](https://user-images.githubusercontent.com/73076854/208654898-56884b7f-ccf9-4194-b065-5c00422ac0a4.png)
 
@@ -289,7 +296,7 @@ mount
 apt install parted
 partprobe
 fdisk -l
-mdadm --manage /dev/md127 --add /dev/sdc
+mdadm --manage /dev/md127 --add /dev/sdc  // ou sdb ça dépend ce qui manque
 mdadm --detail /dev/md127
 ```
 - Si cela ne fonctionne pas

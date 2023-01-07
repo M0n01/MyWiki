@@ -1,3 +1,4 @@
+
 ## Syntaxe des commandes
 
 Le texte en **gras** signale les commandes et mots-clés à saisir tels quels.
@@ -141,6 +142,106 @@ Pour vérifier que les mdp sont bien chiffrés
 Sw-Floor-1(config)# show running-config
 ```
 
+### Bannière (avertissement)
+
+
+```
+Sw-Floor-1# configure terminal
+
+Sw-Floor-1(config)# banner motd #Seulement pour les accès autorisé# // MOTD (Message Of The Day)
+```
+
+ou
+
+```
+R1(config)# banner motd #
+
+Enter TEXT message. End with a new line and the #
+
+*********************************************** 
+
+Seulement pour les accès autorisé
+
+***********************************************
+
+#
+
+R1(config)#
+```
+
+>Une fois cette commande exécutée, la bannière s'affiche lors de toutes les tentatives d'accès au périphérique jusqu'à ce qu'on la supprime.
+
+### Configurations
+
+Deux fichiers système stockent la configuration des périphériques:
+
+startup-config 
+```
+show startup-config
+```
+
+>Fichier de configuration enregistré qui est stocké dans NVRAM (mémoire vive non volatile contenant les commandes utilisées au démarrage/redémarrage. Ne perd pas son contenu lors de la mise hors tension).
+
+running-config
+```
+show running-config
+```
+
+>Stocké dans la mémoire vive (RAM). Reflète la configuration actuelle. Mémoire volatile (perd tout son contenu lorsque le périphérique est mis hors tension).
+
+Enregistrer les modifications apportées à la configuration en cours dans le fichier de configuration initiale :
+```
+copy running-config startup-config
+```
+ou
+```
+copy run start
+```
+
+Pour appliquer la config startup à la config en cours (charger la sauvegarde antérieur) :
+```
+copy startup-config running-config
+```
+ou
+```
+copy start run
+```
+
+Restaurer la configuration en cours (redémarre) :
+```
+reload
+```
+
+Restaurer la configuration initial :
+```
+erase startup-config
+```
+Puis
+```
+reload
+```
+Pour recharger le périphérique pour supprimer le fichier de configuration en cours dans la mémoire vive.
+
+>Lors du rechargement, un commutateur charge la configuration initiale qui était proposée à l'origine avec le périphérique.
+
+Lister les directory : 
+```
+dir ?
+```
+
+Entrer dedans : 
+```
+dir nvram:
+```
+
+
+
+
+
+
+
+
+
 ### RIP
 
 >Regarde le chemin le plus **court** par le nombre de routeur à passer.
@@ -240,3 +341,5 @@ router# reload
 Save?[yes/no]: n
 reload?[confirm]
 ```
+
+

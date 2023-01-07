@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Sureté de fonctionnement/Charge et liens.md",
+                "file": "MyWiki/Réseaux/Cisco.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Solutions",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Sureté de fonctionnement/Charge et liens.md",
+                "file": "MyWiki/Réseaux/Cisco.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Sureté de fonctionnement/Charge et liens.md",
+                "file": "MyWiki/Réseaux/Cisco.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Sureté de fonctionnement/Charge et liens.md"
+                "file": "MyWiki/Réseaux/Cisco.md"
               }
             }
           }
@@ -138,25 +138,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
       "canvas:Create new canvas": false
     }
   },
   "active": "bf17640618a8a7ef",
   "lastOpenFiles": [
-    "MyWiki/OS/Linux/Apache.md",
-    "MyWiki/Sureté de fonctionnement/Charge et liens.md",
+    "MyWiki/Composants_PC/Carte Mère.md",
+    "MyWiki/Réseaux/Cisco.md",
     "MyWiki/OS/Linux/Commandes de base.md",
+    "MyWiki/Sureté de fonctionnement/Charge et liens.md",
+    "MyWiki/OS/Linux/Apache.md",
     "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
     "MyWiki/Sureté de fonctionnement/Sureté de fonctionnement.md",
     "MyWiki/Sureté de fonctionnement/TP LXC Dockeur.md",
     "MyWiki/Sureté de fonctionnement/TP Virtualisation et Proxmox.md",
-    "MyWiki/Sureté de fonctionnement/TP NAS.md",
-    "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
-    "MyWiki/Sécurité/TP1 Sécurité.md"
+    "MyWiki/Sureté de fonctionnement/TP NAS.md"
   ]
 }

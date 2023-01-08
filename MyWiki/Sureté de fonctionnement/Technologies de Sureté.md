@@ -1,10 +1,7 @@
-**Mode promiscuité** : Dans un pont cela permet de laisser tout le trafic passer et pas seulement celui qui nous est destiné
-
-**Fail over service** : 1 qui tombe = 1 autre qui prend le relai
 
 ## Load Balencing
 
-**Load balencer** : Répartition de charge. Permet de faire de la Redondance. Il faut doubler le Load Balencer au cas où il y en a un qui tombe.
+==**Load balencer**== : Répartition de charge. Permet de faire de la Redondance. Il faut doubler le Load Balencer au cas où il y en ai un qui tombe.
 - Robin Robin
 - En fonction de la puissance CPU (1 à 50%, 1 à 25%...)
 - En fonction du nombre de requête 
@@ -13,16 +10,17 @@
 
 Snapshot != Backup
 
-Accès par pont :
+**==Accès par pont==** : Le mode d'accès réseau par pont de VirtualBox crée un pont entre la carte réseau d'une VM et celle du PC hôte. La VM peut ainsi appartenir au même réseau local que celui du PC hôte.
 
-NAT (en réalité PAT) : un routeur virtuel entre la carte réel et la carte virtuel. Le routeur virtuel fournit aussi une adresse IP (il fait office de DHCP)
+**==NAT (en réalité PAT)==** : Un routeur virtuel entre la carte réel et la carte virtuel. Le routeur virtuel fournit aussi une adresse IP (il fait office de DHCP)
 Masquerade
 
-Host Only : Une carte virtuelle sur l'hôte connecté avec la carte virtuelle de la VM. Pour communiquer entre une VM et la machine hôte. On peut communiquer avec le réseau si on active le routage sur la machine hôte.
+**==Host Only==** : Une carte virtuelle sur l'hôte connecté avec la carte virtuelle de la VM. Pour communiquer entre une VM et la machine hôte. On peut communiquer avec le réseau si on active le routage sur la machine hôte.
 
-**Hyperviseur** : [DirectX](https://fr.wikipedia.org/wiki/DirectX), VirtualBox, VMWare, Qemu
+>[!INFO]
+**Exemple d'hyperviseur** : DirectX, VirtualBox, VMWare, Qemu
 
-ProxMox
+==**Mode promiscuité**== : Dans un pont cela permet de laisser tout le trafic passer et pas seulement celui qui nous est destiné. Pour écouter le trafic réseau.
 
 ## Conteneurs
 
@@ -40,13 +38,13 @@ Voir [[Protocoles#Connexion à distance| Connexion à distance]]
 
 ## RAID
 
-**RAID 0** : Plusieurs disques qui ne font qu'un --> vitesse de lecture ecriture x4 (pour les HDD) mais même principe pour SSD.
+==**RAID 0**== : Plusieurs disques qui ne font qu'un --> vitesse de lecture ecriture x4 (pour les HDD) mais même principe pour SSD.
 
-**RAID 1** : Chaque données sur un disque est clonné sur un autre.
+==**RAID 1**== : Chaque données sur un disque est clonné sur un autre.
 
-**RAID 1 0** : Des grappes (RAID 0) en double (RAID 1)
+==**RAID 1 0**== : Des grappes (RAID 0) en double (RAID 1)
 
-**RAID 5** : Un disque en "checksum" qui va additionner les valeurs des autres. Le problème c'est que le disque en checksum va recevoire bcp de lecture/ecriture. Donc on réparti l'espace de checksum sur les différents disques.
+==**RAID 5**== : Un disque en "checksum" qui va additionner les valeurs des autres. Le problème c'est que le disque en checksum va recevoire bcp de lecture/ecriture. Donc on réparti l'espace de checksum sur les différents disques.
 - Hot Spare
 - Hot Plug
 
@@ -55,48 +53,32 @@ Voir [[Protocoles#Connexion à distance| Connexion à distance]]
 
 Bien pour séparer l'OS des données.
 
-Partitions Statiques 
+==**Partitions Statiques**== : Section d'un support de stockage
 
-Partitions Dynamiques (mieux) : 1 seule partition dans laquelle on fait des partitions virtuelles (LVM).
+==**Partitions Dynamiques**== : 1 seule partition dans laquelle on fait des partitions virtuelles (LVM). C'est mieux que le partitionnement statique.
 
+==**Hyperconvergence**== : un serveur qui gère un cluster de machine pour faire du RAID avec.
 
-Système de fichier : permet de décoder les données et les présenter sous forme de répertoires.
-
-Hyperconvergence : un serveur qui gère un cluster de machine pour faire du RAID avec.
-
-Une machine sans disque, qui utilise un disque sur un serveur via un cable réseaux = plus rapide qu'un disque directement installé sur une machine
-
-AD
-
-Base de données (BDD)
+>[!REMARQUE]
+Une machine sans disque, qui utilise un disque sur un serveur via un cable réseaux est plus rapide qu'un disque directement installé sur une machine
 
 ## Fail over service
 
+1 machine qui tombe = 1 autre qui prend le relai
+
 **[Keepalived](https://keepalived.readthedocs.io/en/latest/introduction.html)** : permet de faire basculer une adresse IP à un autre équipement si le premier tombe.
 
-## Test Revoir
+## Sauvegardes
 
-- Serveur ESX
+**==Archive==** : Fichier qui contient des fichiers. Un iso est une archive.
 
-- Cours Virtualisation
-	- Emulation matérielle (GNS3)
-	- Virtualisation totale (possible si processeur de même type)
-	- Para virtualisation (le plus rapide)
-	- Virtualisation au niveau matériel
-	- Conteneurs
+- Transférer une archive contenant 1000 fichiers est beaucoup plus rapide que de transférer directement les 1000 fichiers. De plus, l'archive est bien moins lourde.
 
-- OVA, ISO
+>[!REMARQUE]
+Sur windows la compression de fichiers est pas ouf par rapport à Linux.
 
-un iso est une archive
+#### Protocoles de diques
 
-archive -> fichier qui contient des fichies
-
-transférer une archive contenant 1000 fichiers c'est beaucoup plus rapide que de transférer directement les 1000 fichiers et en plus l'archive est bien moins lourde.
-
-Sur windows la compression de fichier est pas ouf par rapport à Linux.
-
-Le problème des nappes --> si haut débit alors interférence entre elles
-
-Protocoles de diques :
 - SATA/eSATA 6 Gbits/s
 - SAS : 12 Gbits/s
+Le probème des nappes est qu'à haut débit, il y a des interférences.

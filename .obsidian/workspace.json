@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
+                "file": "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
+                "file": "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
+                "file": "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md"
+                "file": "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "956d97f9c1aa4f60",
   "lastOpenFiles": [
+    "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
     "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
     "MyWiki/Sureté de fonctionnement/Charge et liens.md",
     "MyWiki/OS/Windows/Bureau à distance.md",
@@ -155,7 +156,6 @@
     "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
     "MyWiki/OS/Linux/LinuxWiki/Système.md",
     "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
-    "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
     "MyWiki/Sureté de fonctionnement/RAID.md",
     "MyWiki/Documentation_Obsidian.md"
   ]

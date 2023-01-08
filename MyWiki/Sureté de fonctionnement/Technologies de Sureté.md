@@ -28,7 +28,7 @@ ProxMox
 
 Les conteneurs sont différents des VM.
 Si on a plusieur VM qui ont le même OS (et le même que l'hôte), autant utiliser l'OS de la machine hôte, donc pas d'OS supplémentaire et pas d'hyperviseur. Pour les mêmes ressources, une machine qui fait tourner des serveurs web avec Dockeur peut en faire tourner 100 fois plus qu'une machine qui utilise des VM.
-Dockeur utilise LXC.
+Dockeur est une surcouche de LXC.
 *Pour lancer un conteneur il faut une image.*
 
 **[Kubernetes](https://kubernetes.io/fr/)** : Permet de faire un cluster et donc de gérer plusieur noeuds (Dockeur n'en gère qu'1). Automatise les tâches opérationnelles de gestion des conteneurs et inclut des commandes intégrées permettant de déployer des applications, de leur apporter des modifications, d'effectuer un scaling à la hausse ou à la baisse en fonction des besoins, de surveiller les applications, et bien plus encore. La gestion des applications est ainsi facilitée.
@@ -86,4 +86,17 @@ Base de données (BDD)
 	- Conteneurs
 
 - OVA, ISO
-- 
+
+un iso est une archive
+
+archive -> fichier qui contient des fichies
+
+transférer une archive contenant 1000 fichiers c'est beaucoup plus rapide que de transférer directement les 1000 fichiers et en plus l'archive est bien moins lourde.
+
+Sur windows la compression de fichier est pas ouf par rapport à Linux.
+
+Le problème des nappes --> si haut débit alors interférence entre elles
+
+Protocoles de diques :
+- SATA/eSATA 6 Gbits/s
+- SAS : 12 Gbits/s

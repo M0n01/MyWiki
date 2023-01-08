@@ -131,7 +131,7 @@ mount -a -o remount    // remonte tout ce qui est déclaré dans le fstab
 
 mount -o remount chemin    // remonte la partition chemin
 ```
-- **Pour déplacer un dossier existant dans une nouvelle partition voir [[Déplacé dossier dans nouvelle partition|procédure]].**
+- Pour déplacer un dossier existant dans une nouvelle partition voir [[Déplacé dossier dans nouvelle partition|procédure]].
 
 #### Disques virtuels
 voir [[Disques et partitions#Volumes logiques|Wiki]]

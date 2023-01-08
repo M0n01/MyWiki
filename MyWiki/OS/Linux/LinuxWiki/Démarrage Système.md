@@ -3,7 +3,7 @@
 
 ## Firmware
 
-Dans un système informatique, un firmware (ou micrologiciel, microcode, logiciel interne ou encore logiciel embarqué) est un programme intégré dans un matériel informatique ordinateur, photocopieur, automate (disque dur, routeur, appareil photo numérique, etc.) pour qu'il puisse fonctionner.
+Dans un système informatique, un firmware (ou micrologiciel, microcode, logiciel interne ou encore logiciel embarqué) est un programme intégré dans un matériel informatique ordinateur, photocopieur, automate (disque dur, routeur, appareil photo numérique, etc.) pour qu'il puisse fonctionner.
 
 ### Différence UEFI et BIOS
 ```mermaid
@@ -35,6 +35,7 @@ Le **BIOS (Basic Input Output System)** est en quelque sorte le centre de contr
 -   Une fois le programme d'amorçage trouvé et chargé en mémoire, le BIOS lui donne le contrôle.
 -   Simplement, le BIOS exécute le MBR.
 
+>[!INFO]
 Sur les cartes récentes il est remplacé par sa version moderne l'[[Démarrage Système#UEFI|UEFI]].
 
 Il est situé sur la [[Carte Mère|carte mère]] dans plusieurs types de mémoires différentes : 

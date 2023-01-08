@@ -5,64 +5,65 @@
 #### DNS 
 
 - Système de noms de domaine. Traduit les noms de domaine tels que cisco.com, en adresses IP.
-- *Port 53*
+> *Port 53*
 
 #### DHCPv4
 
 - Protocole de configuration dynamique des hôtes pour IPv4. Un serveur DHCPv4 affecte dynamiquement les informations d'adressage IPv4 aux clients DHCPv4 au démarrage et permet de réutiliser les adresses lorsqu'elles ne sont plus nécessaires.
-- *Serveur : Port 67  |  Client : Port 68*
+> *Serveur : Port 67  |  Client : Port 68*
 
 #### DHCPv6
 
 - Protocole de configuration dynamique des hôtes pour IPv6. DHCPv6 est similaire à DHCPv4. Un serveur DHCPv6 affecte dynamiquement les informations d'adressage IPv6 aux clients DHCPv6 au démarrage.
-- *Serveur : Port 67  |  Client : Port 68*
+> *Serveur : Port 67  |  Client : Port 68*
 
 #### SLAAC
 
 - Autoconfiguration des adresses apatrides. Méthode qui permet à un périphérique d'obtenir ses informations d'adressage IPv6 sans utiliser un serveur DHCPv6.
+
 #### SMTP
 
 - Protocole de Transfert de Courrier Simple. Permet aux clients d'envoyer du courrier électronique à un serveur de messagerie et aux serveurs d'envoyer du courrier électronique à d'autres serveurs.
-- *Sans chiffrement : Port 25*
-- *Chiffrement implicite : Port 465*
-- *Chiffrement explicite : 587*
+> *Sans chiffrement : Port 25*
+> *Chiffrement implicite : Port 465*
+> *Chiffrement explicite : 587*
 
 #### POP3
 
 - Protocole de la Poste, version 3. Permet aux clients de récupérer le courrier électronique à partir d'un serveur de messagerie et de le télécharger dans l'application de messagerie locale du client.
-- *Port 110 et 995 (SSL)*
+> *Port 110 et 995 (SSL)*
 
 #### IMAP
 
 - Protocole d'Accès aux Messages Internet. Permet aux clients d'accéder au courrier électronique stocké sur un serveur de messagerie ainsi que de maintenir le courrier électronique sur le serveur.
-- *IMAP2 et IMAP4 : 143 (TCP)*
-- *IMAP3 : 220 (TCP)*
-- *IMAPS (TLS implicite) : 993 (TCP)*
+> *IMAP2 et IMAP4 : 143 (TCP)*
+> *IMAP3 : 220 (TCP)*
+> *IMAPS (TLS implicite) : 993 (TCP)*
 
 #### FTP
 
 - Protocole de Transfert de Fichiers. Définit les règles qui permettent à un utilisateur sur un hôte d'accéder et de transférer des fichiers vers et depuis un autre hôte via un réseau. Le FTP est un protocole de livraison de fichiers fiable,connexion orienté et reconnu.
-- *Port 21 (écoute) et Port 20 (données par défaut)*
+> *Port 21 (écoute) et Port 20 (données par défaut)*
 
 #### SFTP
 
 - Protocole de Transfert de Fichiers SSH. En tant qu'extension du protocole Secure Shell (SSH), le SFTP peut être utilisé pour établir une session de transfert de fichiers sécurisée dans laquelle le transfert de fichiers est crypté. SSH est une méthode de connexion à distance sécurisée qui est généralement utilisée pour accéder à la ligne de commande d'un périphérique.
-- *Port 22*
+> *Port 22*
 
 #### TFTP
 
 - Protocole de Transfert de Fichiers Trivial. Un protocole de transfert de fichiers simple et sans connexion avec une livraison de fichiers sans accusé de réception. Produit moins de surcharge que le protocole FTP.
-- *Port 69*
+> *Port 69*
 
 #### HTTP
 
 - Protocole de Transfert Hypertexte. Ensemble de règles permettant d'échanger du texte, des graphiques, des sons, des vidéos et autres fichiers multimédia sur le web.
-- *Port 80*
+> *Port 80*
 
 ##### HTTPS 
 
 - HTTP Sécuisé. Forme sécurisée de HTTP qui crypte les données échangées sur le World Wide Web.
-- *Port 443*
+> *Port 443*
 
 #### REST 
 
@@ -130,10 +131,10 @@ Protocole permettant d'établir une communication chiffrée, donc sécurisée (o
 
 Lors d'une connexion ssh à un serveur, l'hôte sauvegarde la clé publique du serveur. Si elle vient à changer (dans le cas d'un Man In The Middle ou d'un changement sur le serveur) alors on sera prévenu de ce changement avant de se connecter.
 
-- La clé privé doit être bien garder, elle est secrète. Si quelqu'un obtient ma clé privé, il peut se faire passer pour moi.
-- Tout le monde peut avoir la clé publique, on s'en fiche. Elle ne sert qu'à chiffré des messages.
-
-La clé publique peut être calculé avec la clé privé mais pas l'inverse.
+>[!INFO]
+>- La clé privé doit être bien garder, elle est secrète. Si quelqu'un obtient ma clé privé, il peut se faire passer pour moi.
+>- Tout le monde peut avoir la clé publique. Elle ne sert qu'à chiffré des messages.
+>- La clé publique peut être calculé avec la clé privé mais pas l'inverse.
 
 **Déroulement de la communication :**
 
@@ -147,7 +148,8 @@ La clé publique peut être calculé avec la clé privé mais pas l'inverse.
 
 Pour le RSA prendre RSA 4096 car 2048 trop juste.
 
-**Bonne pratique** = Désactiver la connexion via SSH à root avec un mot de passe. Donc obligation de se connecter via une clé.
+>[!Bonne Pratique]
+Désactiver la connexion via SSH à root avec un mot de passe. Donc obligation de se connecter via une clé.
 
 
 ## Connexion à distance

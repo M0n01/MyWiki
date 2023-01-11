@@ -73,6 +73,17 @@ A rendre mi mars !
 1) Synthèse organisation + éléments clés en lien avec sujet -> integration pro
 2) Analyse stratégique SWOT
 
+SWOT :
+
+|Forces | Faiblesse |
+|--------|-----------|
+|**Opportunité** | **Menaces** |
+
+|Polyvalent, autonome | Débutant, 1ere année d'informatique, Pas le permis voiture |
+|--------|-----------|
+|**Possibilités d'évolution au sein de l'entreprise et des compétences** | **Concurrence**, **marché saturé** |
+
+
 ### Cadre théorique
 
 - Domaines (Systèmes, Réseau, gestion de projets, communication)

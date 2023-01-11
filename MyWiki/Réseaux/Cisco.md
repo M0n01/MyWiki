@@ -828,11 +828,12 @@ voir [Info OSPF](https://cisco.goffinet.org/ccna/ospf/messages-ospf/)
 
 1) Définir IP sur interfaces
 2) Mettre en place OSPF
+
 ##### Config OSPF
 ```
 router(config)#router ospf 1  
-router(config-router)#network ip_voisin1 masque_inversé area 0  
-router(config-router)#network ip_voisin2 masque_inversé area 0  
+router(config-router)#network ip_reseau_voisin1 masque_inversé area 0  
+router(config-router)#network ip_reseau_voisin2 masque_inversé area 0  
 router(config-router)#end
 ```
 
@@ -849,8 +850,8 @@ Router0B(config)# no router ospf 1
 - Le réinjecter
 ```
 router(config)#router ospf 1  
-router(config-router)#network ip_voisin1 masque_inversé area 0  
-router(config-router)#network ip_voisin2 masque_inversé area 0  
+router(config-router)#network ip_reseau_voisin1 masque_inversé area 0  
+router(config-router)#network ip_reseau_voisin2 masque_inversé area 0  
 router(config-router)#end
 ```
 
@@ -914,4 +915,6 @@ Save?[yes/no]: n
 reload?[confirm]
 ```
 
+
+### Commutateur de niveau 3
 

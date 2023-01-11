@@ -1,6 +1,13 @@
 
 A rendre mi mars !
 
+**Un bon rapport en licence :**
+
+- **==Précision==**
+- **==Prise de recul==**
+- **==Justification==**
+
+
 ### Enjeux
 
 - Le rapport tournera autoure de cette problèmatique : 
@@ -36,10 +43,46 @@ A rendre mi mars !
 
 ## 1) Page de présentation
 
-## 2) Introduction (1-2 pages)
+## 2) Introduction (1,5-2 pages)
 
 >Petite histoire de l'entreprise
 >Annonce du plan
+
+### Accroche
+
+>Impact : 
+- Stat/chiffres/questions courte/actu/citation
+
+### Description
+
+>Rapide (5 lignes) :
+- Entreprise
+- secteur
+- missions
+
+### Raisons du choix
+
+
+### Contexte du choix 
+
+- Alternance
+
+### Problématique
+
+- Enjeux clés à votre mission
+1) Synthèse organisation + éléments clés en lien avec sujet -> integration pro
+2) Analyse stratégique SWOT
+
+### Cadre théorique
+
+- Domaines (Systèmes, Réseau, gestion de projets, communication)
+
+### Mission : Objectifs
+
+
+### Méthodologie
+
+
 
 ## 3) Remerciements (10 lignes)
 
@@ -92,3 +135,11 @@ A rendre mi mars !
 
 >Reprends contexte, enjeux, méthodes utilisé, conlusions.
 >C'est autosuffisant
+
+
+
+
+
+
+
+# Rendre introduction rapport V1

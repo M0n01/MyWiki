@@ -68,38 +68,6 @@ rm -r *.txt                 // supprimer tout les fichiers txt
 stat nom_fichier            // info sur fichier
 ```
 
-### Utilisateurs et groupes
-```bash
-adduser nom_utilisateur  // ajouter utilisateur
-
-addgroup nom_groupe      // ajouter groupe
-
-id nom_utilisateur       // info utilisateur (uid,gid...)
-
-usermod -G nom_groupe nom_user  // ajouter un utilisateur à un groupe
-
-chgrp nom_groupe /repertoire    // changer groupe propriétaire de repertoire
-
-cat /etc/group      // affiche la liste des groupes
-
-cat /etc/passwd     // affiche la liste des utilisateurs
-
-visudo /etc/sudoers    // editer fichier de conf sudo
-```
-
-### Accès (ACL)
-```bash
-chmod g+rwx /repertoire  // donner droits rwx au groupe sur repertoire
-chmod u+rwx fichier      // droits pour utilisateur sur fichier
-chmod a-rwx              // enlever droits pour tout le monde
-chmod 1777 /repertoire   // groupe proprio de repertoire a tout les droits sauf supprimer, seul le créateur peut supprimer
-
-setfacl -m g:nom_groupe:rwx /repertoire  // droits rwx au groupe sur repertoire
-setfacl -m u:nom_groupe:rwx /repertoire  // pareil pour utilisateur
-setfacl -m g:nom_groupe:0 /repertoire    // enlève tout les droits au groupe sur repertoire
-
-getfacl /repertoire  // liste les acl de repertoire
-```
 
 ### Stockage
 voir [[Mémoire]]

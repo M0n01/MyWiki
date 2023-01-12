@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ea2bb8b24e231e69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MyWiki/OS/Linux/Users et Accès.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "61a664235df9a36c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MyWiki/Sécurité/TP sécu app.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "5621715a5f9b9a54",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Sécurité/EXAM.md",
+                "file": "MyWiki/Réseaux/TP3 Archi commutée redondante.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Sécurité/EXAM.md",
+                "file": "MyWiki/Réseaux/TP3 Archi commutée redondante.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Sécurité/EXAM.md",
+                "file": "MyWiki/Réseaux/TP3 Archi commutée redondante.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Sécurité/EXAM.md"
+                "file": "MyWiki/Réseaux/TP3 Archi commutée redondante.md"
               }
             }
           }
@@ -173,15 +148,15 @@
   },
   "active": "5621715a5f9b9a54",
   "lastOpenFiles": [
+    "MyWiki/Réseaux/TP2 Switch N3.md",
+    "MyWiki/Réseaux/TP3 Archi commutée redondante.md",
     "MyWiki/Sécurité/TP sécu app.md",
-    "MyWiki/OS/Linux/Commandes de base.md",
+    "MyWiki/Réseaux/Cisco.md",
     "MyWiki/OS/Linux/Users et Accès.md",
+    "MyWiki/Sécurité/EXAM.md",
+    "MyWiki/OS/Linux/Commandes de base.md",
     "MyWiki/Code.md",
     "MyWiki/Réseaux sans fils/TP-act-2-Réseaux-centr.md",
-    "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
-    "MyWiki/Sureté de fonctionnement/Charge et liens.md",
-    "MyWiki/OS/Linux/RAID.md",
-    "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
-    "MyWiki/Sécurité/TP1 Sécurité.md"
+    "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md"
   ]
 }

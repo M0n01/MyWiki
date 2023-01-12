@@ -349,6 +349,8 @@ Router(config)# interface type-and-number
 
 Router(config-if)# description description-text
 
+Router(config-if)# no switchport
+
 Router(config-if)# ip address ipv4-address subnet-mask
 
 Router(config-if)# ipv6 address ipv6-address/prefix-length

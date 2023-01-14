@@ -169,7 +169,7 @@ R1(config)#
 
 >Une fois cette commande exécutée, la bannière s'affiche lors de toutes les tentatives d'accès au périphérique jusqu'à ce qu'on la supprime.
 
-### Configurations
+### Afficher et sauvegarder la configuration
 
 Deux fichiers système stockent la configuration des périphériques:
 
@@ -233,24 +233,31 @@ dir nvram:
 ```
 
 
-### Interface virtuelle switch
+### Interface virtuelle switch (SVI) pour accès distant
 
 >Pour accéder à distance au commutateur, une adresse IP et un masque de sous-réseau doivent être configurés sur l'interface SVI. 
 
 Pour configurer une SVI sur un commutateur :
 ```
-interface vlan 1
+S1(config)# interface vlan 99
 ```
-Vlan 1 n'est pas une interface physique réelle mais une interface virtuelle. 
+Vlan 99 n'est pas une interface physique réelle mais une interface virtuelle. 
 
 Attribuez ensuite une adresse IPv4 : 
 ```
-ip address adresseIP masque
+S1(config-if)# ip address adresseIP masque
 ```
 
-Enfin, activez l'interface virtuelle : 
+Activez l'interface virtuelle : 
 ```
-no shutdown
+S1(config-if)# no shutdown
+S1(config-if)# exit
+```
+
+Configurer la passerelle par défaut:
+```
+S1(config)# ip default-gateway adress_IP
+S1(config)# end
 ```
 
 ### Info réseau
@@ -918,5 +925,7 @@ reload?[confirm]
 ```
 
 
-### Commutateur de niveau 3
+### Dépannage
+
+![[Dépannage_cisco.png]]
 

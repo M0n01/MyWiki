@@ -40,6 +40,11 @@ Switch(config-if)# switchport mode trunk
 Switch(config-if)# switchport trunk native VLAN 1 // Si paquet appartenant à aucun VLAN alors envoyé dans VLAN 1
 Switch(config-if)# switchport trunk allowed VLAN 10,20,1
 ```
+**Limitations :** 
+- Pas de mélange FastEthernet et Gigabit au sein d'un même Etherchannel
+- 8 ports Ethernets max
+- 800 Mbps / 8 Gbps max
+- 6 Etherchannels max (en augmentation)
 
 5) Activer le routage entre les VLAN sur le Switch N3
 ```

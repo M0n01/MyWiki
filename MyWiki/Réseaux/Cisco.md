@@ -744,6 +744,8 @@ En revanche l’affectation des ports sur le switch1 ne sont pas reproduites sur
 
 ### Spanning Tree Protocol (STP)
 
+>En couche 3 (IPv4 et IPv6) il y a le TTL pour éviter les boucles notamment. En couche 2 (Ethernet) on utilise STP.
+
 Afficher
 ```
 Switch_1#show spanning-tree

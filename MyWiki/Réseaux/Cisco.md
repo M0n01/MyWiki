@@ -878,10 +878,10 @@ Router(config)#ip nat inside source static udp 192.168.1.2 67 132.78.241.30 67
 
 ### DHCP 
 
+#### Serveur
 Activer le DHCP sur les postes
-
 ```
-campus(config)#ip dhcp pool <nom> // crée un groupe, puis place le routeur en mode spécialisé de configuration DHCP
+campus(config)#ip dhcp pool <nom> // crée un groupe (un pool d'adresses), puis place le routeur en mode spécialisé de configuration DHCP
 
 campus(dhcp-config)#network 172.16.12.0 255.255.255.0 // plage d’adresses à octroyer
 
@@ -891,7 +891,7 @@ campus(dhcp-config)#dns-server 172.16.1.2 // adresse du serveur DNS
 
 campus(dhcp-config)#domain-name foo.com // nom de domaine
 
-campus(config)#ip dhcp excluded-address 172.16.12.1 172.16.12.11 // exclure une adresse ou une série d’adresses lors de l’assignation
+campus(config)#ip dhcp excluded-address 172.16.12.1 172.16.12.11 // exclure une adresse ou une série d’adresses lors de l’assignation (ici de .1 à .11)
 
 campus #show ip dhcp binding // visualisation
 ```
@@ -900,6 +900,20 @@ Pour désactiver le service
 ```
 no service dhcp
 ```
+
+Info
+```
+R1# show ip dhcp server statistics
+```
+
+#### Client
+IP par DHCP sur une interface
+```
+SOHO(config)# interface G0/0/1 
+SOHO(config-if)# ip address dhcp
+SOHO(config-if)# no shutdown
+```
+
 
 ### Monitoring (Switch)
 

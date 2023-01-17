@@ -89,7 +89,7 @@ fdisk /dev/sdb   // monter nouvelle partition sur le disque sdb
 >0c      // FAT32 LBA
 >w       // sauvegarder
 
-mkfs.vfat /dev/sdb1   // formate sdb1 en FAT
+mkfs.vfat /dev/sdb1   // formate sdb1 en FAT32
 mkfs.ext4 /dev/sdb1   // formate sdb1 en ext4
 
 mount /dev/sdb1 /repertoire  // monter partition dans repertoire

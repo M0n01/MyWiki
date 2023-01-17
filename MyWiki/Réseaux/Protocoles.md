@@ -12,6 +12,8 @@
 - Protocole de configuration dynamique des hôtes pour IPv4. Un serveur DHCPv4 affecte dynamiquement les informations d'adressage IPv4 aux clients DHCPv4 au démarrage et permet de réutiliser les adresses lorsqu'elles ne sont plus nécessaires.
 > *Serveur : Port 67  |  Client : Port 68*
 
+*Lorsque les serveurs DHCP ne sont pas opérationnels sur un réseau, les postes de travail reçoivent des adresses appartenant à la plage 169.254.0.0/16.*
+
 #### DHCPv6
 
 - Protocole de configuration dynamique des hôtes pour IPv6. DHCPv6 est similaire à DHCPv4. Un serveur DHCPv6 affecte dynamiquement les informations d'adressage IPv6 aux clients DHCPv6 au démarrage.

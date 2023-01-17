@@ -17,9 +17,16 @@
 - Protocole de configuration dynamique des hôtes pour IPv6. DHCPv6 est similaire à DHCPv4. Un serveur DHCPv6 affecte dynamiquement les informations d'adressage IPv6 aux clients DHCPv6 au démarrage.
 > *Serveur : Port 67  |  Client : Port 68*
 
+- **==Sans état==** : *Indique au client d'utiliser les informations contenues dans le message RA pour l'adressage, mais des paramètres de configuration supplémentaires sont disponibles à partir d'un serveur DHCPv6.*
+
+- **==Avec état==** : *Cette option est la plus proche de DHCPv4. Dans ce cas, le message RA indique au client d'obtenir toutes les informations d'adressage à partir d'un serveur DHCPv6 avec état, à l'exception de l'adresse de passerelle par défaut qui est l'adresse lien-local IPv6 source du RA.*
+
 #### SLAAC
 
 - Autoconfiguration des adresses apatrides. Méthode qui permet à un périphérique d'obtenir ses informations d'adressage IPv6 sans utiliser un serveur DHCPv6.
+- La méthode SLAAC permet aux hôtes de créer leur propre adresse de monodiffusion globale IPv6 unique sans les services d'un serveur DHCPv6.
+- Le SLAAC utilise les messages RA ICMPv6 pour fournir l'adressage et d'autres informations de configuration qui seraient normalement fournies par un serveur DHCP. Un hôte configure son adresse IPv6 en fonction des informations envoyées dans le RA. Les messages RA sont envoyés par un routeur IPv6 toutes les 200 secondes.
+![[SLAAC.png]]
 
 #### SMTP
 
@@ -165,3 +172,10 @@ Désactiver la connexion via SSH à root avec un mot de passe. Donc obligation d
 Le RDP (Remote Desktop Protocol) permet d'utiliser un ordinateur de bureau à distance. C'est le plus couramment utilisé. Le protocole RDP a été initialement publié par Microsoft. Il est disponible pour la plupart des systèmes d'exploitation Windows, mais il peut également être utilisé avec les systèmes d'exploitation Mac.
 
 #### [[Protocoles#HTTP|HTTP (HTTPS)]]
+
+
+## Haute dispo
+
+### Protocole HSRP (Hot Standby Router Protocol)
+
+Le protocole HRSP est un FHRP propriétaire de CISCO qui est conçu pour permettre le basculement transparent d'un périphérique IPv4 au premier saut. Le protocole HSRP offre une disponibilité de réseau élevée, par le biais d'une redondance de routage au premier saut pour les hôtes IPv4 des réseaux configurés avec une adresse de passerelle par défaut IPv4. HSRP est utilisé dans un groupe de routeurs pour sélectionner un périphérique actif et un périphérique en veille. Dans un groupe d'interfaces de périphérique, le périphérique actif est celui qui est utilisé pour le routage des paquets ; le périphérique en veille est celui qui prend le relais en cas de défaillance du périphérique actif ou lorsque certaines conditions prédéfinies sont réunies. La fonction du routeur en veille HSRP est de surveiller l'état de fonctionnement du groupe HSRP et de prendre rapidement la responsabilité du réacheminement des paquets lorsque le routeur actif est défaillant.

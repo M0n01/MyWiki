@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Réseaux/Protocoles.md",
+                "file": "MyWiki/OS/Clé Bootable.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Réseaux/Protocoles.md",
+                "file": "MyWiki/OS/Clé Bootable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Réseaux/Protocoles.md",
+                "file": "MyWiki/OS/Clé Bootable.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Réseaux/Protocoles.md"
+                "file": "MyWiki/OS/Clé Bootable.md"
               }
             }
           }
@@ -161,15 +161,15 @@
   },
   "active": "2d025e65173cc83a",
   "lastOpenFiles": [
-    "MyWiki/Réseaux/Cisco.md",
+    "MyWiki/Réseaux/TP3 Archi commutée redondante.md",
+    "MyWiki/Réseaux/TP2 Switch N3.md",
     "MyWiki/Réseaux/Protocoles.md",
-    "MyWiki/OS/Clé Bootable.md",
+    "MyWiki/Réseaux/Exam Réseaux Complexe.md",
+    "MyWiki/Réseaux/Cisco.md",
+    "MyWiki/Réseaux/Bonnes pratiques.md",
     "MyWiki/Code.md",
-    "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
-    "MyWiki/OS/Linux/Commandes de base.md",
-    "MyWiki/Composants_PC/Mémoire.md",
-    "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
-    "MyWiki/OS/Linux/LinuxWiki/Système.md",
-    "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md"
+    "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
+    "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
+    "MyWiki/Sureté de fonctionnement/Charge et liens.md"
   ]
 }

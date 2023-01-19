@@ -12,7 +12,7 @@ Snapshot != Backup
 
 **==Accès par pont==** : Le mode d'accès réseau par pont de VirtualBox crée un pont entre la carte réseau d'une VM et celle du PC hôte. La VM peut ainsi appartenir au même réseau local que celui du PC hôte.
 
-**==NAT (en réalité PAT)==** : Un routeur virtuel entre la carte réel et la carte virtuel. Le routeur virtuel fournit aussi une adresse IP (il fait office de DHCP)
+**==NAT (en réalité PAT)==** : Un routeur virtuel entre la carte réel et la carte virtuel. Le routeur virtuel fournit aussi une adresse IP (il fait office de DHCP).
 Masquerade
 
 **==Host Only==** : Une carte virtuelle sur l'hôte connecté avec la carte virtuelle de la VM. Pour communiquer entre une VM et la machine hôte. On peut communiquer avec le réseau si on active le routage sur la machine hôte.

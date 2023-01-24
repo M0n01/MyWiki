@@ -1,6 +1,11 @@
 
 >La sécurité n'est aussi solide que le lien le plus faible du système, et la couche 2 est considérée comme ce lien faible. Cela est dû au fait que, les réseaux locaux étaient traditionnellement sous le contrôle administratif d'une seule organisation. Nous avons intrinsèquement fait confiance à toutes les personnes et tous les appareils connectés à notre réseau local. Aujourd'hui, avec le BYOD et des attaques plus sophistiquées, nos réseaux locaux sont devenus plus vulnérables à la pénétration. Par conséquent, en plus de protéger les couches 3 à 7, les professionnels de la sécurité réseau doivent également atténuer les attaques contre l'infrastructure LAN de couche 2.
 
+## Bonnes pratiques
+
+- Faire des VLAN privé
+
+
 ## ==Les Attaques du switch==
 
 ### Attaques de Table MAC
@@ -56,6 +61,12 @@ Un acteur de menace dans des situations spécifiques pourrait intégrer une bali
 
 >[!Remarque]
 >Une attaque de double marquage VLAN est unidirectionnelle et ne fonctionne que lorsque l'attaquant est connecté à un port résidant dans le même VLAN que le VLAN natif du port de trunk. L'idée est que le double marquage permet à l'attaquant d'envoyer des données à des hôtes ou des serveurs sur un VLAN qui autrement seraient bloqués par un certain type de configuration de contrôle d'accès. Vraisemblablement, le trafic de retour sera également autorisé, ce qui donnera à l'attaquant la possibilité de communiquer avec des périphériques sur le VLAN normalement bloqué.
+
+En bref, une attaque par saut de VLAN peut être lancée de trois manières:
+
+- Usurpation des messages DTP de l'hôte attaquant pour que le commutateur passe en mode de trunking. À partir de là, l'attaquant peut envoyer du trafic étiqueté avec le VLAN cible, et le commutateur délivre ensuite les paquets à la destination.
+- Présentation d'un commutateur indésirable et activation de trunking. L'attaquant peut alors accéder à tous les VLAN sur le commutateur victime à partir du commutateur non autorisé.
+- Un autre type d'attaque par saut de VLAN est une attaque à double étiquète (ou à double encapsulation). Cette attaque profite de la façon dont le matériel de la plupart des commutateurs fonctionne.
 
 >[!Info]
 >Voir la [[Secu Réseaux#Atténuation des attaques VLAN|méthode d'atténuation]].
@@ -146,7 +157,7 @@ En cas de succès, l'hôte attaquant devient le pont racine, comme le montre la 
 ![[STPPATTA.PNG]]
 
 >[!Info]
->Cette attaque STP est atténuée par l'implémentation de BPDU Guard sur tous les ports d'accès.
+>Cette attaque STP est atténuée par l'implémentation de BPDU Guard sur tous les ports d'accès. Voir [[Secu Réseaux#Atténuation attaques STP|atténuation attaques STP]]
 
 ### Reconnaissance CDP (Cisco uniquement)
 
@@ -161,7 +172,6 @@ Les diffusions CDP ne sont ni chiffrées, ni authentifiées. Par conséquent, un
 
 ## ==Techniques d'Atténuation des Attaques du switch==
 
-
 ### Atténuation des attaques VLAN
 
 Les attaques de saut de VLAN et de double marquage VLAN peuvent être évitées en mettant en œuvre les directives de sécurité de jonction suivantes :
@@ -170,21 +180,78 @@ Les attaques de saut de VLAN et de double marquage VLAN peuvent être évitées 
 - Désactivez le trunking automatique sur les liaisons de jonction afin que les trunks doivent être activées manuellement.
 - Assurez-vous que le VLAN natif n'est utilisé que pour les liaisons de trunk.
 
+Utilisez les étapes suivantes pour atténuer les attaques par saut de VLAN:
+
+1) Désactivez les négociations DTP (jonction automatique) sur les ports sans trunk à l'aide de la commande de configuration de l'interface **switchport mode access** .
+
+2) Désactivez les ports inutilisés et placez-les dans un VLAN inutilisé.
+
+3) Activez manuellement la liaison de jonction sur un port de jonction à l'aide de la commande **switchport mode trunk** .
+
+4) Désactivez les négociations DTP (trunking automatique) sur les ports de jonction à l'aide de la commande **switchport nonegotiate** .
+
+5) Définissez le VLAN natif sur un VLAN autre que VLAN 1 à l'aide de la commande **switchport trunk native vlan** vlan_number.
+
 ### Sécurité des ports
 
-Empêche de nombreux types d'attaques, y compris les attaques d'inondation d'adresses MAC et les attaques de famine DHCP. La sécurité des ports ne permettra d'apprendre qu'un nombre spécifié d'adresses sources MAC sur le port. La sécurité des ports est discuté plus en détail dans un autre module.
+Empêche de nombreux types d'attaques, y compris les attaques d'inondation d'adresses MAC et les attaques de famine DHCP. 
+
+Il permet à un administrateur de configurer manuellement les adresses MAC d'un port ou de permettre au commutateur d'apprendre dynamiquement un nombre limité d'adresses MAC. Lorsqu'un port configuré avec la sécurité des ports reçoit une trame, le système recherche l'adresse MAC source de la trame dans la liste des adresses source sécurisées qui ont été configurées manuellement ou automatiquement (par apprentissage) sur le port.
 
 ### Surveillance DHCP
 
 Empêche la famine du DHCP et les attaques d'usurpation du DHCP.
 
+L'espionnage DHCP détermine si les messages DHCP proviennent d'une source de confiance ou non. Il filtre ensuite les messages DHCP et limite la fiabilité du trafic DHCP de sources qui ne sont pas approuvé.
+
+Les périphériques sous contrôle administratif (par exemple, les commutateurs, les routeurs et les serveurs) sont des sources fiables. Tout appareil placé en dehors de votre réseau est une source non fiable. Par ailleurs, tous les ports d'accès sont généralement traités comme des sources non fiables.
+
+Une table DHCP est créée qui inclut l'adresse MAC source d'un périphérique sur un port non approuvé et l'adresse IP attribuée par le serveur DHCP à ce périphérique. L'adresse MAC et l'adresse IP sont liées ensemble. Par conséquent, cette table est appelé table de liaison d'espionnage DHCP.
+
+Utilisez les étapes suivantes pour activer l'espionnage DHCP (snooping):
+
+1) Activez l'espionnage DHCP à l'aide de la commande de configuration globale **ip dhcp snooping** .
+
+2) Sur les ports approuvés, configurez l'interface avec la commande **ip dhcp snooping trust**.
+
+3) Limitez le nombre de messages de découverte DHCP pouvant être reçus par seconde sur les ports non approuvés à l'aide de la commande de configuration d'interface **ip dhcp snooping limit rate** .
+
+4) Activez la surveillance DHCP par VLAN ou par une plage de VLAN à l'aide de la commande de configuration globale **ip dhcp snooping** _vlan_.
+
 ### Inspection ARP dynamique (DAI)
 
 Empêche l'usurpation d'ARP et les attaques d'empoisonnement d'ARP.
 
+Pour empêcher l'usurpation ARP et l'empoisonnement ARP qui en résulte, un commutateur doit garantir que seules les requêtes et les réponses ARP valides sont relayées.
+
+L'inspection ARP Dynamique (DAI) nécessite l'espionnage DHCP (snooping) et aide à prévenir les attaques ARP en :
+
+- Ne pas relayer les réponses ARP non valides ou gratuites vers d'autres ports du même VLAN.
+- Interception de toutes les requêtes et les réponses ARP sur les ports non approuvés.
+- Vérification de chaque paquet intercepté pour une liaison IP-MAC valide.
+- Abandon et journalisation des réponses ARP provenant de non valides pour empêcher l'empoisonnement ARP.
+- Error-disabling l'interface si le nombre DAI des paquets ARP configurés sont dépassées.
+
+Pour atténuer les risques d'usurpation ARP et d'empoisonnement ARP, suivez ces directives d'implémentation DAI:
+
+- Activez globalement L'espionnage DHCP (snooping ).
+- Activer l'espionnage DHCP sur les VLAN sélectionnés.
+- Activer l'inspection ARP dynamique (DAI) sur les VLAN sélectionnés.
+- Configurer les interface approuvées avec l'espionnage DHCP et l'inspection ARP.
+
+>[!Remarque]
+>Il est généralement conseillé de configurer tous les ports de commutateur d'accès comme non approuvés et de configurer tous les ports de liaison montante qui sont connectés à d'autres commutateurs comme approuvés.
+
 ### Protection de la source IP (IPSG)
 
 Empêche les attaques d'usurpation d'adresse MAC et IP.
+
+### Atténuation attaques STP
+
+Pour atténuer les attaques de manipulation du protocole Spanning Tree (STP), utilisez PortFast et Bridge Protocol Data Unit (BPDU) Garde :
+
+- **PortFast** : Avec PortFast, une interface configurée comme un port d'accès ou trunc passe immédiatement de l'état de blocage à celui de transfert, et contourne ainsi les situations d'écoutes et d'apprentissages. Appliquer à tous les ports d'utilisateur final. PortFast ne doit pas être configuré que sur les ports connectés aux périphériques finaux.
+- **BPDU Guard** : Une erreur de BPDU guard désactive immédiatement un port qui reçoit un BPDU. Comme PortFast, BPDU guard ne doit pas être configuré que sur les ports connectés aux périphériques finaux.
 
 ### Atténuation pour CDP
 

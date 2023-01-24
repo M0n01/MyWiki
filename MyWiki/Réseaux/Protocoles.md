@@ -7,14 +7,16 @@
 - Système de noms de domaine. Traduit les noms de domaine tels que cisco.com, en adresses IP.
 > *Port 53*
 
-#### DHCPv4
+#### DHCP 
+
+##### DHCPv4
 
 - Protocole de configuration dynamique des hôtes pour IPv4. Un serveur DHCPv4 affecte dynamiquement les informations d'adressage IPv4 aux clients DHCPv4 au démarrage et permet de réutiliser les adresses lorsqu'elles ne sont plus nécessaires.
 > *Serveur : Port 67  |  Client : Port 68*
 
 *Lorsque les serveurs DHCP ne sont pas opérationnels sur un réseau, les postes de travail reçoivent des adresses appartenant à la plage 169.254.0.0/16.*
 
-#### DHCPv6
+##### DHCPv6
 
 - Protocole de configuration dynamique des hôtes pour IPv6. DHCPv6 est similaire à DHCPv4. Un serveur DHCPv6 affecte dynamiquement les informations d'adressage IPv6 aux clients DHCPv6 au démarrage.
 > *Serveur : Port 67  |  Client : Port 68*
@@ -22,6 +24,8 @@
 - **==Sans état==** : *Indique au client d'utiliser les informations contenues dans le message RA pour l'adressage, mais des paramètres de configuration supplémentaires sont disponibles à partir d'un serveur DHCPv6.*
 
 - **==Avec état==** : *Cette option est la plus proche de DHCPv4. Dans ce cas, le message RA indique au client d'obtenir toutes les informations d'adressage à partir d'un serveur DHCPv6 avec état, à l'exception de l'adresse de passerelle par défaut qui est l'adresse lien-local IPv6 source du RA.*
+
+![[DHCPP.PNG]]
 
 #### SLAAC
 

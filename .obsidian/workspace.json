@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Réseaux/Secu Réseaux.md",
+                "file": "MyWiki/Sécurité/TP sécu app.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Réseaux/Secu Réseaux.md",
+                "file": "MyWiki/Sécurité/TP sécu app.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Réseaux/Secu Réseaux.md",
+                "file": "MyWiki/Sécurité/TP sécu app.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Réseaux/Secu Réseaux.md"
+                "file": "MyWiki/Sécurité/TP sécu app.md"
               }
             }
           }
@@ -151,25 +151,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "canvas:Create new canvas": false
     }
   },
   "active": "5c02472c4e552aed",
   "lastOpenFiles": [
+    "MyWiki/Code.md",
+    "Rapport Alternance.md",
+    "MyWiki/Réseaux/Secu Réseaux.md",
     "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
     "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
     "MyWiki/Sureté de fonctionnement/Charge et liens.md",
     "MyWiki/Sécurité/TP sécu app.md",
-    "MyWiki/Réseaux/Secu Réseaux.md",
     "MyWiki/Réseaux/Exam Réseaux Complexe.md",
     "MyWiki/Réseaux/Protocoles.md",
-    "MyWiki/Réseaux/TP2 Switch N3.md",
-    "MyWiki/Réseaux/TP3 Archi commutée redondante.md",
-    "MyWiki/Réseaux/Bonnes pratiques.md"
+    "MyWiki/Réseaux/TP2 Switch N3.md"
   ]
 }

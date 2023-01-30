@@ -47,7 +47,11 @@ DLS1(config-vlan)# name VLAN10
 
 Mise en place des liens trunk vers les switch d'acces et entre switch distributions
 ```
-DLS1(config)# interface range gigabitEthernet 0/1-2
+DLS1(config)# interface range fastEthernet 0/1-3
+DLS1(config-if)# switchport trunk encapsulation dot1q 
+DLS1(config-if)# switchport mode trunk
+
+DLS1(config)# interface GigabitEthernet 0/1
 DLS1(config-if)# switchport trunk encapsulation dot1q 
 DLS1(config-if)# switchport mode trunk
 ```
@@ -129,3 +133,156 @@ SW_DISTRIB(config-if)# exit
 ```
 
 >Faire test Ping PC différent VLAN (vérifier les gateway)
+
+
+### 2) Coeur de réseaux
+
+Mettre des ip sur toute les interfaces
+
+Core1
+```
+Switch(config)# ip routing
+Switch(config)#interface gigabitEthernet 0/2
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 192.168.11.2 255.255.255.252
+Switch(config-if)#no shutdown
+
+Switch(config)#interface gigabitEthernet 0/1
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 172.20.1.253 255.255.255.0
+Switch(config-if)#no shutdown
+
+Switch(config)#interface fastEthernet 0/11
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 192.168.12.2 255.255.255.252
+Switch(config-if)#no shutdown
+
+Switch(config)#interface fastEthernet 0/1
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 192.168.1.2 255.255.255.252
+Switch(config-if)#no shutdown
+```
+
+Core2
+```
+Switch(config)# ip routing
+Switch(config)#interface gigabitEthernet 0/2
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 192.168.22.2 255.255.255.252
+Switch(config-if)#no shutdown
+
+Switch(config)#interface gigabitEthernet 0/1
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 172.20.1.252 255.255.255.0
+Switch(config-if)#no shutdown
+
+Switch(config)#interface fastEthernet 0/11
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 192.168.21.2 255.255.255.252
+Switch(config-if)#no shutdown
+
+Switch(config)#interface fastEthernet 0/1
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 192.168.2.2 255.255.255.252
+Switch(config-if)#no shutdown
+```
+
+Distribution1
+```
+Switch(config)#interface gigabitEthernet 0/2
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 192.168.11.1 255.255.255.252
+Switch(config-if)#no shutdown
+
+Switch(config)#interface fastEthernet 0/11
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 192.168.21.1 255.255.255.252
+Switch(config-if)#no shutdown
+```
+
+Distribution2
+```
+Switch(config)#interface gigabitEthernet 0/2
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 192.168.22.1 255.255.255.252
+Switch(config-if)#no shutdown
+
+Switch(config)#interface fastEthernet 0/11
+Switch(config-if)#no switchport
+Switch(config-if)#ip address 192.168.12.1 255.255.255.252
+Switch(config-if)#no shutdown
+```
+
+### 3) Routeurs
+
+#### Routeur 0
+```
+Switch(config)# ip routing
+Routeur(config)#interface FastEthernet 0/0
+Routeur(config-if)#ip address 123.123.123.1 255.255.255.0
+Routeur(config-if)#no shutdown
+
+Routeur(config)#interface FastEthernet 0/1
+Routeur(config-if)#ip address 192.168.1.1 255.255.255.252
+Routeur(config-if)#no shutdown
+```
+
+Route par défaut et redistribution de cette route par OSPF
+```
+Routeur(config)#ip route 0.0.0.0 0.0.0.0 123.123.123.3
+
+router(config)#router ospf 1
+router(config-router)#default-information originate
+```
+
+PAT
+```
+Routeur(config)# interface fastEthernet 0/0
+Routeur(config-if)# ip nat outside
+Routeur(config-if)# exit
+Routeur(config)# access-list 1 permit 172.16.10.0 0.0.0.255
+Routeur(config)# access-list 1 permit 172.16.20.0 0.0.0.255
+Routeur(config)# ip nat inside source list 1 interface Fast0/1 overload // indique au routeur de translater notre access-list, à travers notre interface sortie
+```
+
+#### Routeur 1
+```
+Switch(config)# ip routing
+Routeur(config)#interface FastEthernet 0/0
+Routeur(config-if)#ip address 123.123.123.2 255.255.255.0
+Routeur(config-if)#no shutdown
+
+Routeur(config)#interface FastEthernet 0/1
+Routeur(config-if)#ip address 192.168.2.1 255.255.255.252
+Routeur(config-if)#no shutdown
+```
+
+Route par défaut et redistribution de cette route par OSPF
+```
+Routeur(config)#ip route 0.0.0.0 0.0.0.0 123.123.123.3
+
+router(config)#router ospf 1
+router(config-router)#default-information originate
+```
+
+PAT
+```
+Routeur(config)# interface fastEthernet 0/0
+Routeur(config-if)# ip nat outside
+Routeur(config-if)# exit
+Routeur(config)# access-list 1 permit 172.16.10.0 0.0.0.255
+Routeur(config)# access-list 1 permit 172.16.20.0 0.0.0.255
+Routeur(config)# ip nat inside source list 1 interface Fast0/1 overload // indique au routeur de translater notre access-list, à travers notre interface sortie
+```
+
+#### Routeur FAI
+```
+Switch(config)# ip routing
+Routeur(config)#interface FastEthernet 0/0
+Routeur(config-if)#ip address 123.123.123.3 255.255.255.0
+Routeur(config-if)#no shutdown
+
+Routeur(config)#interface FastEthernet 0/1
+Routeur(config-if)#ip address 100.100.100.254 255.255.255.0
+Routeur(config-if)#no shutdown
+```

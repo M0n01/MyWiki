@@ -23,11 +23,9 @@
             "id": "5c329ba8c2a3c29e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "MyWiki/Réseaux/TP2 Switch N3.md",
-                "mode": "source",
-                "source": false
+                "file": "MyWiki/Images/SwN3_Example.png"
               }
             }
           }
@@ -98,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Réseaux/TP2 Switch N3.md",
+                "file": "MyWiki/Images/SwN3_Example.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Réseaux/TP2 Switch N3.md",
+                "file": "MyWiki/Images/SwN3_Example.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Réseaux/TP2 Switch N3.md"
+                "file": "MyWiki/Images/SwN3_Example.png"
               }
             }
           }
@@ -161,15 +159,15 @@
   },
   "active": "5c329ba8c2a3c29e",
   "lastOpenFiles": [
+    "MyWiki/Images/SwN3_Example2.png",
+    "MyWiki/Images/SwN3_Example.png",
+    "MyWiki/Réseaux/TP2 Switch N3.md",
     "MyWiki/Réseaux/Cisco.md",
     "MyWiki/Réseaux/RIP.md",
     "MyWiki/Réseaux/TP3 Archi commutée redondante.md",
     "MyWiki/Réseaux/Exam Réseaux Complexe.md",
-    "MyWiki/Réseaux/TP2 Switch N3.md",
     "MyWiki/Réseaux/Protocoles.md",
     "MyWiki/Réseaux/Secu Réseaux.md",
-    "Rapport Alternance.md",
-    "MyWiki/Sécurité/TP sécu app.md",
-    "MyWiki/Code.md"
+    "Rapport Alternance.md"
   ]
 }

@@ -286,3 +286,118 @@ Routeur(config)#interface FastEthernet 0/1
 Routeur(config-if)#ip address 100.100.100.254 255.255.255.0
 Routeur(config-if)#no shutdown
 ```
+
+### OSPF
+
+Core 1
+```
+Switch(config)#interface loopback 0
+Switch(config-if)#ip address 10.0.0.11 255.255.255.255
+Switch(config-if)#exit
+Switch(config)#router ospf 1
+Switch(config-router)#network 192.168.12.0 0.0.0.3 area 0
+Switch(config-router)#network 192.168.11.0 0.0.0.3 area 0
+Switch(config-router)#network 172.20.1.0 0.0.0.255 area 0
+Switch(config-router)#network 192.168.1.0 0.0.0.3 area 0
+Switch(config-router)#end
+```
+
+Core 2
+```
+Switch(config)#interface loopback 0
+Switch(config-if)#ip address 10.0.0.12 255.255.255.255
+Switch(config-if)#exit
+Switch(config)#router ospf 1
+Switch(config-router)#network 192.168.22.0 0.0.0.3 area 0
+Switch(config-router)#network 192.168.21.0 0.0.0.3 area 0
+Switch(config-router)#network 172.20.1.0 0.0.0.255 area 0
+Switch(config-router)#network 192.168.2.0 0.0.0.3 area 0
+Switch(config-router)#end
+```
+
+Distribution 1
+```
+Switch(config)#interface loopback 0
+Switch(config-if)#ip address 10.0.0.1 255.255.255.255
+Switch(config-if)#exit
+Switch(config)#router ospf 1
+Switch(config-router)#network 172.16.10.0 0.0.0.255 area 0
+Switch(config-router)#network 172.16.20.0 0.0.0.255 area 0
+Switch(config-router)#network 192.168.21.0 0.0.0.3 area 0
+Switch(config-router)#network 192.168.11.0 0.0.0.3 area 0
+Switch(config-router)#end
+```
+
+Distribution 2
+```
+Switch(config)#interface loopback 0
+Switch(config-if)#ip address 10.0.0.2 255.255.255.255
+Switch(config-if)#exit
+Switch(config)#router ospf 1
+Switch(config-router)#network 192.168.22.0 0.0.0.255 area 0
+Switch(config-router)#network 192.168.12.0 0.0.0.255 area 0
+Switch(config-router)#network 172.16.10.0 0.0.0.255 area 0
+Switch(config-router)#network 172.16.20.0 0.0.0.255 area 0
+Switch(config-router)#end
+```
+
+Routeur 0
+```
+Switch(config)#interface loopback 0
+Switch(config-if)#ip address 10.0.0.21 255.255.255.255
+Switch(config-if)#exit
+Switch(config)#router ospf 1
+Switch(config-router)#network 192.168.1.0 0.0.0.3 area 0
+Switch(config-router)#network 123.123.123.0 0.0.0.255 area 0
+Switch(config-router)#end
+```
+
+Routeur 1
+```
+Switch(config)#interface loopback 0
+Switch(config-if)#ip address 10.0.0.22 255.255.255.255
+Switch(config-if)#exit
+Switch(config)#router ospf 1
+Switch(config-router)#network 192.168.2.0 0.0.0.3 area 0
+Switch(config-router)#network 123.123.123.0 0.0.0.255 area 0
+Switch(config-router)#end
+```
+
+Routeur FAI
+```
+Switch(config)#interface loopback 0
+Switch(config-if)#ip address 10.0.0.23 255.255.255.255
+Switch(config-if)#exit
+Switch(config)#router ospf 1
+Switch(config-router)#network 100.100.100.0 0.0.0.255 area 0
+Switch(config-router)#network 123.123.123.0 0.0.0.255 area 0
+Switch(config-router)#end
+```
+
+##### Informations
+Afficher les voisins d'un routeur
+```
+Router0B#show ip ospf neighbor
+ou
+Router0B#show ip ospf neighbor detail
+```
+
+Afficher métrique d'interface
+```
+Router0B#show ip ospf interface
+```
+
+Afficher toute les routes connu et leur Area
+```
+Router0B#show ip ospf database
+```
+
+Afficher informations sur les routes
+```
+Router0B#show ip route
+```
+
+Afficher ID du routeur
+```
+Router0B#show ip protocols
+```

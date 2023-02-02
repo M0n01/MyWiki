@@ -166,6 +166,23 @@ route -n      // affiche les ip et leur passerelles et autres info
 netdiscover     // Découvrir les ip et MAC sur un réseau
 ```
 
+**Configuration réseau**
+/etc/network/interfaces
+```
+auto eth0
+iface eth0 inet static
+address 192.168.25.10/24
+
+auto eth1
+iface eth1 inet dhcp
+```
+
+**Activer routage**
+/etc/sysctl.conf
+```
+net.ipv4.ip_forward=1
+```
+
 
 ### Metadata image
 ```bash

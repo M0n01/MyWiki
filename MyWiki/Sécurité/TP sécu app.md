@@ -1,7 +1,7 @@
 
 ## PHP conf
 
-```
+```bash
 apt-get update
 
 apt-get install apache2
@@ -10,8 +10,8 @@ apt-get install php
 ```
 
 Créer un phpinfo.php
-```
-touche phpinfo.php
+```bash
+touch phpinfo.php
 nano phpinfo.php
 	<?php
 	phpinfo() ;
@@ -19,13 +19,13 @@ nano phpinfo.php
 ```
 
 Executer
-```
+```bash
 phph phpinfo.php
 ```
 
 
 Ajouter un script PHP  
-```
+```bash
 cd /var/www/html
 touch index.php
 nano index.php
@@ -49,14 +49,14 @@ puis changer le "user" par "admin"
 ## Nikto
 
 Installer nikto via github
-```
+```bash
 export http_proxy=http://192.168.2.7:3128
 export https_proxy=http://192.168.2.7:3128
 git clone https://github.com/sullo/nikto.git
 ```
 
 Tester
-```
+```bash
 cd nikto/program
 ./nikto.pl -h 127.0.0.1 -C all      // pour relever les failles
 ```
@@ -67,7 +67,7 @@ cd nikto/program
 Challenges → App – Script → Python – input() 
 Webssh
 
-```
+```python
 #!/usr/bin/python3
 import sys
 def youLose():

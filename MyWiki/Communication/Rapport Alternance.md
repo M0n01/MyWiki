@@ -112,15 +112,35 @@ SWOT :
 		- Résume le contenu
 		- Exemple : Ouest Solution Informatique, la nouvelle pme du bocage
 
-## 5) Développement (20 pages)
+## 5) Développement (16/26 pages)
 
 >Présentation de l'entreprise
 
-## 6) Conclusion (2 pages)
+- Contexte (présentation entreprise, matrice SWOT, shéma, secteurs)
+- Activités / Aspects opérationnel 15 pages
+	- Journées types
+	- Outils techniques utilisé
+	- Méthodo de travail
+	- Résultat obtenue (atteindre objectif, respecter les delais)
+	- Problèmes rencontré
+	- Retour d'expérience (points fort, points faible)
+	- Description apports (ça m'apporte quoi ? savoir faire/être)
 
-- **Bilan :**
-	>Appris ?
-	>Projet pro ?
+
+
+## 6) Conclusion (1.5/2 pages)
+
+==**Important car c'est la dernière impression**==
+
+- **Objectif** :
+	- Répond aux questions (problématique)
+
+- Etapes :
+	- Résumé global de l'alternance (contexte+enjeux) 5 lignes
+	- Réponse à la problématique 20 lignes
+	- Ouverture 5 lignes
+	- Bilan perso et pro : Appris ? Projet pro ? 10/20 lignes (1ere personne)
+
 
 ## 7) Sitographie
 

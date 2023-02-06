@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md",
+                "file": "MyWiki/Systèmes/Languages Programmation.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md",
+                "file": "MyWiki/Systèmes/Languages Programmation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md",
+                "file": "MyWiki/Systèmes/Languages Programmation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes de base.md"
+                "file": "MyWiki/Systèmes/Languages Programmation.md"
               }
             }
           }
@@ -163,25 +163,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
       "canvas:Create new canvas": false
     }
   },
   "active": "ecba9e3cd98f1039",
   "lastOpenFiles": [
+    "MyWiki/OS/Clé Bootable.md",
+    "MyWiki/Réseaux/Cisco.md",
+    "MyWiki/Réseaux/Secu Réseaux.md",
+    "MyWiki/Systèmes/Languages Programmation.md",
     "MyWiki/Sécurité/TP3 Samba.md",
+    "MyWiki/OS/Linux/Commandes de base.md",
     "MyWiki/Sécurité/TP sécu app.md",
     "MyWiki/Sécurité/Chiffrement.md",
     "MyWiki/Sécurité/EXAM.md",
-    "MyWiki/Communication/Pechakucha.md",
-    "MyWiki/Communication/Rapport Alternance.md",
-    "MyWiki/OS/Clé Bootable.md",
-    "MyWiki/Réseaux/TP3 Archi commutée redondante.md",
-    "MyWiki/Documentation_Obsidian.md",
-    "MyWiki/Code.md"
+    "MyWiki/Communication/Pechakucha.md"
   ]
 }

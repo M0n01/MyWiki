@@ -6,7 +6,7 @@
 
 #### Infos démarrage sur clé (flash)
 
-Si installation sans bootloader, mettre un bootloader sur une autre clé et booter dessus pour lancer l'OS précédemment installer.
+Si installation sans bootloader, mettre un bootloader (refind par exemple) sur une autre clé et booter dessus pour lancer l'OS précédemment installer.
 
 ##### ==Ubuntu==
 Démarrer sur la clé en version de test 

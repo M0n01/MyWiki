@@ -1276,3 +1276,12 @@ reload?[confirm]
 
 ![[Dépannage_cisco.png]]
 
+#### Pour routes statiques et par défaut
+
+```
+ping adresse_IP
+traceroute adresse_IP
+show ip route
+show ip interface brief
+show cdp neighbors detail // fournit une liste des dispositifs Cisco directement connectés. Cette commande valide la connectivité de couche 2 (et donc de couche 1). Par exemple, si un périphérique voisin est répertorié dans le résultat de la commande, mais qu'il ne peut pas être testé avec une commande ping, l'adressage de couche 3 doit être examiné.
+```

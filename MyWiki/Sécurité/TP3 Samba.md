@@ -1,56 +1,47 @@
-## Installation de Samba :
+## Installation de Samba 
 
-## Configuration de la machine :
+### Configuration de la machine 
 
-### Configuration du nom de la machine :
+#### Configuration du nom de la machine :
 
-nano /etc/hostname :
-
+```bash
+nano /etc/hostname
+```
 remplacer la ligne par : servAD.rt.iut
 
-  
+```bash
+nano /etc/hosts
+```
+avoir la ligne suivante : 192.168.10.1 servAD.rt.iut
 
-nano /etc/hosts :
 
-avoir la ligne suivante :
+#### Configuration de l'adresse ip :
 
-192.168.10.1 servAD.rt.iut
-
-  
-
-### Configuration de l'adresse ip :
-
-nano /etc/network/interfaces :
+```bash
+nano /etc/network/interfaces
 
 auto eth1
-
 iface eth1 inet dhcp
 
-  
-
 auto eth0
-
 iface eth0 inet static
-
-address 192.168.100.1/24
-
+address 192.168.10.1/24
+```
 Puis reboot
 
-  
 
-## Installation et configuration de kerberos :
 
-### Installation des outils pour kerberos et kerberos :
+### Installation et configuration de kerberos :
 
+#### Installation des outils pour kerberos et kerberos :
+
+```bash
 apt-get install dnsutils
-
 apt-get install attr
-
 apt-get install krb5-user libpam-krb5
+```
 
-  
-
-### Entrer dans l’ordre :
+#### Entrer dans l’ordre :
 
 RT.IUT (maj !)
 
@@ -58,14 +49,10 @@ servAD.rt.iut
 
 servAD.rt.iut
 
-  
 
-### Configuration de Kerberos :
+#### Configuration de Kerberos :
 
-  
-
-nano /etc/krb5.conf :
-
+```bash
 [libdefaults]
 
 default_realm = RT.IUT
@@ -89,77 +76,65 @@ admin_server = servAD.rt.iut
 .rt.iut = RT.IUT #Ligne à ajouter
 
 rt.iut = RT.IUT #Ligne à ajouter
+```
+nano /etc/krb5.conf :
 
-  
-  
 
-### Installer les outils nécessaire au DC :
+#### Installer les outils nécessaire au DC :
 
+```bash
 apt-get install winbind
-
 apt-get install samba ldap-utils
-
 apt-get install msktutil
-
-  
+```
 
 Tapez : 
 
 samba-tool domain provision et comme réponse : 
 
-  
-
 RT.IUT, RT, dc, SAMBA_INTERNAL,<ip_forwarder>, pass Rt85000lry!
 
   
-
 Tapez ensuite : 
 
+```bash
 #cp /var/lib/samba/private/krb5.conf /etc/
 
 samba-tool domain passwordsettings set --complexity=off
-
 samba-tool domain passwordsettings set --min-pwd-length=5
-
 samba-tool user add rt (avec rtlry en mdp)
-
 samba-tool user add root (avec rtlry en mdp)
-
 samba-tool user add administrateur (avec Rtlry! en mdp)
-
 samba-tool group addmembers "Domain Admins" administrateur
-
-  
+```
 
 On redémarre ensuite les services : 
-
-  
-
+```bash
 systemctl unmask samba-ad-dc
-
 systemctl enable samba-ad-dc
-
 systemctl disable samba winbind nmbd smbd
-
 systemctl mask samba winbind nmbd smbd
 
 reboot
+```
 
-# Configuration en DC et DNS avec SAMBA
 
-## Configuration de Samba :
+## Configuration en DC et DNS avec SAMBA
 
-  
+### Configuration de Samba :
 
-### Effacer le fichier smb.conf : 
+#### Effacer le fichier smb.conf : 
 
+```bash
 rm -f /etc/samba/smb.conf
+```
 
-  
 
-### Passage de Samba en DC :
+#### Passage de Samba en DC :
 
+```
 samba-tool domain provision
+```
 
 Information à entrer après la commande : RT.IUT, RT, dc, SAMBA_INTERNAL, <ip_forwarder>, pass Rt85000lry!
 

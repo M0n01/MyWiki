@@ -1,6 +1,8 @@
 
 ## Clés de chiffrement
 
-- **MDA**
-- **SHA**
-- ....
+- MDA
+- SHA
+- ACL
+- Serveur authentification Kerberos OU ntlm
+- HTTPS

@@ -51,3 +51,21 @@ FAIRE des branches pour chaque user
 
 FAIRE authentification ssh par clé pour github
 comme ça pas besoin de retapper user et mdp
+
+
+## SSH Git
+
+1) Générer une paire de clé
+```bash
+cd .ssh
+ssh-keygen -o -t rsa -C "email@example.com"
+>fingerprint... ? yes
+```
+
+2) Copier la clé publique
+```bash
+cat id_rsa.pub
+```
+
+3) La coller dans GitHub
+	Settings>Deploy keys>Nommer et Coller>Coher "Allow write access (push)"

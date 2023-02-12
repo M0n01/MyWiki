@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Sécurité/TP3 Samba.md",
+                "file": "MyWiki/OS/Linux/GitHub.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Sécurité/TP3 Samba.md",
+                "file": "MyWiki/OS/Linux/GitHub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Sécurité/TP3 Samba.md",
+                "file": "MyWiki/OS/Linux/GitHub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Sécurité/TP3 Samba.md"
+                "file": "MyWiki/OS/Linux/GitHub.md"
               }
             }
           }
@@ -148,15 +148,15 @@
   },
   "active": "2b3f18d4798aa097",
   "lastOpenFiles": [
-    "MyWiki/Sécurité/TP sécu app.md",
+    "MyWiki/OS/Linux/SSH.md",
+    "MyWiki/OS/Linux/Reset mdp Debian.md",
     "MyWiki/Sécurité/TP3 Samba.md",
+    "MyWiki/Sécurité/TP sécu app.md",
     "MyWiki/Sécurité/TP https ssl.md",
     "MyWiki/Sécurité/Chiffrement.md",
     "MyWiki/Sécurité/EXAM.md",
     "MyWiki/Sécurité/TP3b Radius.md",
     "MyWiki/Sécurité/TP3a Samba NTLM.md",
-    "MyWiki/OS/Linux/Commandes de base.md",
-    "MyWiki/OS/Linux/PHP.md",
-    "MyWiki/OS/Linux/Reset mdp Debian.md"
+    "MyWiki/OS/Linux/Commandes de base.md"
   ]
 }

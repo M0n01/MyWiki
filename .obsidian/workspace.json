@@ -148,6 +148,8 @@
   },
   "active": "2b3f18d4798aa097",
   "lastOpenFiles": [
+    "MyWiki/OS/Linux/Commandes de base.md",
+    "MyWiki/OS/Linux/GitHub.md",
     "MyWiki/OS/Linux/SSH.md",
     "MyWiki/OS/Linux/Reset mdp Debian.md",
     "MyWiki/Sécurité/TP3 Samba.md",
@@ -155,8 +157,6 @@
     "MyWiki/Sécurité/TP https ssl.md",
     "MyWiki/Sécurité/Chiffrement.md",
     "MyWiki/Sécurité/EXAM.md",
-    "MyWiki/Sécurité/TP3b Radius.md",
-    "MyWiki/Sécurité/TP3a Samba NTLM.md",
-    "MyWiki/OS/Linux/Commandes de base.md"
+    "MyWiki/Sécurité/TP3b Radius.md"
   ]
 }

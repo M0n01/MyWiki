@@ -42,6 +42,8 @@ apt purge mon_paquet    // en cas de problèmes de installation
 
 env | grep proxy // vérifier proxy
 
+cp -R <source_folder> <destination_folder> // copier dossier
+
 voir LOG JOURNALCTL
 ```
 

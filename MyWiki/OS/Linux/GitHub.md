@@ -31,6 +31,11 @@ Met à jour la copie locale
 git pull
 ```
 
+Supprimer toute la conf git
+```bash
+rm -Rf .git*
+```
+
 
 git init : création d'un nouveau dépôt 
 git status : affiche l'état du dépôt 

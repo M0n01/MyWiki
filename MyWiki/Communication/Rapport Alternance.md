@@ -167,10 +167,3 @@ SWOT :
 >Reprends contexte, enjeux, méthodes utilisé, conlusions.
 >C'est autosuffisant
 
-
-
-
-
-
-
-# Rendre introduction rapport V1

@@ -1,6 +1,6 @@
 
 ### WordPress
-- Récupérer le dossier Wordpress sur la partage
+- Récupérer le dossier Wordpress sur le partage
 - Se connecter avec l'utilisateur wpftp sur WinSCP/Filezilla
 - Déplacer le dossier Wordpress dans le dossier Public/
 ```bash

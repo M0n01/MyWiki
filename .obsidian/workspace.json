@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
+                "file": "MyWiki/Sécurité/TP3 Samba.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 240.5
   },
   "right": {
     "id": "1b34bab71917387e",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
+                "file": "MyWiki/Sécurité/TP3 Samba.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
+                "file": "MyWiki/Sécurité/TP3 Samba.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md"
+                "file": "MyWiki/Sécurité/TP3 Samba.md"
               }
             }
           }
@@ -148,12 +148,17 @@
   },
   "active": "f6a68951d7f5911d",
   "lastOpenFiles": [
+    "MyWiki/Sécurité/TP3b Radius.md",
+    "MyWiki/Sécurité/TP3a Samba NTLM.md",
+    "MyWiki/Sécurité/TP3 Samba.md",
+    "MyWiki/Sécurité/EXAM.md",
+    "MyWiki/Sécurité/Chiffrement.md",
+    "MyWiki/OS/Linux/Commandes/Users et Accès.md",
+    "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
     "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
     "MyWiki/OS/Linux/LinuxWiki/Système.md",
-    "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
     "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
     "MyWiki/OS/Linux/Commandes/Commandes de base.md",
-    "MyWiki/Sécurité/Chiffrement.md",
     "MyWiki/Réseaux/TP3 Archi commutée redondante.md",
     "MyWiki/Réseaux/TP2 Switch N3.md",
     "MyWiki/Réseaux/Secu Réseaux.md",
@@ -169,11 +174,6 @@
     "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
     "MyWiki/OS/Linux/Procédures/MySQL.md",
     "MyWiki/OS/Linux/Commandes",
-    "MyWiki/OS/Linux/Commandes/GitHub.md",
-    "MyWiki/OS/Linux/Commandes/SSH.md",
-    "MyWiki/OS/Clé Bootable.md",
-    "MyWiki/OS/Linux/Procédures/PHP.md",
-    "MyWiki/OS/Linux/Procédures/Reset mdp Debian.md",
-    "MyWiki/OS/Linux/Procédures/WordPress.md"
+    "MyWiki/OS/Linux/Commandes/GitHub.md"
   ]
 }

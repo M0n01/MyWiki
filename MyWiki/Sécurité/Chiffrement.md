@@ -14,3 +14,18 @@
 	- Clé publique du site 
 	- Nom de l'autorité de certification
 	- Signature de l'autorité de certification (hash du fichier chiffré par l'entité de certif) + Date + nom de l'action
+
+
+### Chiffrement salé d'un mot de passe (hash)
+
+Pour rendre les attaques par dictionnaire inefficace.
+
+Par exemple : $1$7RBNnEK2 $PRFufDu3WwXg72Ay2Moci0
+
+Le hash est composé de trois éléments, séparés par le symbole $ :
+
+1.  L'identificateur de type de hash : Ici "1". Cela indique que le hash a été généré en utilisant l'algorithme MD5. "6" correspond au SHA-512 etc.
+
+2.  La valeur de sel : Ici "7RBNnEK2". Le sel est utilisé pour ajouter de la complexité au hash et le rendre plus difficile à craquer. Lorsqu'un mot de passe est hashé, la valeur de sel est combinée avec le mot de passe avant que le hash ne soit généré.
+
+3.  Le mot de passe hashé : Ici "PRFufDu3WwXg72Ay2Moci0". C'est le résultat de l'application de l'algorithme MD5 à la combinaison du mot de passe et du sel.

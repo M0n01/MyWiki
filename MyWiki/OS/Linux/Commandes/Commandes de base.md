@@ -24,6 +24,7 @@ ls -lah                // liste et trie en plus lisible
 ls -a         // liste les fichiers cachés
 ls -la        // affiche fichier caché
 dump      // info au format hexa
+tail    // juste les dernières lignes
 
 who     // liste des terminaux ouverts
 
@@ -49,6 +50,7 @@ env | grep proxy // vérifier proxy
 cp -R <source_folder> <destination_folder> // copier dossier
 
 voir LOG JOURNALCTL
+et syslog-ng
 ```
 
 ### Metadata image

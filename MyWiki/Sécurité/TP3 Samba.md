@@ -82,6 +82,7 @@ apt-get install winbind
 apt-get install samba ldap-utils
 apt-get install msktutil
 ```
+Winbind intègre NTLM
 
 Taper : 
 ```bash

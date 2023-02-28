@@ -24,8 +24,8 @@ Prérequis :
 
 - Conf réseau
 	- clique droit décocher activer réseau
-```
-dhclient //obtenir ip
+```bash
+dhclient # obtenir ip
 ```
 
 - Installer le paquet ifsenslave
@@ -192,7 +192,7 @@ apt install ipvsadm
 - Mettre en place le NAT sur les paquets sortants vers internet (Adapter selon votre carte réseau)
 ```bash
 iptables -t nat -A POSTROUTING -o bond0 -j MASQUERADE
-iptables-save > /etc/iptables/rules.v4   // pour sauvegarder
+iptables-save > /etc/iptables/rules.v4   # pour sauvegarder
 ```
 - Autorisation du port 80
 ```bash

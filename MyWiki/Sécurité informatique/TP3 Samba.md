@@ -19,10 +19,10 @@ avoir la ligne suivante : 192.168.10.1 servAD.rt.iut
 ```bash
 nano /etc/network/interfaces
 
-auto eth1   // coté NAT
+auto eth1   # coté NAT
 iface eth1 inet dhcp
 
-auto eth0   // coté LAN interne
+auto eth0   # coté LAN interne
 iface eth0 inet static
 address 192.168.10.1/24
 ```
@@ -308,7 +308,7 @@ auto eth0
 iface eth0 inet static
 address 192.168.10.100/24
 
-/etc/resolv.conf     // refaire après reboot
+/etc/resolv.conf     # refaire après reboot
 search rt.iut 
 nameserver 192.168.10.1 
 
@@ -330,7 +330,7 @@ apt install ldap-utils
 
 Synchro l’heure :
 ```bash
-ntpdate servAD.rt.iut     // ne marche pas mais pg
+ntpdate servAD.rt.iut     # ne marche pas mais pg
 ```
 
 

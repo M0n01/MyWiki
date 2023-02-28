@@ -7,7 +7,7 @@ NTLM
 Radius = centralisateur d'authentification. Il faut déclarer chaque client. Echanges chiffrés (clé différente pour chaque clients).
 - Client radius : Borne Wifi, Switch, Proxy...
 
-
+Squid = proxy linux
 
 PEAP = envoie mot de passe en clair
 

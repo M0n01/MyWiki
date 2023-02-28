@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f6a68951d7f5911d",
+            "id": "48508ad2eb22a5ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Sécurité/Chiffrement.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8cad4c983163a233",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MyWiki/Sécurité/EXAM.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "125400e01fd490bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MyWiki/Sécurité/TP Journalisation.md",
+                "file": "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Sécurité/TP Journalisation.md",
+                "file": "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Sécurité/TP Journalisation.md",
+                "file": "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Sécurité/TP Journalisation.md"
+                "file": "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md"
               }
             }
           }
@@ -171,17 +146,17 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "125400e01fd490bd",
+  "active": "48508ad2eb22a5ca",
   "lastOpenFiles": [
-    "MyWiki/Sécurité/TP sécu app.md",
-    "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
-    "MyWiki/Communication/Rapport Alternance.md",
-    "MyWiki/Communication/Pechakucha.md",
-    "MyWiki/Sécurité/TP Journalisation.md",
-    "MyWiki/Sécurité/Authentification.md",
-    "Remarque.md",
-    "MyWiki/Sécurité/EXAM.md",
-    "MyWiki/Sécurité/TP https ssl.md",
-    "MyWiki/Sécurité/TP3 Samba.md"
+    "MyWiki/Sécurisation réseaux/Pare-feu.md",
+    "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md",
+    "MyWiki/OS/Linux/Procédures/Apache.md",
+    "MyWiki/OS/Linux/Commandes/Stéganographie.md",
+    "MyWiki/OS/Linux/Commandes/Système.md",
+    "MyWiki/OS/Linux/Commandes/SSH.md",
+    "MyWiki/OS/Linux/Commandes/réseaux.md",
+    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
+    "MyWiki/OS/Linux/Procédures/Docker.md",
+    "MyWiki/OS/Linux/Procédures/FTP.md"
   ]
 }

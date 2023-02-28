@@ -103,7 +103,7 @@
 
 #### ICMPv4
 
-- Protocole de message de contrôle Internet pour IPv4. Fournit un retour d'information d'un hôte de destination à un hôte source sur les erreurs de livraison de paquets.
+- Protocole de message de contrôle Internet pour IPv4. Fournit un retour d'information d'un hôte de destination à un hôte source sur les erreurs de livraison de paquets. (ping par exemple)
 
 #### ICMPv6
 

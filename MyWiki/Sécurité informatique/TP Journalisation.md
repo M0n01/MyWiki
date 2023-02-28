@@ -6,7 +6,7 @@
 ```bash
 nano /etc/systemd/timesyncd.conf
 
-NTP = 192.168.2.3  // décommenter et ajouter IP
+NTP = 192.168.2.3  # décommenter et ajouter IP
 ```
 
 Puis
@@ -81,11 +81,11 @@ modifier la configuration du script de démarrage de syslog (/etc/rc.d/initd/rsy
 nano /etc/rsyslog
 
 #provides UDP syslog reception
-module(load="imudp")                    // décommenter
-input(type="imudp" port="514")      // décommenter
+module(load="imudp")                    # décommenter
+input(type="imudp" port="514")      # décommenter
 #provides TCP syslog reception
-module(load="imtcp")                    // décommenter
-input(type="imtcp" port="514")      // décommenter
+module(load="imtcp")                    # décommenter
+input(type="imtcp" port="514")      # décommenter
 ```  
 
 Redémarrer le service syslog :
@@ -110,7 +110,7 @@ Modifier la configuration pour que les messages local3.* soient envoyées à vot
 nano /etc/rsyslog.conf
 
 #local3.*                   /var/log/local3.log    // commenter 
-local3.*                    @@192.168.5.51    // mettre IP serv (mon IP si je suis serv)
+local3.*                    @@192.168.5.51    # mettre IP serv (mon IP si je suis serv)
 
 ```
 

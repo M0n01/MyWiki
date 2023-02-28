@@ -7,7 +7,7 @@
 
 - ==**Asymétrique**== : Utiliser pour échanger les clés symétriques. Si on chiffre avec une clé (publique ou privé) on peu déchiffrer avec l'autre (publique ou privé).
 
-- ==**Signature électronique**== : Hash + Chiffrement. On chiffre le Hash d'un fichier mais pas tout le fichier car trop lourd. Le récepteur va hasher le fichier et le comparer au hash qu'il a déchiffrer, si ce n'est pas le même c'est soit que le fichier à été modifier soit qu'on a pas la bonne clé. C'est pour s'assurer de l'identité de l'émetteur.
+- ==**Signature électronique**== : Hash + Chiffrement. On chiffre (avec clé privé) le Hash d'un fichier mais pas tout le fichier car trop lourd. Le récepteur va hasher le fichier et le comparer au hash qu'il a déchiffrer (avec la clé publique), si ce n'est pas le même c'est soit que le fichier à été modifier soit qu'on a pas la bonne clé. C'est pour s'assurer de l'identité de l'émetteur.
 
 - ==**Certificat**== : 
 	- Identité : DNS (nom du site) 

@@ -1,0 +1,3 @@
+Ne pas bloquer ICMP car empêche les messages d'erreur (ça va bloquer notre réseau). Donc si un hôte n'arrive pas à envoyer de paquets et qu'il ne reçoit pas de messages d'erreur du routeur, il part du principe que le paquet est trop gros, et donc il le fragmente. Et à chaque echec de transmission il va refragmenter. A la fin on aura beaucoup de paquets très petit donc on aura un très mauvais débit.
+
+On reconnait un logiciel par son hash (hash d'une version de firefox par exemple)

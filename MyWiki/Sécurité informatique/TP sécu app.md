@@ -58,7 +58,7 @@ git clone https://github.com/sullo/nikto.git
 Tester
 ```bash
 cd nikto/program
-./nikto.pl -h 127.0.0.1 -C all      // pour relever les failles
+./nikto.pl -h 127.0.0.1 -C all      # pour relever les failles
 ```
 
 

@@ -315,5 +315,5 @@ service networking restart
 ### Route statique vers réseaux interne :
 
 sur relais : ip route add 192.168.10.0/24 via 192.168.30.10
-
+(à refaire quand on redémarre VM)
 sur machine dmz : ip route add 192.168.10.0/24 via 192.168.20.10

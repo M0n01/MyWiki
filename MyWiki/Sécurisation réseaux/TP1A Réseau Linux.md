@@ -33,103 +33,82 @@ sysctl -p
 
 ### Activer le PAT sur l'interface eth0 (Masquerade)  
 
+```bash
 nano /etc/network/interfaces
 
 post-up iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+```
 
-  
-
+```bash
 service networking restart
+```
 
-  
 
 ### Configurer l’interfaces réseaux deuxième machine :
 
+```bash
 nano /etc/network/interfaces
 
 auto eth0
-
 iface eth0 inet static
-
 address 192.168.0.2/24
-
 gateway 192.168.0.1
 
-  
-
 nano /etc/resolv.conf
-
 nameserver 192.168.2.1
-
 nameserver 192.168.2.2
-
 search rtprive.rt
+```
 
-  
-
+```bash
 service networking restart
+```
 
-  
 
 ## DMZ
 
-  
-
 ### Configurer les interfaces réseaux(1er VM) : Ajouter carte réseau interne
 
+```bash
 nano /etc/network/interfaces
 
 auto eth2
-
 iface eth2 inet static
-
 address 192.168.10.1/24
 
-  
-
 auto eth0
-
 …
 
 post-up iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 192.168.10.2:80
+```
 
-  
-
+```bash
 service networking restart
+```
 
-  
 
 ### Créer une nouvelle machine dans le réseaux DMZ et config la carte réseau puis installer un service http(3ème VM) :
 
+```bash
 nano /etc/network/interfaces
 
 auto eth0
-
 iface eth0 inet static
-
 address 192.168.10.2/24
-
 gateway 192.168.10.1
 
-  
-
 nano /etc/resolv.conf
-
 nameserver 192.168.2.1
-
 nameserver 192.168.2.2
 
 search rtprive.rt
+```
 
-  
-
+```bash
 service networking restart
 
-  
-
 apt install apache2
-
-  
+```
 
 Faire le test depuis la machine hôte : 
 
@@ -139,181 +118,158 @@ Faire le test depuis la machine hôte : 
     
 3.  Accéder au serveur apache
     
+  
+## II ] Réalisation d'une infrastructure réseau privée avec DMZ et liaison Internet
 
-  
-  
-  
-  
-  
-  
-  
-  
+### Routage   
 
-# II ] Réalisation d'une infrastructure réseau privée avec DMZ et liaison Internet
-
-  
-
-1.  ## Routage
-    
-
-  
-
-### Création de la machine interne avec 3 carte réseaux dans lan10,lan20 et lan30 et configurations des interfaces réseaux :
-
+Création de la machine interne avec 3 carte réseaux dans lan10,lan20 et lan30 et configurations des interfaces réseaux :
+```bash
 nano /etc/network/interfaces
+```
 
-# côté réseaux interne
+### côté réseaux interne
 
+```bash
 auto eth0
-
 iface eth0 inet static
-
 address 192.168.10.254/24
+```
 
-  
+### côté réseaux DMZ
 
-# côté réseaux DMZ
-
+```bash
 auto eth1
-
 iface eth1 inet static
-
 address 192.168.20.10/24
+```
 
-  
+### côté réseaux Relais
 
- # côté réseaux Relais
-
+```bash
 auto eth2 
-
 iface eth2 inet static
-
 address 192.168.30.10/24
-
 gateway 192.168.30.254
-
-  
+```
 
 ### Activer le routage
 
+```bash
 nano /etc/sysctl.conf
 
 net.ipv4.ip_forward=1     # décommenter
+```
 
-  
-
+```bash
 sysctl -p  # pour vérifier
 
-  
-
 service networking restart
+```
 
-  
 
 ### Création du client carte réseaux dans lan10 :
 
+```bash
 nano /etc/network/interfaces
 
 auto eth0
-
 iface eth0 inet static
-
 address 192.168.10.1/24
-
 gateway 192.168.10.254
-
   
-
 nano /etc/resolv.conf
-
 nameserver 192.168.2.1
-
 nameserver 192.168.2.2
 
 search rtprive.rt
+```
+
 
 ### Création de la machine http (DMZ) carte réseaux dans lan20 et lan30 :
 
+```bash
 nano /etc/network/interfaces
 
 auto eth0
-
 iface eth0 inet static
-
 address 192.168.20.100/24
 
-  
-
 auto eth1
-
 iface eth1 inet static
-
 address 192.168.30.100/24
-
 gateway 192.168.30.254
+```
 
-  
-
+```bash
 nano /etc/resolv.conf
 
 nameserver 192.168.2.1
-
 nameserver 192.168.2.2
+```
 
-  
 
 ### Création de la machine relais avec 2 carte réseaux dans réseaux iut et lan30, configurations des interfaces réseaux :
 
+```bash
 nano /etc/network/interfaces
+```
 
-# côté réseaux iut
 
+### côté réseaux iut
+
+```bash
 auto eth0
-
 iface eth0 inet dhcp
+```
 
-  
 
-# côté réseaux lan30
+### côté réseaux lan30
 
+```bash
 auto eth1
-
 iface eth1 inet static
-
 address 192.168.30.254/24
+```
 
-  
 
 ### Activer le routage :
 
+```bash
 nano /etc/sysctl.conf
 
 net.ipv4.ip_forward=1 # décommenter
+```
 
-  
-
+```bash
 sysctl -p  # pour vérifier
 
-  
-
 service networking restart
+```
 
-  
 
 ### Activer le PAT sur l'interface eth0 (Masquerade)  
 
+```bash
 nano /etc/network/interfaces
 
 post-up iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
-
+```
   
-
+```bash
 service networking restart
+```
 
-  
 
 ### Route statique vers réseaux interne :
 
-sur relais : ip route add 192.168.10.0/24 via 192.168.30.10
-(à refaire quand on redémarre VM)
-sur machine dmz : ip route add 192.168.10.0/24 via 192.168.20.10
+sur relais : (à refaire quand on redémarre VM)
+```bash
+ip route add 192.168.10.0/24 via 192.168.30.10
+```
+
+sur machine dmz : (à refaire quand on redémarre VM)
+```bash
+ip route add 192.168.10.0/24 via 192.168.20.10
+```
+

@@ -335,7 +335,7 @@ ntpdate servAD.rt.iut     # ne marche pas mais pg
 
 
 Intégrer le client dans le domaine :
-
+```bash
 nano /etc/samba/smb.conf
 [global]
    workgroup = RT #Ligne a remplacer
@@ -343,43 +343,54 @@ nano /etc/samba/smb.conf
    security = ads
    kerberos method = secrets and keytab
    winbind use default domain = yes
+```
 
 Puis reboot
-
+```bash
 reboot
+```
 
 Adhérer le client au domaine :
+```bash
+net ads join -U administrateur # No DNS domain... c'est normal
+```
 
-net ads join -U administrateur
-
-Test de connexion avec l’AD ( LDAP ) :
-
+Test de connexion avec l’AD (LDAP) :
+```bash
 nano /etc/ldap/ldap.conf 
-TLS_REQCERT never #Ligne à ajouter
 
+TLS_REQCERT never #Ligne à ajouter
+```
+Puis
+```bash
 ldapsearch -x -ZZ -LLL -D "cn=administrateur,cn=Users,dc=rt,dc=iut" -W -h servAD.rt.iut -b "CN=Users,dc=rt,dc=iut"
+```
 
 Vérifier avec Winbind :
-
+```bash
 service winbind restart
 wbinfo -u
 wbinfo -g
 wbinfo -a administrateur
 wbinfo -a rt --ntlmv2 		#test authentification LM (--lanman)/NTLM(--ntlmv2)
 wbinfo -K rt 			#échec du test authentification kerberos !!!
+```
 
 vérifier une authentification avec ntlm_auth :
-
- ntlm_auth --request-nt-key –domain=RT.IUT --username=rt –password=rtlry
+```bash
+ntlm_auth --request-nt-key –domain=RT.IUT --username=rt --password=rtlry
+```
 
 -   Linux et KERBEROS Installation des utilitaires :
-
+```bash
 apt install krb5-user && apt install libpam-krb5
+```
 
 l’installation de kerberos doit produire cette configuration : /etc/krb5.conf :
-
+```bash
 mv /etc/krb5.conf /etc/krb5.conf.bak
 nano /etc/krb5.conf
+
 (Ligne à ajouter)
 [libdefaults]
 	default_realm = RT.IUT
@@ -393,52 +404,62 @@ nano /etc/krb5.conf
 [domain_realm]
 	.rt.iut = RT.IUT
           	rt.iut = RT.IUT
+```
 
 Kerberos : récupérer un ticket de session administrateur :
-
+```bash
 kinit administrateur@RT.IUT
 klist -e
 kdestroy
+```
 
 Vous êtes donc en mesure d’utiliser les différents services disponibles dans le domaine
-
+```bash
 wbinfo -u 	( si erreur redémarrer service winbind )
 wbinfo -K rt 	test authentification kerberos
+```
 
-# [](https://github.com/WolfAnto/TP_SAMBA4_RADIUS/blob/main/README.md#vm-serveur-radius)VM Serveur Radius
+
+# VM Serveur Radius
 
 (Refaire les étapes précédente ou sinon reprendre le Client Linux pour le transformer en serveur Radius)
 
 -   Configuration Serveur Radius Installation de freeradius :
-
+```bash
 apt-get install freeradius
+```
 
 Configuration de freeradius :
-
+```bash
 nano /etc/freeradius/3.0/clients.conf
+
 client localhost {
 ipaddr = 127.0.0.1 ou ip de VM3
 secret = testing123
 }
+```
 
 Configuration des users :
-
+```bash
 nano /etc/freeradius/3.0/users
 
-A la fin du fichier config ajouter :
+# A la fin du fichier config ajouter :
 nom-p Cleartext-Password := "azerty"
+```
 
 Redémarrer le service :
-
+```bash
 systemctl restart freeradius.service
+```
 
 Vérification :
-
+```bash
 radtest nom-p azerty localhost 0 testing123
 Resultat : Received Access-Accept...
+```
 
 Vérification des différents mode :
-
+```bash
 radtest -t pap nom-p azerty localhost 0 testing123
 Resultat : Received Access-Accept…
 
@@ -447,24 +468,29 @@ Resultat : Received Access-Accept…
 
 radtest -t mschap nom-p azerty localhost 0 testing123
 Resultat : Received Access-Accept…
+```
 
 Décommenter la ligne # unix :
-
+```bash
 nano /etc/freeradius/3.0/sites-enabled/default
+
 authorize {
 unix      
 }
+```
 
 redémarrer le service freeradius :
-
+```bash
 systemctl restart freeradius.service
+```
 
 retester (remarque : vous pouvez à la fois utiliser les comptes locaux et unix) :
-
+```bash
 radtest rt rtlry localhost 0 testing123
+```
 
 Se mettre en DHCP pour recevoir IP+DNS de la part de l’AD :
-
+```bash
 nano /etc/network/interfaces
 auto lo
 iface lo inet loopback
@@ -474,84 +500,107 @@ auto eth0
 #address 192.168.10.100/24   // enlève l’ancienne conf statique
 #gateway 192.168.10.1
 iface eth0 inet dhcp
+```
 
 Puis reboot
-
+```bash
 reboot
+```
 
 Test de création de hash LM et NTLM :
-
+```bash
 smbencrypt motdepassecompliqué
+```
 
 Installer winbind :
-
+```bash
 apt-get install winbind
+```
 
+```bash
 nano /etc/samba/smb.conf
 security = ADS
 realm = rt.iut
 workgroup = RT
+```
 
 Rejoindre le domaine :
-
+```bash
 net join ads -U administrateur
+```
 
+```bash
 service winbind restart
+```
 
+```bash
 nano /etc/freeradius/3.0/users
+
 Ajouter :  DEFAULT Auth-Type := ntlm_auth
+```
 
 Ajoutez ces lignes dans la partie Authenticate :
-
+```bash
 nano /etc/freeradius/3.0/sites-enabled/default 
 nano /etc/freeradius/3.0/sites-enabled/inner-tunnel
 
 Auth-Type ntlm_auth {
           ntlm_auth
 }
+```
 
+```bash
 nano /etc/freeradius/3.0/mods-available/ntlm_auth
 
 exec ntlm_auth {
     	wait = yes
     	program = "/usr/bin/ntlm_auth --request-nt-key --domain=RT --username=%{mschap:User-Name} --password=%{User-Password}"
 }
+```
 
 Arrêter le service et démarrer freeradius en mode debug :
-
+```bash
 service freeradius stop
 freeradius -X
+```
 
 Dans une autre console en localhost :
-
+```bash
 radtest administrateur Rtlry! localhost 0 testing123
+```
 
 Mschap avec ntlm_auth :
-
+```bash
 nano /etc/freeradius/3.0/users
+
 DEFAULT Auth-Type:= mschap
 
 nano /etc/freeradius/3.0/mods-available/mschap
-En dessous de la ligne 82 ajouter :
 
+En dessous de la ligne 82 ajouter :
 ntlm_auth = "/usr/bin/ntlm_auth --request-nt-key --username=%{mschap:User-Name:-None} --domain=%{%{mschap:NT-Domain}:-RT} --challenge=%{mschap:Challenge:-00} --nt-response=%{mschap:NT-Response:-00}"
 
 winbind_username = "%{mschap:User-Name}"
 winbind_domain = "RT"
+```
 
 Pour que freeradius puisse appeler winbindd :
-
+```bash
 usermod -a -G winbindd_priv freerad
 chown root:winbindd_priv /var/lib/samba/winbindd_privileged/
+```
 
 stop freeradius efficacement :
-
+```bash
 pkill freeradius
+```
 
 démarrer freeradius en mode debug :
-
+```bash
 freeradius -X
+```
 
 dans une autre console :
-
+```bash
 radtest -t mschap rt rtlry localhost 0 testing123
+```

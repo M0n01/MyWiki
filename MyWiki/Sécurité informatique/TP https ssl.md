@@ -73,7 +73,7 @@ ST=France
 L=LRY
 O=iut
 OU=r&t
-CN=www.rt.iut
+CN=www.rt.iut  # ça doit être le nom du serveur, si ce n'est pas le cas modifier /etc/hostname et mettre www.rt.iut
 emailAddress=admin@rt.iut
 [ cert_type ]
 nsCertType = server
@@ -85,6 +85,7 @@ openssl req -config server.conf -new -sha256 -key server.key > server.csr
 Envoyer le fichier server.csr à l'autorité de certification
 ```bash
 (nécéssite SSH sur les deux machines)
+apt install ssh # sur les 2 VM
 scp server.csr rt@191.162.X.X:/home/rt/Bureau/server.csr
 ```
 
@@ -114,7 +115,7 @@ Afficher le certificat
 ```bash
 less server.crt
 ```
-Envoyer le fichier server.csr à l'autorité de certification
+Envoyer le fichier server.crt à l'autorité de certification
 ```bash
 scp server.crt rt@191.162.X.X:/home/rt/Bureau/server.crt
 scp ca.crt rt@191.162.X.X:/home/rt/Bureau/ca.crt
@@ -131,6 +132,7 @@ cp server.key /etc/ssl/private/server.key
 Editez le fichier de configuration default-ssl
 ```bash
 cp /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.save
+
 nano /etc/apache2/sites-available/default-ssl.conf
 ```
 Vérifier que le serveur écoute bien sur le port 443 et qu'il utilise bien les bons certificats et clé.

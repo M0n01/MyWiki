@@ -20,3 +20,6 @@
 	- HTTPS utilise le port 443 en TCP
 
 
+- **==Firewall ==**: Ne s'occupe que des couches Physique, Liaison de données, Réseau et Transport.
+- **==Proxy (ou Relais)==** : S'occupe des couches au dela de la couche Transport. Pour les paquets sortant du réseau.
+- ==**Reverse Proxy**== : Pareil mais pour les paquets entrant dans le réseau.

@@ -1224,7 +1224,7 @@ Afficher métrique d'interface
 Router0B#show ip ospf interface
 ```
 
-Afficher toute les routes connu et leur Area
+Afficher toute les routes connu et leur Area (commun à toute les routeurs d'une même zone)
 ```
 Router0B#show ip ospf database
 ```

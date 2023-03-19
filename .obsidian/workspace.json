@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/SSH.md",
+                "file": "MyWiki/Réseaux/Cisco.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/SSH.md",
+                "file": "MyWiki/Réseaux/Cisco.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/SSH.md",
+                "file": "MyWiki/Réseaux/Cisco.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/SSH.md"
+                "file": "MyWiki/Réseaux/Cisco.md"
               }
             }
           }
@@ -148,10 +148,10 @@
   },
   "active": "1412c7de98f847cc",
   "lastOpenFiles": [
+    "MyWiki/OS/Linux/Commandes/SSH.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
     "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
-    "MyWiki/OS/Linux/Commandes/SSH.md",
     "MyWiki/OS/Linux/Commandes/GitHub.md",
     "MyWiki/OS/Linux/Commandes/Stéganographie.md",
     "MyWiki/Communication/Pechakucha.md",

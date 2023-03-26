@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Réseaux/Cisco.md",
+                "file": "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Réseaux/Cisco.md",
+                "file": "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Réseaux/Cisco.md",
+                "file": "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Réseaux/Cisco.md"
+                "file": "MyWiki/OS/Linux/Commandes/Disques et stockage.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "1412c7de98f847cc",
   "lastOpenFiles": [
+    "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
+    "MyWiki/Réseaux/Cisco.md",
     "MyWiki/OS/Linux/Commandes/SSH.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",

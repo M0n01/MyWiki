@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Disques et stockage.md"
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md"
               }
             }
           }
@@ -148,10 +148,11 @@
   },
   "active": "1412c7de98f847cc",
   "lastOpenFiles": [
+    "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
+    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
     "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
     "MyWiki/Réseaux/Cisco.md",
     "MyWiki/OS/Linux/Commandes/SSH.md",
-    "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
     "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
     "MyWiki/OS/Linux/Commandes/GitHub.md",
@@ -173,7 +174,6 @@
     "MyWiki/Sécurisation réseaux/Pare-feu.md",
     "MyWiki/OS/Linux/Procédures/Apache.md",
     "MyWiki/OS/Linux/Commandes/Commandes de base.md",
-    "MyWiki/OS/Linux/Commandes/Système.md",
-    "MyWiki/OS/Linux/Procédures/Docker.md"
+    "MyWiki/OS/Linux/Commandes/Système.md"
   ]
 }

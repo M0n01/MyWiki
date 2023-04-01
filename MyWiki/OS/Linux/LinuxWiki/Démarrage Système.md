@@ -12,8 +12,7 @@ graph TD
 Hardware --> Firmware
 Firmware --> UEFI
 UEFI --> GPT
-GPT --> Kernel
-Kernel
+GPT --> Bootloader
 
 Firmware --> BIOS
 BIOS --> MBR

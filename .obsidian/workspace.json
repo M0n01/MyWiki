@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240.5
+    "width": 269.5
   },
   "right": {
     "id": "1b34bab71917387e",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md"
+                "file": "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md"
               }
             }
           }
@@ -148,6 +148,10 @@
   },
   "active": "1412c7de98f847cc",
   "lastOpenFiles": [
+    "MyWiki/OS/Clé Bootable.md",
+    "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
+    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
+    "MyWiki/OS/Linux/Commandes/Stéganographie.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
     "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
     "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
@@ -156,7 +160,6 @@
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
     "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
     "MyWiki/OS/Linux/Commandes/GitHub.md",
-    "MyWiki/OS/Linux/Commandes/Stéganographie.md",
     "MyWiki/Communication/Pechakucha.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux",
     "MyWiki/Sécurité informatique/EXAM.md",
@@ -171,9 +174,6 @@
     "MyWiki/OS/Linux/Procédures/RAID.md",
     "MyWiki/Communication/Rapport Alternance.md",
     "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md",
-    "MyWiki/Sécurisation réseaux/Pare-feu.md",
-    "MyWiki/OS/Linux/Procédures/Apache.md",
-    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
-    "MyWiki/OS/Linux/Commandes/Système.md"
+    "MyWiki/Sécurisation réseaux/Pare-feu.md"
   ]
 }

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Cyber/Attaques Réseau.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Cyber/Attaques Réseau.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Cyber/Attaques Réseau.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Cyber/Attaques Réseau.md"
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md"
               }
             }
           }
@@ -148,8 +148,16 @@
   },
   "active": "06742860e1bc2723",
   "lastOpenFiles": [
-    "MyWiki/Réseaux/Protocoles.md",
+    "MyWiki/OS/Linux/Procédures/Apache.md",
+    "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
+    "MyWiki/OS/Linux/Commandes/Users et Accès.md",
+    "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
+    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
+    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
+    "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
+    "MyWiki/OS/Linux/Commandes/Système.md",
     "MyWiki/Cyber/Attaques Réseau.md",
+    "MyWiki/Réseaux/Protocoles.md",
     "MyWiki/Cyber/Généralités_Cyber.md",
     "MyWiki/Cyber/Ingénierie Sociale.md",
     "MyWiki/Cyber/Outils.md",
@@ -160,22 +168,14 @@
     "MyWiki/Images/INGE_SOCIA.png",
     "MyWiki/Documentation_Obsidian.md",
     "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
-    "MyWiki/OS/Linux/Commandes/Système.md",
-    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
-    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
     "MyWiki/OS/Windows/Active Directory.md",
     "MyWiki/OS/Clé Bootable.md",
     "MyWiki/OS/Linux/Commandes/Stéganographie.md",
-    "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
-    "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
     "MyWiki/Réseaux/Cisco.md",
     "MyWiki/OS/Linux/Commandes/SSH.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
-    "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
     "MyWiki/OS/Linux/Commandes/GitHub.md",
     "MyWiki/Communication/Pechakucha.md",
-    "MyWiki/OS/Linux/Commandes/Réseaux Linux",
-    "MyWiki/Sécurité informatique/EXAM.md",
-    "MyWiki/Sécurité informatique/Chiffrement.md"
+    "MyWiki/OS/Linux/Commandes/Réseaux Linux"
   ]
 }

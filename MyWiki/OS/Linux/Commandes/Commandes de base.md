@@ -18,6 +18,8 @@ CTRL + k    // supprime la ligne
 ```bash
 history    // affiche historique de commande
 
+find /* -name nom_dossier_ou_ficher   // localiser un élément depuis la racine
+
 ls -l      // liste en mode détaillé (droits etc)
 ls -l *.conf | sort    // liste et trie avec détails les fichiers .conf
 ls -lah                // liste et trie en plus lisible

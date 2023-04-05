@@ -1,10 +1,5 @@
 
 ```bash
-sudo service docker start  // ou status
-
-
-
-
 minikube start --driver=virtualbox
 minikube status
 ```

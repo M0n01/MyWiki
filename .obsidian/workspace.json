@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Communication/Rapport Alternance Projet.md",
+                "file": "MyWiki/Sécurité informatique/Chiffrement.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f8241ed06e0ac2ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/Cyber/Généralités_Cyber.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Communication/Rapport Alternance Projet.md",
+                "file": "MyWiki/Cyber/Généralités_Cyber.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Communication/Rapport Alternance Projet.md",
+                "file": "MyWiki/Cyber/Généralités_Cyber.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Communication/Rapport Alternance Projet.md"
+                "file": "MyWiki/Cyber/Généralités_Cyber.md"
               }
             }
           }
@@ -171,8 +183,21 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "7977f14389281ab9",
+  "active": "f8241ed06e0ac2ac",
   "lastOpenFiles": [
+    "MyWiki/Cyber/Ingénierie Sociale.md",
+    "MyWiki/Cyber/Outils.md",
+    "MyWiki/Cyber/Attaques Réseau.md",
+    "MyWiki/Cyber/Généralités_Cyber.md",
+    "MyWiki/Réseaux/Bonnes pratiques pour la sécurité du réseau.md",
+    "MyWiki/Images/ESA.png",
+    "MyWiki/Images/DefProf.png",
+    "MyWiki/Sécurité informatique/Chiffrement.md",
+    "MyWiki/Sécurité informatique/Authentification.md",
+    "MyWiki/Sécurisation réseaux/Pare-feu.md",
+    "MyWiki/Réseaux/Secu Réseaux.md",
+    "MyWiki/Réseaux/Cisco.md",
+    "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md",
     "MyWiki/Communication/Rapport Alternance Projet.md",
     "MyWiki/Communication/Rapport Alternance.md",
     "MyWiki/OS/Linux/Procédures/Docker.md",
@@ -185,22 +210,10 @@
     "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
     "MyWiki/OS/Linux/Commandes/Système.md",
-    "MyWiki/Cyber/Attaques Réseau.md",
     "MyWiki/Réseaux/Protocoles.md",
-    "MyWiki/Cyber/Généralités_Cyber.md",
-    "MyWiki/Cyber/Ingénierie Sociale.md",
-    "MyWiki/Cyber/Outils.md",
-    "MyWiki/Sécurisation réseaux/Pare-feu.md",
-    "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md",
-    "MyWiki/Réseaux/Secu Réseaux.md",
     "MyWiki/Cyber",
     "MyWiki/Images/INGE_SOCIA.png",
     "MyWiki/Documentation_Obsidian.md",
-    "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
-    "MyWiki/OS/Windows/Active Directory.md",
-    "MyWiki/OS/Clé Bootable.md",
-    "MyWiki/OS/Linux/Commandes/Stéganographie.md",
-    "MyWiki/Réseaux/Cisco.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux"
   ]
 }

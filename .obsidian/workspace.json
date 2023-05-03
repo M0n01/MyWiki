@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/MacOS/MacOS.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,6 +64,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "fca60c8032a35c17",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/MacOS/MacOS.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/MacOS/MacOS.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/MacOS/MacOS.md"
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md"
               }
             }
           }
@@ -138,24 +146,27 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "canvas:Create new canvas": false
     }
   },
   "active": "06742860e1bc2723",
   "lastOpenFiles": [
+    "MyWiki/OS/Linux/Commandes/Système.md",
+    "MyWiki/Cyber/Outils.md",
+    "MyWiki/Cyber/Généralités_Cyber.md",
+    "MyWiki/Cyber/Attaques Réseau.md",
+    "MyWiki/Sécurité informatique/TP3 Samba.md",
+    "MyWiki/OS/MacOS/MacOS.md",
     "MyWiki/Systèmes/Languages Programmation.md",
     "MyWiki/OS/Linux/Procédures/Docker.md",
     "MyWiki/Communication/Rapport Alternance.md",
     "MyWiki/Sécurité informatique/Chiffrement.md",
-    "MyWiki/Cyber/Généralités_Cyber.md",
     "MyWiki/Cyber/Ingénierie Sociale.md",
-    "MyWiki/Cyber/Outils.md",
-    "MyWiki/Cyber/Attaques Réseau.md",
     "MyWiki/Réseaux/Bonnes pratiques pour la sécurité du réseau.md",
     "MyWiki/Images/ESA.png"
   ]

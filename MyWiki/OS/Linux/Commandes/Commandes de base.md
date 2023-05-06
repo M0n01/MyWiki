@@ -53,8 +53,6 @@ cp -R <source_folder> <destination_folder> // copier dossier
 
 history  // voir historique
 
-voir LOG JOURNALCTL
-et syslog-ng
 ```
 
 ### Metadata image

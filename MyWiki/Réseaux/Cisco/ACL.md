@@ -42,6 +42,61 @@ R1(config-ext-nacl)# permit tcp 192.168.10.0 0.0.0.255 any eq ftp
 R1(config-ext-nacl)# permit tcp 192.168.10.0 0.0.0.255 any eq ftp-data
 ```
 
+Créer une liste ACL standard nommée
+```
+Router(config)# ip access-list standard nom_ACL
+```
+
+Liée ACL à une interface
+```
+Router(config-if) # ip access-group {access-list-number | access-list-name} {in | out}
+```
+
+## Syntaxe ACL standard
+
+Router(config)# **access-list** _access-list-number_ {**deny** | **permit** | **remark** _text_} _source_ (_source-wildcard_) (**log**)
+
+==_access-list-number_==
+
+- Il s'agit du nombre décimal de l'ACL.
+- La plage de numéros ACL standard est de 1 à 99 ou de 1300 à 1999.
+
+==**deny**==
+
+Cela refuse l'accès si les conditions sont respectées.
+
+==**permit**==
+
+Cela autorise l'accès si les conditions sont respectées.
+
+==**remark** _text_==
+
+- (Facultatif) Ceci ajoute une entrée de texte à des fins de documentation.
+- Chaque remarque comporte 100 caractères au maximum.
+
+==_source_==
+
+- Cela identifie l'adresse du réseau source ou de l'hôte à filtrer.
+- Utilisez le mot-clé **any** pour spécifier tous les réseaux.
+- Utilisez le mot-clé **host** _ip-address_ ou simplement entrer une _adresse IP_ (sans le mot-clé **hôte** ) pour identifier une adresse IP spécifique.
+
+==_source-wildcard_==
+
+(Facultatif) Il s'agit d'un masque générique de 32 bits qui est appliqué à la _source_. S'il est omis, un masque 0.0.0.0 par défaut est supposé.
+
+==**log**==
+
+- (Facultatif) Ce mot-clé génère et envoie un message d'information chaque fois que l'ACE est apparié.
+- Le message comprend le numéro ACL, la condition appariée (c'est-à-dire autorisée ou refusée), l'adresse source et le nombre de paquets.
+- Ce message est généré pour le premier paquet apparié.
+- Ce mot clé ne doit être implémenté que pour le dépannage ou les raisons de sécurité.
+
+Supprimer une ACL
+```
+no access-list numéro_ACL
+```
+
+
 ### ACL standard
 
 ```
@@ -65,6 +120,76 @@ Router(config-if)# ip access-group 2 in // applique les ACL sur les paquets entr
 >[!INFO]
 >Les masques sont inversés dans les commandes.
 >Access-list >= 100 pour les acl étendu.
+
+## Syntaxe ACL étendu
+
+Router(config)# **access-list** access-list-number {**deny** | **permit** | **remark** text} protocol source source-wildcard (operator {port}) destination destination-wildcard (operator {port}) (**established**) (**log**)
+
+==_access-list-number_==
+
+- Il s'agit du nombre décimal de l'ACL.
+- La plage de numéros ACL étendue est de 100 à 199 et de 2000 à 2699.
+
+==**deny**==
+
+Cela refuse l'accès si les conditions sont respectées.
+
+==**permit**==
+
+Cela autorise l'accès si les conditions sont respectées.
+
+==**remark** text==
+
+- (Facultatif) Ajoute une entrée de texte à des fins de documentation.
+- Chaque remarque comporte 100 caractères au maximum.
+
+==_protocol_==
+
+- Nom ou numéro d'un protocole Internet.
+- Les mots clés courants incluent **ip**, **tcp**, **udp**et **icmp**.
+- Le mot-clé **ip** correspond à tous les protocoles IP.
+
+==_source_==
+
+- Cela identifie l'adresse du réseau source ou de l'hôte à filtrer.
+- Utilisez le mot-clé **any** pour spécifier tous les réseaux.
+- Utilisez le mot-clé **host** _ip-address_ ou simplement entrer une _adresse IP_ (sans le mot-clé **hôte** ) pour identifier une adresse IP spécifique.
+
+==_source-wildcard_==
+
+(facultatif) Il s'agit d'un masque générique de 32 bits qui est appliqué à la source
+
+==_destination_==
+
+- Cela identifie l'adresse du réseau de destination ou de l'hôte à filtrer.
+- Utilisez le mot-clé **any** pour spécifier tous les réseaux.
+- Utilisez le mot-clé **host** _ip-address_ ou _ip-address_.
+
+==_destination-wildcard_==
+
+(Facultatif) Il s'agit d'un masque générique de 32 bits qui est appliqué à la destination.
+
+==_operator_==
+
+- Facultatif) Compare les ports source ou de destination .
+- Les opérandes possibles incluent **It** (inférieur à), **gt** (Supérieur à), **eq** (égal), **neq** (pas égal), et **range** (plage inclusive).
+
+==_port_==
+
+(Facultatif) Numéro décimal ou nom d’un port TCP ou UDP.
+
+==**established**==
+
+- (Facultatif) Pour le protocole TCP uniquement.
+- Il s'agit d'une fonctionnalité de pare-feu de 1er génération.
+
+==**log**==
+
+- (Facultatif) Ce mot-clé génère et envoie un message d'information chaque fois que l'ACE est apparié.
+- Ce message inclut le numéro ACL, la condition appariée (c'est-à-dire autorisée ou refusée), l'adresse source et le nombre de paquets.
+- Ce message est généré pour le premier paquet apparié.
+- Ce mot clé ne doit être implémenté que pour le dépannage ou les raisons de sécurité.
+
 
 ### ACL étendu
 
@@ -101,7 +226,23 @@ Router(config)# access-list 102 deny tcp 192.168.1.5 any // refuse le poste 192.
 Router(config)# access-list 102 permit ip any any // accepte toutes les ip
 ```
 
+## Sécurisation VTY
 
+Exemple
+```
+R1(config)# username ADMIN secret class
+R1(config)# ip access-list standard ADMIN-HOST
+R1(config-std-nacl)# remark This ACL secures incoming vty lines
+R1(config-std-nacl)# permit 192.168.10.10
+R1(config-std-nacl)# deny any
+R1(config-std-nacl)# exit
+R1(config)# line vty 0 4
+R1(config-line)# login local
+R1(config-line)# transport input telnet
+R1(config-line)# access-class ADMIN-HOST in
+R1(config-line)# end
+R1#
+```
 
 ## Bonnes pratiques
 

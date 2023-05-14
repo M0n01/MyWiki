@@ -1,5 +1,5 @@
 
-**NAT** : Lorsque l'on a une seul adresse public pour plusieurs adresses privé
+voir [[Théorie NAT et PAT]]
 
 #### NAT statique
 

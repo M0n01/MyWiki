@@ -1,6 +1,34 @@
 
 ![[model_TCP_Protocol.PNG]]
 
+#### Couche 1 (OSI)
+
+**Normes de protocole de fibre optique de couche 1 :**
+
+-   Hiérarchie numérique synchrone (SDH)
+	- Synchronous Digital Hierarchy (SDH) est une norme mondiale pour le transport de données sur un câble à fibre optique.
+	
+-   Mise en réseau optique synchrone (SONET)
+	- Synchronous Optical Networking (SONET) est la norme nord-américaine qui fournit les mêmes services que SDH.
+	
+-   Multiplexage en longueur d'onde dense (DWDM)
+	- DWDM (Dense Wavelength Division Multiplexing) est une technologie plus récente qui augmente la capacité de charge des données de SDH et SONET en envoyant simultanément plusieurs flux de données (multiplexage) en utilisant différentes longueurs d'onde de lumière.
+
+SDH et SONET fournissent essentiellement les mêmes services et leur capacité de transmission peut être augmentée en utilisant la technologie DWDM.
+
+#### Couche 2 (OSI)
+
+Les protocoles de la couche 2 déterminent comment les données sont encapsulées.
+
+-   Large bande (c.-à-d. DSL et câble)
+-   Sans-fil
+-   WAN Ethernet (Metro Ethernet)
+-   Changement d'étiquette multiprotocole (MPLS)
+-   PPP (Point-to-Point Protocol)
+-   HDLC (High Level Data Link Control)
+-   Relais de trame (héritage)
+-   Mode de transfert asynchrone (ATM)
+
 #### DNS 
 
 - Système de noms de domaine. Traduit les noms de domaine tels que cisco.com, en adresses IP.

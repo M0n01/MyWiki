@@ -1,5 +1,5 @@
 
-voir [[Théorie NAT et PAT]]
+voir [[NAT et PAT]]
 
 #### NAT statique
 

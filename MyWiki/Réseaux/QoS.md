@@ -47,28 +47,13 @@ Il ne s'agit pas vraiment d'une implémentation dans la mesure où la stratégie
 
 La conception de base d'Internet prévoit la remise des paquets «au mieux» et n'offre aucune garantie. Toujours prédominante sur Internet aujourd'hui, cette approche reste adaptée dans la plupart des cas. Comme ce modèle applique un traitement identique à tous les paquets réseau, le message vocal d'urgence est traité de la même manière qu'une photo numérique jointe à un e-mail. Sans la stratégie QoS, le réseau ne peut pas faire la différence entre les paquets et, par conséquent, ne peut pas leur appliquer un traitement préférentiel.
 
-<table>
-	<tr>
-		<th>Bénéfices</th>
-		<th>Inconvénients</th>
-	</tr>
-	<tr>
-		<td>- Il s'agit du modèle le plus évolutif.</td>
-		<td>- Il n'offre aucune garantie de remise.</td>
-	</tr>
-	<tr>
-		<td>- Son évolutivité est uniquement limitée par la bande passante disponible, laquelle affecte alors l'ensemble du trafic.</td>
-		<td>- Le délai et l'ordre de remise des paquets sont aléatoires et rien ne garantit leur arrivée.</td>
-	</tr>
-	<tr>
-		<td>- Aucun mécanisme QoS spécial ne doit être implémenté.</td>
-		<td>- Aucun paquet ne bénéficie d'un traitement préférentiel.</td>
-	</tr>
-		<tr>
-		<td>- C'est le modèle le plus simple et rapide à déployer.</td>
-		<td>- Les données essentielles sont traitées de la même façon que les e-mails normaux.</td>
-	</tr>
-</table>
+| Bénéfices | Inconvénients |  
+| -------- | -------- |
+| Il s'agit du modèle le plus évolutif.| Il n'offre aucune garantie de remise. | 
+| Son évolutivité est uniquement limitée par la bande passante disponible, laquelle affecte alors l'ensemble du trafic. | Le délai et l'ordre de remise des paquets sont aléatoires et rien ne garantit leur arrivée. |
+| Aucun mécanisme QoS spécial ne doit être implémenté.| Aucun paquet ne bénéficie d'un traitement préférentiel. |
+| C'est le modèle le plus simple et rapide à déployer.| Les données essentielles sont traitées de la même façon que les e-mails normaux. |
+
 
 
 ### Services intégrés (IntServ)
@@ -77,23 +62,11 @@ IntServ propose une qualité de service très élevée aux paquets IP, avec remi
 
 ![[IntServ.png]]
 
-<table>
-	<tr>
-		<th>Bénéfices</th>
-		<th>Inconvénients</th>
-	</tr>
-	<tr>
-		<td>- Contrôle d'admission des ressources explicite, de bout en bout</td>
-		<td>- Consommation importante de ressources due aux exigences de signalisation continue de l'architecture dynamique.</td>
-	</tr>
-	<tr>
-		<td>- Contrôle d'admission de la stratégie par demande.</td>
-		<td>- Approche basée sur les flux, inadaptée aux implémentations de grande taille, par exemple Internet.</td>
-	</tr>
-	<tr>
-		<td>- Signalisation des numéros de port dynamiques.</td>
-	</tr>
-</table>
+| Bénéfices | Inconvénients |  
+| -------- | -------- |
+| Contrôle d'admission des ressources explicite, de bout en bout| Consommation importante de ressources due aux exigences de signalisation continue de l'architecture dynamique. | 
+| Contrôle d'admission de la stratégie par demande. | Approche basée sur les flux, inadaptée aux implémentations de grande taille, par exemple Internet.|
+| Signalisation des numéros de port dynamiques.|  |
 
 
 ### Services différenciés (DiffServ)
@@ -107,20 +80,10 @@ Le modèle DiffServ n'est pas une stratégie QoS de bout en bout car il ne peut 
 
 ![[DiffServ.png]]
 
-<table>
-	<tr>
-		<th>Bénéfices</th>
-		<th>Inconvénients</th>
-	</tr>
-	<tr>
-		<td>- Haute évolutivité.</td>
-		<td>- Aucune garantie stricte de la qualité de service.</td>
-	</tr>
-	<tr>
-		<td>- Large choix de niveaux de qualité.</td>
-		<td>- Nécessite le fonctionnement conjoint de mécanismes complexes sur l'ensemble du réseau.</td>
-	</tr>
-</table>
+| Bénéfices | Inconvénients |  
+| -------- | -------- |
+| Haute évolutivité.| Aucune garantie stricte de la qualité de service. | 
+| Large choix de niveaux de qualité | Nécessite le fonctionnement conjoint de mécanismes complexes sur l'ensemble du réseau|
 
 >[!Remarque]
 >Les réseaux modernes utilisent principalement le modèle DiffServ. Cependant, en raison des volumes croissants de trafic sensible à la latence et à la gigue, les modèles InteServ et RSVP sont parfois également déployés.

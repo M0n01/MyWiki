@@ -22,6 +22,11 @@ Les VPN modernes prennent en charge les fonctionnalités de chiffrement, telles 
 	</tr>
 </table>
 
+| Avantages | |  
+| -------- | -------- |
+| Haute évolutivité.| Aucune garantie stricte de la qualité de service. | 
+| Large choix de niveaux de qualité | Nécessite le fonctionnement conjoint de mécanismes complexes sur l'ensemble du réseau|
+
 
 ## VPN site à site
 

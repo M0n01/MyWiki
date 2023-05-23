@@ -2,30 +2,15 @@ Les VPN modernes prennent en charge les fonctionnalités de chiffrement, telles 
 
 **==Principaux avantages des VPN :==**
 
-<table>
-	<tr>
-		<td>Réductions des coûts</td>
-		<td>Avec l'avènement de technologies économiques à large bande passante, les organisations peuvent utiliser des VPN pour réduire leurs coûts de connectivité en augmentant simultanément la bande passante de la connexion à distance.</td>
-	</tr>
-	<tr>
-		<td>Sécurité</td>
-		<td>Les VPN offrent le meilleur niveau de sécurité possible, en utilisant des protocoles de chiffrement et d'authentification avancés qui protègent les données d'un accès non autorisé.
-</td>
-	</tr>
-	<tr>
-		<td>Évolutivité</td>
-		<td>Les VPN permettent aux organisations d'utiliser Internet, ce qui permet d'ajouter facilement de nouveaux utilisateurs sans ajouter d'infrastructure significative.</td>
-	</tr>
-	<tr>
-		<td>Compatibilité</td>
-		<td>Les VPN peuvent être mis en œuvre à partir d'une variété d'options de liaison WAN, y compris toutes les technologies à large bande populaires. Travailleurs distants peuvent profitez de ces connexions à haut débit pour obtenir un accès sécurisé à leurs réseaux d'entreprise.</td>
-	</tr>
-</table>
+|                                                           |                                                                                                                                                                                                                                                                                  |
+|:--------------------------------------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **<span style="color:green">Réductions des coûts</span>** | Avec l'avènement de technologies économiques à large bande passante, les organisations peuvent utiliser des VPN pour réduire leurs coûts de connectivité en augmentant simultanément la bande passante de la connexion à distance                                                |
+| **<span style="color:green">Sécurité</span>**             | Les VPN offrent le meilleur niveau de sécurité possible, en utilisant des protocoles de chiffrement et d'authentification avancés qui protègent les données d'un accès non autorisé                                                                                              |
+| **<span style="color:green">Compatibilité</span>**        | Les VPN peuvent être mis en œuvre à partir d'une variété d'options de liaison WAN, y compris toutes les technologies à large bande populaires. Travailleurs distants peuvent profitez de ces connexions à haut débit pour obtenir un accès sécurisé à leurs réseaux d'entreprise |
+| **<span style="color:green">Évolutivité</span>**          | Les VPN permettent aux organisations d'utiliser Internet, ce qui permet d'ajouter facilement de nouveaux utilisateurs sans ajouter d'infrastructure significative                                                                                                                |
 
-| Avantages | |  
-| -------- | -------- |
-| Haute évolutivité.| Aucune garantie stricte de la qualité de service. | 
-| Large choix de niveaux de qualité | Nécessite le fonctionnement conjoint de mécanismes complexes sur l'ensemble du réseau|
+
+
 
 
 ## VPN site à site

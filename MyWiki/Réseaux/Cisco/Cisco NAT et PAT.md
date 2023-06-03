@@ -1,5 +1,5 @@
 
-voir [[NAT et PAT]]
+voir [[MyWiki/Réseaux/NAT et PAT]]
 
 #### NAT statique
 

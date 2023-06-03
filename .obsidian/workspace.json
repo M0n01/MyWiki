@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f9c9f24213642909",
+        "id": "43ec9a2c0215bba5",
         "type": "tabs",
         "children": [
           {
-            "id": "a3364072062bc796",
+            "id": "c0a88392a2089769",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -91,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md"
-              }
+              "state": {}
             }
           },
           {
@@ -162,48 +156,48 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a3364072062bc796",
+  "active": "c0a88392a2089769",
   "lastOpenFiles": [
+    "MyWiki/Réseaux/Cisco/Gestion des images IOS.md",
+    "MyWiki/Réseaux/Syslog.md",
+    "MyWiki/Réseaux/Cisco/Maintenance fichiers routeur et commutateur.md",
+    "MyWiki/Réseaux/Cisco/Cisco Syslog.md",
+    "MyWiki/Images/Syslog1.png",
+    "MyWiki/Réseaux/SNMP.md",
+    "MyWiki/Images/MIB2.png",
+    "MyWiki/Images/MIB.png",
+    "MyWiki/Images/SNMP4.png",
+    "MyWiki/Images/SNMP3.png",
+    "MyWiki/Images/SNMP2.png",
     "MyWiki/Documentation_Obsidian.md",
+    "MyWiki/Images/SNMP1.png",
+    "MyWiki/Réseaux/Cisco/Cisco NTP.md",
+    "MyWiki/Réseaux/Cisco/LLDP.md",
+    "MyWiki/Réseaux/NTP.md",
+    "MyWiki/Images/NTP1.png",
+    "MyWiki/Réseaux/Cisco/Info réseau.md",
+    "MyWiki/Réseaux/Cisco/Cisco LLDP.md",
+    "MyWiki/Réseaux/Cisco/Cisco NAT et PAT.md",
+    "MyWiki/Réseaux/Cisco/Cisco.md",
     "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
+    "MyWiki/Réseaux/Cisco/Cisco Discovery Protocol.md",
+    "MyWiki/Réseaux/Secu Réseaux.md",
+    "MyWiki/Réseaux/Cisco/TP3 Archi commutée redondante.md",
+    "MyWiki/Réseaux/Cisco/TP2 Switch N3.md",
+    "MyWiki/Réseaux/Cisco/VLAN.md",
+    "MyWiki/Réseaux/VPN/VPN.md",
+    "MyWiki/Réseaux/VPN/IPSec.md",
+    "MyWiki/Réseaux/NAT et PAT.md",
+    "MyWiki/OS/Clé Bootable.md",
+    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
+    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
     "Excalidraw",
     "MyWiki/Réseaux/QoS.md",
-    "MyWiki/Réseaux/VPN/VPN.md",
-    "MyWiki/Réseaux/NAT et PAT.md",
     "Untitled.canvas",
-    "MyWiki/Réseaux/VPN/IPSec.md",
-    "MyWiki/Réseaux/Cisco/Cisco NAT et PAT.md",
-    "MyWiki/Réseaux/Secu Réseaux.md",
-    "MyWiki/Réseaux/Protocoles.md",
     "MyWiki/Images/IntServ.png",
     "MyWiki/Images/DiffServ.png",
-    "MyWiki/Réseaux/Cisco/Cisco.md",
-    "MyWiki/Images/LLQ.png",
-    "MyWiki/Images/CBWFQ.png",
-    "MyWiki/Images/WFQ.png",
-    "MyWiki/Images/FIFO.png",
-    "MyWiki/Réseaux/Cisco/VLAN.md",
-    "MyWiki/Réseaux/Cisco/OSPF.md",
-    "MyWiki/Images/IPSec_ENC.png",
     "MyWiki/Réseaux/VPN",
-    "MyWiki/Images/IPSECex.png",
-    "MyWiki/Images/IPSEC1.png",
     "MyWiki/Réseaux/VPN",
-    "MyWiki/Images/VTII.png",
-    "MyWiki/OS/Windows/Active Directory.md",
-    "MyWiki/Réseaux/Cisco/DHCP.md",
-    "MyWiki/Réseaux/Cisco/Info réseau.md",
-    "MyWiki/Cyber/Attaques Réseau.md",
-    "MyWiki/Composants_PC/Carte Mère.md",
-    "MyWiki/Composants_PC/CPU.md",
-    "MyWiki/Composants_PC/GPU.md",
-    "MyWiki/Composants_PC/Mémoire.md",
-    "MyWiki/Sécurisation réseaux/Pare-feu.md",
-    "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md",
-    "MyWiki/Réseaux/Bonnes pratiques pour la sécurité du réseau.md",
-    "MyWiki/Réseaux/TP2 Switch N3.md",
-    "MyWiki/Réseaux/TP3 Archi commutée redondante.md",
-    "MyWiki/Réseaux/Cisco/ACL.md",
     "MyWiki/Réseaux/Cisco"
   ]
 }

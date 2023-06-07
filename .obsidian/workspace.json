@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "43ec9a2c0215bba5",
+        "id": "2dbd69543affad06",
         "type": "tabs",
         "children": [
           {
-            "id": "c0a88392a2089769",
+            "id": "c4d6f1c63d3d9071",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md"
+              }
             }
           },
           {
@@ -146,53 +154,53 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "canvas:Create new canvas": false,
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "canvas:Créer une nouvelle toile": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c0a88392a2089769",
+  "active": "c4d6f1c63d3d9071",
   "lastOpenFiles": [
-    "MyWiki/Réseaux/Cisco/Gestion des images IOS.md",
+    "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
+    "MyWiki/OS/Windows/Commandes de base.md",
+    "MyWiki/OS/Windows/SSH.md",
+    "MyWiki/OS/Windows/Bureau à distance.md",
+    "MyWiki/OS/Windows/Active Directory.md",
+    "MyWiki/OS/MacOS/MacOS.md",
+    "MyWiki/Composants_PC/GPU.md",
+    "MyWiki/Composants_PC/Mémoire.md",
+    "MyWiki/Composants_PC/Carte Mère.md",
+    "MyWiki/Composants_PC/CPU.md",
+    "MyWiki/Cyber/Ingénierie Sociale.md",
+    "MyWiki/Cyber/Généralités_Cyber.md",
+    "MyWiki/Cyber/Attaques Réseau.md",
+    "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
+    "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
+    "MyWiki/Sureté de fonctionnement/Charge et liens.md",
+    "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md",
+    "MyWiki/Sécurisation réseaux/Pare-feu.md",
     "MyWiki/Réseaux/Syslog.md",
-    "MyWiki/Réseaux/Cisco/Maintenance fichiers routeur et commutateur.md",
-    "MyWiki/Réseaux/Cisco/Cisco Syslog.md",
-    "MyWiki/Images/Syslog1.png",
     "MyWiki/Réseaux/SNMP.md",
+    "MyWiki/Réseaux/Secu Réseaux.md",
+    "MyWiki/Réseaux/QoS.md",
+    "MyWiki/Réseaux/Protocoles.md",
+    "MyWiki/Réseaux/NTP.md",
+    "MyWiki/Réseaux/NAT et PAT.md",
+    "MyWiki/Réseaux/VPN/VPN.md",
+    "MyWiki/Images/Syslog1.png",
     "MyWiki/Images/MIB2.png",
     "MyWiki/Images/MIB.png",
     "MyWiki/Images/SNMP4.png",
     "MyWiki/Images/SNMP3.png",
     "MyWiki/Images/SNMP2.png",
-    "MyWiki/Documentation_Obsidian.md",
     "MyWiki/Images/SNMP1.png",
-    "MyWiki/Réseaux/Cisco/Cisco NTP.md",
-    "MyWiki/Réseaux/Cisco/LLDP.md",
-    "MyWiki/Réseaux/NTP.md",
     "MyWiki/Images/NTP1.png",
-    "MyWiki/Réseaux/Cisco/Info réseau.md",
-    "MyWiki/Réseaux/Cisco/Cisco LLDP.md",
-    "MyWiki/Réseaux/Cisco/Cisco NAT et PAT.md",
-    "MyWiki/Réseaux/Cisco/Cisco.md",
-    "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
-    "MyWiki/Réseaux/Cisco/Cisco Discovery Protocol.md",
-    "MyWiki/Réseaux/Secu Réseaux.md",
-    "MyWiki/Réseaux/Cisco/TP3 Archi commutée redondante.md",
-    "MyWiki/Réseaux/Cisco/TP2 Switch N3.md",
-    "MyWiki/Réseaux/Cisco/VLAN.md",
-    "MyWiki/Réseaux/VPN/VPN.md",
-    "MyWiki/Réseaux/VPN/IPSec.md",
-    "MyWiki/Réseaux/NAT et PAT.md",
-    "MyWiki/OS/Clé Bootable.md",
-    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
-    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
     "Excalidraw",
-    "MyWiki/Réseaux/QoS.md",
     "Untitled.canvas",
     "MyWiki/Images/IntServ.png",
     "MyWiki/Images/DiffServ.png",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
+                "file": "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
+                "file": "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
+                "file": "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md"
+                "file": "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md"
               }
             }
           },
@@ -166,6 +166,21 @@
   },
   "active": "c4d6f1c63d3d9071",
   "lastOpenFiles": [
+    "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
+    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
+    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
+    "MyWiki/OS/Clé Bootable.md",
+    "MyWiki/OS/Linux/Procédures/WordPress.md",
+    "MyWiki/OS/Linux/Procédures/Reset mdp Debian.md",
+    "MyWiki/OS/Linux/Procédures/RAID.md",
+    "MyWiki/OS/Linux/Procédures/PHP.md",
+    "MyWiki/OS/Linux/Procédures/MySQL.md",
+    "MyWiki/OS/Linux/Procédures/Apache.md",
+    "MyWiki/OS/Linux/Procédures/Kubernetes.md",
+    "MyWiki/OS/Linux/Procédures/FTP.md",
+    "MyWiki/OS/Linux/Procédures/Docker.md",
+    "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
+    "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
     "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
     "MyWiki/OS/Windows/Commandes de base.md",
     "MyWiki/OS/Windows/SSH.md",
@@ -177,21 +192,6 @@
     "MyWiki/Composants_PC/Carte Mère.md",
     "MyWiki/Composants_PC/CPU.md",
     "MyWiki/Cyber/Ingénierie Sociale.md",
-    "MyWiki/Cyber/Généralités_Cyber.md",
-    "MyWiki/Cyber/Attaques Réseau.md",
-    "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
-    "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
-    "MyWiki/Sureté de fonctionnement/Charge et liens.md",
-    "MyWiki/Sécurisation réseaux/TP1A Réseau Linux.md",
-    "MyWiki/Sécurisation réseaux/Pare-feu.md",
-    "MyWiki/Réseaux/Syslog.md",
-    "MyWiki/Réseaux/SNMP.md",
-    "MyWiki/Réseaux/Secu Réseaux.md",
-    "MyWiki/Réseaux/QoS.md",
-    "MyWiki/Réseaux/Protocoles.md",
-    "MyWiki/Réseaux/NTP.md",
-    "MyWiki/Réseaux/NAT et PAT.md",
-    "MyWiki/Réseaux/VPN/VPN.md",
     "MyWiki/Images/Syslog1.png",
     "MyWiki/Images/MIB2.png",
     "MyWiki/Images/MIB.png",

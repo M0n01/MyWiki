@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Systèmes/Langages Programmation.md",
+                "file": "MyWiki/Sureté de fonctionnement/Charge et liens.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c2ad880f6daea3e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/Sureté de fonctionnement/Evolutivité.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7dfbd722a79cc362",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Choix d'un commutateur.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Systèmes/Langages Programmation.md",
+                "file": "Choix d'un commutateur.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Systèmes/Langages Programmation.md",
+                "file": "Choix d'un commutateur.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Systèmes/Langages Programmation.md"
+                "file": "Choix d'un commutateur.md"
               }
             }
           },
@@ -164,8 +189,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c4d6f1c63d3d9071",
+  "active": "7dfbd722a79cc362",
   "lastOpenFiles": [
+    "MyWiki/Sureté de fonctionnement/Evolutivité.md",
+    "Choix d'un commutateur.md",
+    "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
+    "MyWiki/Systèmes/Langages Programmation.md",
+    "MyWiki/Réseaux/Protocoles.md",
+    "MyWiki/Sureté de fonctionnement/Charge et liens.md",
+    "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
     "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
@@ -185,13 +217,6 @@
     "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
     "MyWiki/OS/Windows/Commandes de base.md",
     "MyWiki/OS/Windows/SSH.md",
-    "MyWiki/OS/Windows/Bureau à distance.md",
-    "MyWiki/OS/Windows/Active Directory.md",
-    "MyWiki/OS/MacOS/MacOS.md",
-    "MyWiki/Composants_PC/GPU.md",
-    "MyWiki/Composants_PC/Mémoire.md",
-    "MyWiki/Composants_PC/Carte Mère.md",
-    "MyWiki/Composants_PC/CPU.md",
     "MyWiki/Images/Syslog1.png",
     "MyWiki/Images/MIB2.png",
     "MyWiki/Images/MIB.png",

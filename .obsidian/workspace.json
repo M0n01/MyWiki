@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Choix d'un commutateur.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Choix d'un commutateur.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Choix d'un commutateur.md",
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Choix d'un commutateur.md"
+                "file": "MyWiki/OS/Linux/Commandes/Commandes de base.md"
               }
             }
           },
@@ -191,8 +191,14 @@
   },
   "active": "7dfbd722a79cc362",
   "lastOpenFiles": [
-    "MyWiki/Sureté de fonctionnement/Evolutivité.md",
+    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
+    "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
+    "MyWiki/OS/Linux/Commandes/Logs.md",
+    "MyWiki/OS/Linux/Commandes/SSH.md",
+    "MyWiki/OS/Linux/Commandes/Système.md",
+    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
     "Choix d'un commutateur.md",
+    "MyWiki/Sureté de fonctionnement/Evolutivité.md",
     "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
     "MyWiki/Systèmes/Langages Programmation.md",
     "MyWiki/Réseaux/Protocoles.md",
@@ -200,8 +206,6 @@
     "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
-    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
-    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
     "MyWiki/OS/Clé Bootable.md",
     "MyWiki/OS/Linux/Procédures/WordPress.md",
     "MyWiki/OS/Linux/Procédures/Reset mdp Debian.md",
@@ -213,10 +217,6 @@
     "MyWiki/OS/Linux/Procédures/FTP.md",
     "MyWiki/OS/Linux/Procédures/Docker.md",
     "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
-    "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
-    "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
-    "MyWiki/OS/Windows/Commandes de base.md",
-    "MyWiki/OS/Windows/SSH.md",
     "MyWiki/Images/Syslog1.png",
     "MyWiki/Images/MIB2.png",
     "MyWiki/Images/MIB.png",

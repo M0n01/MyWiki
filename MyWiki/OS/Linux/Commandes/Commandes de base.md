@@ -38,6 +38,9 @@ ps uww num_PID    // infos sur un processus
 
 top    // info consommation ressources
 
+kill // stoper un process
+kill -9 // forcer
+
 sudo -H -i    // être comme root mais sur un utilisateur lambda
 
 grep   // permet de filtrer le résultat de la commande

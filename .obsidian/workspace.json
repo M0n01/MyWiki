@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
+                "file": "MyWiki/Systèmes/Langages Programmation.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
+                "file": "MyWiki/Systèmes/Langages Programmation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
+                "file": "MyWiki/Systèmes/Langages Programmation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md"
+                "file": "MyWiki/Systèmes/Langages Programmation.md"
               }
             }
           },
@@ -154,18 +154,19 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Ouvrir le sélecteur rapide": false,
-      "graph:Ouvrir la vue graphique": false,
-      "canvas:Créer une nouvelle toile": false,
-      "daily-notes:Ouvrir la note quotidienne": false,
-      "templates:Insérer le modèle": false,
-      "command-palette:Ouvrir la palette de commandes": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "c4d6f1c63d3d9071",
   "lastOpenFiles": [
+    "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
     "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
     "MyWiki/OS/Linux/Commandes/Commandes de base.md",
@@ -191,7 +192,6 @@
     "MyWiki/Composants_PC/Mémoire.md",
     "MyWiki/Composants_PC/Carte Mère.md",
     "MyWiki/Composants_PC/CPU.md",
-    "MyWiki/Cyber/Ingénierie Sociale.md",
     "MyWiki/Images/Syslog1.png",
     "MyWiki/Images/MIB2.png",
     "MyWiki/Images/MIB.png",

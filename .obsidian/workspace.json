@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dépannage réseau.md",
+                "file": "MyWiki/Réseaux/Dépannage réseau.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "af69dc5b5e60dd89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/Réseaux/Cloud.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0554fb041f11728f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/Réseaux/Virtualisation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -106,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dépannage réseau.md",
+                "file": "MyWiki/Réseaux/Virtualisation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dépannage réseau.md",
+                "file": "MyWiki/Réseaux/Virtualisation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dépannage réseau.md"
+                "file": "MyWiki/Réseaux/Virtualisation.md"
               }
             }
           },
@@ -177,10 +201,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a82d78bd220c8dfb",
+  "active": "0554fb041f11728f",
   "lastOpenFiles": [
+    "MyWiki/Images/SDNT3.png",
+    "MyWiki/Images/SDNT2.png",
+    "MyWiki/Images/SDNT1.png",
+    "MyWiki/Images/SDN1.png",
+    "MyWiki/Images/SDN2.png",
+    "MyWiki/Images/SDN.png",
+    "MyWiki/Images/hyper3.png",
+    "MyWiki/Images/hyper1.png",
+    "MyWiki/Images/hyper2.png",
+    "MyWiki/Images/Hyperviseur.png",
+    "MyWiki/Réseaux/Cloud.md",
+    "MyWiki/Réseaux/Virtualisation.md",
+    "MyWiki/Réseaux/Dépannage réseau.md",
+    "MyWiki/Images/DepannApp.png",
+    "MyWiki/Réseaux/Protocoles.md",
     "MyWiki/Réseaux/Syslog.md",
-    "Dépannage réseau.md",
     "MyWiki/Réseaux/SNMP.md",
     "MyWiki/Réseaux/QoS.md",
     "MyWiki/Réseaux/Choix d'un commutateur.md",
@@ -196,27 +234,13 @@
     "MyWiki/OS/Linux/Commandes/SSH.md",
     "MyWiki/OS/Linux/Commandes/Système.md",
     "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
-    "MyWiki/Réseaux/Protocoles.md",
     "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
     "MyWiki/OS/Clé Bootable.md",
     "MyWiki/OS/Linux/Procédures/WordPress.md",
-    "MyWiki/OS/Linux/Procédures/Reset mdp Debian.md",
-    "MyWiki/OS/Linux/Procédures/RAID.md",
-    "MyWiki/OS/Linux/Procédures/PHP.md",
-    "MyWiki/Images/Syslog1.png",
-    "MyWiki/Images/MIB2.png",
-    "MyWiki/Images/MIB.png",
-    "MyWiki/Images/SNMP4.png",
-    "MyWiki/Images/SNMP3.png",
-    "MyWiki/Images/SNMP2.png",
-    "MyWiki/Images/SNMP1.png",
-    "MyWiki/Images/NTP1.png",
     "Excalidraw",
     "Untitled.canvas",
-    "MyWiki/Images/IntServ.png",
-    "MyWiki/Images/DiffServ.png",
     "MyWiki/Réseaux/VPN",
     "MyWiki/Réseaux/VPN",
     "MyWiki/Réseaux/Cisco"

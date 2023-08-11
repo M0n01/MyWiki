@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c4d6f1c63d3d9071",
+            "id": "b0a4ca6194dd082f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Réseaux/Syslog.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a82d78bd220c8dfb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MyWiki/Réseaux/Dépannage réseau.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "af69dc5b5e60dd89",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MyWiki/Réseaux/Cloud.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0554fb041f11728f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MyWiki/Réseaux/Virtualisation.md",
+                "file": "MyWiki/Réseaux/Automatisation des réseaux.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -130,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Réseaux/Virtualisation.md",
+                "file": "MyWiki/Réseaux/Automatisation des réseaux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Réseaux/Virtualisation.md",
+                "file": "MyWiki/Réseaux/Automatisation des réseaux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Réseaux/Virtualisation.md"
+                "file": "MyWiki/Réseaux/Automatisation des réseaux.md"
               }
             }
           },
@@ -201,30 +164,33 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0554fb041f11728f",
+  "active": "b0a4ca6194dd082f",
   "lastOpenFiles": [
+    "MyWiki/Système/API.md",
+    "MyWiki/Réseaux/Automatisation des réseaux.md",
+    "MyWiki/Images/RESTful.png",
+    "MyWiki/Images/URI.png",
+    "MyWiki/Images/HTTP1.png",
+    "MyWiki/Système/Langages Programmation.md",
+    "MyWiki/Images/API2.png",
+    "MyWiki/Images/API1.png",
+    "MyWiki/Images/APIII.png",
+    "MyWiki/Système/Formats de données.md",
+    "MyWiki/Réseaux/Syslog.md",
+    "MyWiki/Réseaux/Dépannage réseau.md",
+    "MyWiki/Réseaux/Cloud.md",
+    "MyWiki/Réseaux/Bonnes pratiques pour la sécurité du réseau.md",
+    "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
+    "MyWiki/Réseaux/Virtualisation.md",
     "MyWiki/Images/SDNT3.png",
     "MyWiki/Images/SDNT2.png",
     "MyWiki/Images/SDNT1.png",
     "MyWiki/Images/SDN1.png",
-    "MyWiki/Images/SDN2.png",
-    "MyWiki/Images/SDN.png",
-    "MyWiki/Images/hyper3.png",
-    "MyWiki/Images/hyper1.png",
-    "MyWiki/Images/hyper2.png",
-    "MyWiki/Images/Hyperviseur.png",
-    "MyWiki/Réseaux/Cloud.md",
-    "MyWiki/Réseaux/Virtualisation.md",
-    "MyWiki/Réseaux/Dépannage réseau.md",
-    "MyWiki/Images/DepannApp.png",
     "MyWiki/Réseaux/Protocoles.md",
-    "MyWiki/Réseaux/Syslog.md",
     "MyWiki/Réseaux/SNMP.md",
     "MyWiki/Réseaux/QoS.md",
     "MyWiki/Réseaux/Choix d'un commutateur.md",
-    "MyWiki/Réseaux/Bonnes pratiques pour la sécurité du réseau.md",
     "MyWiki/Réseaux/Cisco/Maintenance fichiers routeur et commutateur.md",
-    "MyWiki/Systèmes/Langages Programmation.md",
     "MyWiki/Sureté de fonctionnement/Charge et liens.md",
     "MyWiki/Sureté de fonctionnement/Evolutivité.md",
     "MyWiki/OS/Linux/Commandes/Commandes de base.md",
@@ -236,9 +202,6 @@
     "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
     "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
-    "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
-    "MyWiki/OS/Clé Bootable.md",
-    "MyWiki/OS/Linux/Procédures/WordPress.md",
     "Excalidraw",
     "Untitled.canvas",
     "MyWiki/Réseaux/VPN",

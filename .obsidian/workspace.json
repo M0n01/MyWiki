@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "de4b764dda7b13fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UTC505 - Réseaux et sécurité.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Réseaux/Automatisation des réseaux.md",
+                "file": "UTC505 - Réseaux et sécurité.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Réseaux/Automatisation des réseaux.md",
+                "file": "UTC505 - Réseaux et sécurité.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Réseaux/Automatisation des réseaux.md"
+                "file": "UTC505 - Réseaux et sécurité.md"
               }
             }
           },
@@ -164,10 +177,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b0a4ca6194dd082f",
+  "active": "de4b764dda7b13fe",
   "lastOpenFiles": [
-    "MyWiki/Système/API.md",
     "MyWiki/Réseaux/Automatisation des réseaux.md",
+    "UTC505 - Réseaux et sécurité.md",
+    "MyWiki/Réseaux/NTP.md",
+    "MyWiki/Réseaux/Bonnes pratiques pour la sécurité du réseau.md",
+    "MyWiki/Documentation_Obsidian.md",
+    "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
+    "MyWiki/Système/API.md",
     "MyWiki/Images/RESTful.png",
     "MyWiki/Images/URI.png",
     "MyWiki/Images/HTTP1.png",
@@ -179,8 +197,6 @@
     "MyWiki/Réseaux/Syslog.md",
     "MyWiki/Réseaux/Dépannage réseau.md",
     "MyWiki/Réseaux/Cloud.md",
-    "MyWiki/Réseaux/Bonnes pratiques pour la sécurité du réseau.md",
-    "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
     "MyWiki/Réseaux/Virtualisation.md",
     "MyWiki/Images/SDNT3.png",
     "MyWiki/Images/SDNT2.png",
@@ -199,9 +215,6 @@
     "MyWiki/OS/Linux/Commandes/Logs.md",
     "MyWiki/OS/Linux/Commandes/SSH.md",
     "MyWiki/OS/Linux/Commandes/Système.md",
-    "MyWiki/Sureté de fonctionnement/Technologies de Sureté.md",
-    "MyWiki/Sureté de fonctionnement/Déploiement Systèmes.md",
-    "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
     "Excalidraw",
     "Untitled.canvas",
     "MyWiki/Réseaux/VPN",

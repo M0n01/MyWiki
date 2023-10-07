@@ -2,7 +2,7 @@
 # Raccourci clavier
 
 CTRL + alt + t   // ouvre un terminal
-CTRL + r    // rechercher dans l’historique de commande (dans terminal)
+CTRL + r    // rechercher dans l’historique de commande (dans terminal). Si on refait CTRL + r pour remonter dans les occurrences.
 CTRL + a    // revenir au début de la ligne
 CTRL + e    // revenir à la fin de la ligne
 CTRL + k    // supprime la ligne
@@ -16,7 +16,8 @@ CTRL + k    // supprime la ligne
 
 ### Orientation
 ```bash
-history    // affiche historique de commande
+history    // affiche historique de commande.
+	!numéro   // pour rappeler la commande
 
 find /* -name nom_dossier_ou_ficher   // localiser un élément depuis la racine
 
@@ -32,7 +33,7 @@ who     // liste des terminaux ouverts
 
 users   // liste des utilisateurs connectés
 
-ps     // liste des processus
+ps -ef     // liste des processus
 
 ps uww num_PID    // infos sur un processus
 
@@ -56,9 +57,30 @@ cp -R <source_folder> <destination_folder> // copier dossier
 
 history  // voir historique
 
+sudo apt-cache search nom_logiciel  // obtenir le nom du package
+
+grep xitix /etc/password  // afficher le shell utilisé par le compte
 ```
 
+Modifier le fichier /etc/passwd et indiquer un interpréteur de commandes comme /usr/bin/nologin ou /dev/zero ou encore /dev/null, garantit que l'utilisateur ne pourra jamais lancer de shell à la suite du processus d'authentification lors de la connexion. Et donc, il ne pourra pas faire grand chose… .
+
+- Voir DAC et MAC linux (droits)
 ### Metadata image
 ```bash
 exiftool image.png
 ```
+
+
+## Non-free and contrib source for debian 12
+
+```bash
+deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
+debrsrc http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
+
+deb http://deb.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware
+debrsrc http://deb.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware
+
+deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+debrsrc http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+```
+

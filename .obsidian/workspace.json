@@ -4,35 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "2dbd69543affad06",
+        "id": "b698ef7635e35860",
         "type": "tabs",
         "children": [
           {
-            "id": "b0a4ca6194dd082f",
+            "id": "a3586b63dec0b232",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Réseaux/Automatisation des réseaux.md",
+                "file": "MyWiki/Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "de4b764dda7b13fe",
+            "id": "73e0630d2256c578",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UTC505 - Réseaux et sécurité.md",
+                "file": "MyWiki/Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UTC505 - Réseaux et sécurité.md",
+                "file": "MyWiki/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UTC505 - Réseaux et sécurité.md",
+                "file": "MyWiki/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UTC505 - Réseaux et sécurité.md"
+                "file": "MyWiki/Git.md"
               }
             }
           },
@@ -156,6 +155,16 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {}
+            }
+          },
+          {
+            "id": "f05dc9bee581eba0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
             }
           }
         ],
@@ -177,44 +186,45 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "de4b764dda7b13fe",
+  "active": "a3586b63dec0b232",
   "lastOpenFiles": [
-    "MyWiki/Réseaux/Automatisation des réseaux.md",
-    "UTC505 - Réseaux et sécurité.md",
-    "MyWiki/Réseaux/NTP.md",
-    "MyWiki/Réseaux/Bonnes pratiques pour la sécurité du réseau.md",
+    "MyWiki/Images/Résumé_git.png",
+    "MyWiki/Images/revertVSreset.jpg",
+    "MyWiki/Images/git_revert_HARD_etc.png",
+    "MyWiki/Images/git_reset.png",
+    "MyWiki/OS/Linux/LinuxWiki/Bases_linux.md",
+    "MyWiki/OS/Linux/LinuxWiki/Système.md",
+    "MyWiki/OS/Linux/LinuxWiki/Prompt et commandes.md",
+    "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
+    "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
+    "MyWiki/Git.md",
+    "Pasted image 20231005213120.png",
+    "MyWiki/OS/Linux/Commandes/Commandes.md",
+    "MyWiki/OS/Linux/Commandes/Logs.md",
+    "MyWiki/OS/Linux/Commandes/SSH_linux.md",
+    "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
     "MyWiki/Documentation_Obsidian.md",
-    "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
-    "MyWiki/Système/API.md",
-    "MyWiki/Images/RESTful.png",
-    "MyWiki/Images/URI.png",
-    "MyWiki/Images/HTTP1.png",
-    "MyWiki/Système/Langages Programmation.md",
-    "MyWiki/Images/API2.png",
-    "MyWiki/Images/API1.png",
-    "MyWiki/Images/APIII.png",
-    "MyWiki/Système/Formats de données.md",
-    "MyWiki/Réseaux/Syslog.md",
-    "MyWiki/Réseaux/Dépannage réseau.md",
-    "MyWiki/Réseaux/Cloud.md",
-    "MyWiki/Réseaux/Virtualisation.md",
-    "MyWiki/Images/SDNT3.png",
-    "MyWiki/Images/SDNT2.png",
-    "MyWiki/Images/SDNT1.png",
-    "MyWiki/Images/SDN1.png",
-    "MyWiki/Réseaux/Protocoles.md",
-    "MyWiki/Réseaux/SNMP.md",
-    "MyWiki/Réseaux/QoS.md",
-    "MyWiki/Réseaux/Choix d'un commutateur.md",
-    "MyWiki/Réseaux/Cisco/Maintenance fichiers routeur et commutateur.md",
-    "MyWiki/Sureté de fonctionnement/Charge et liens.md",
-    "MyWiki/Sureté de fonctionnement/Evolutivité.md",
-    "MyWiki/OS/Linux/Commandes/Commandes de base.md",
+    "MyWiki/Trucs et astuces.md",
+    "MyWiki/oui.md",
+    "MyWiki/Images/git1.png",
+    "MyWiki/OS/Linux/Commandes/GitHub.md",
+    "MyWiki/OS/Linux/Commandes/Système_commandes.md",
+    "MyWiki/OS/Linux/Commandes/Users et Accès.md",
+    "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
+    "MyWiki/OS/Linux/Procédures/Docker.md",
+    "MyWiki/OS/Linux/Procédures/Kubernetes.md",
+    "MyWiki/OS/Linux/Procédures/MySQL.md",
+    "MyWiki/OS/Linux/Procédures/RAID.md",
+    "MyWiki/OS/Linux/Procédures/Reset mdp Debian.md",
     "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
     "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
-    "MyWiki/OS/Linux/Commandes/Logs.md",
-    "MyWiki/OS/Linux/Commandes/SSH.md",
-    "MyWiki/OS/Linux/Commandes/Système.md",
+    "MyWiki/FOSS/Messagerie.md",
+    "MyWiki/Images/image.png",
+    "MyWiki/Images/image-4.png",
+    "MyWiki/Images/image-3.png",
+    "MyWiki/Images/image-2.png",
+    "MyWiki/Images/image-1.png",
+    "MyWiki/FOSS",
     "Excalidraw",
     "Untitled.canvas",
     "MyWiki/Réseaux/VPN",

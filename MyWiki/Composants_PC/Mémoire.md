@@ -1,3 +1,5 @@
+#hardware
+
 *2 types : les **mémoires vives** ("volatiles") et les **mémois mortes** ("non volatiles")*
 
 ## Mémoires vives

@@ -17,7 +17,8 @@ Tableau :
 | Il s'agit du modèle le plus évolutif.                                                                                 | Il n'offre aucune garantie de remise.                                                       |
 | Son évolutivité est uniquement limitée par la bande passante disponible, laquelle affecte alors l'ensemble du trafic. | Le délai et l'ordre de remise des paquets sont aléatoires et rien ne garantit leur arrivée. |
 
-
+>[!INFO]
+>Pour faire des bulles
 
 
 

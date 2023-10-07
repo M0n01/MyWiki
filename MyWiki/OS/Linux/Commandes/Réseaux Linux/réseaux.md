@@ -21,6 +21,10 @@ ss -laputen     // nouveau netstat (plus info)
 route -n      // affiche les ip et leur passerelles et autres info
 
 netdiscover     // Découvrir les ip et MAC sur un réseau
+
+echo -e "GET / HTTP/1.1\r\nHost: 127.0.0.1\r\nConnection: close\r\n\r\n" | nc 127.0.0.1 80  // requete HTTP localhost
+
+curl "http://127.0.0.1/%2F139ed38c%2034ce3cdc%2F3ae18ce9%20" // encoder /139ed38c 34ce3cdc/3ae18ce9
 ```
 
 **Configuration réseau**

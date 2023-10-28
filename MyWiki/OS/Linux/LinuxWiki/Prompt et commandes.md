@@ -1,3 +1,4 @@
+#path #shell #bash
 La configuration du prompt est stockée dans un fichier et dans une variable gérée par le shell Bash. En l'occurrence, cette variable est nommée $PS1.
 
 La variable $SHELL indique sur quel shell vous êtes connecté.

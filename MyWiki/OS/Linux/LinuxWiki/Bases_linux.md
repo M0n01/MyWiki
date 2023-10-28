@@ -1,4 +1,4 @@
-#linux #wiki 
+#linux #wiki #bases
 
 La philosophie des systèmes UNIX/Linux, c’est : Faire une chose et la faire parfaitement.
 
@@ -73,5 +73,120 @@ Le programme shell intègre :
 - La gestion des canaux entrée/sortie/erreur.
 - Un langage de programmation.
 
+## Fichiers
 
+#### cat
+
+`cat` est une commande historique qui permet de prendre un ou plusieurs flux de données en paramètre d'entrée, et de les afficher à l'écran sur le terminal.
+
+>[!Info]
+>"**cat**" provient de l'abréviation de "**catenate**" en anglais, qui signifie "concaténer". Il est effectivement possible de concaténer plusieurs flux de données passés en paramètre d'entrée avec cette commande.
+
+Exemple:
+```bash
+cat /etc/os-release /etc/passwd
+```
+
+Voir les numéro de ligne
+```bash
+cat -n /chemin_fichier
+```
+
+#### less
+
+La commande `less` permet également d'afficher un fichier mais de manière paginé. 
+
+Exemple:
+```bash
+less /etc/pam.d/login
+```
+- "barre espace"/"b" pour afficher la page suivante/précédente
+- "-N" pour afficher les lignes
+- "G" pour aller à la fin
+- "g" pour aller au début
+- "10g" pour se déplacer à la ligne 10
+- "10" pour avancer de 10 lignes
+- "/" pour rechercher des mots
+	- "n"/"N" pour aller aux occurrences suivantes/précédentes
+
+> Le fichier /etc/pam.d/login est le fichier de configuration du processus d'authentification.
+
+`less` a été codée après `more` par Mark Nudelman qui souhaitait apporter plus de fonctionnalités.. 
+
+>[!Citation]
+>“Less is more, but more more than more is, so more is less less, so use more less if you want less more.” - [**Slackware Linux Essentials**](https://www.slackbook.org/html/file-commands-pagers.html)
+
+### Les canaux et flux de données
+
+Dans la majorité des cas, tous les programmes exécutés sous Linux disposent de 3 canaux de données :
+
+1. **`stdin`**(pour standard input) : canal de l'entrée standard, et par défaut, lorsque vous lancez une commande, c'est votre clavier. La commande sera éventuellement capable de lire les informations saisies avec le clavier via ce canal. Il porte le descripteur de fichier **numéro 0** ;
+2. **`stdout`**(pour standard output) : canal de la sortie standard, et lorsque vous lancez une commande depuis un terminal, c'est l'écran par défaut. Le résultat et les données affichées par la commande sont diffusés sur l'écran. Il porte le descripteur de fichier **numéro 1** ;
+3. **`stderr`**(pour standard error) : canal du flux concernant les erreurs, et par défaut, lorsque vous lancez une commande, c'est aussi l'écran. La commande va différencier les données “normales” des données “erreur” et peut changer de canal pour diffuser ces informations.
+
+![[Pasted image 20231016211524.png]]
+
+#### entrée standard (STDIN)
+```bash
+cat 0< /etc/os-release # /etc/os-release est dans l'entrée standard. "<0" est présent par défaut. Permet d'afficher le fichier os-release.
+cat < /etc/os-release # même chose 
+```
+
+#### sortie standard (STDOUT)
+
+rediriger la sortie standard
+```bash
+cat /etc/os-release > /home/xitix/monfichier # envoie le résultat de la commande "cat" dans monfichier.
+cat /etc/os-release 1> /home/xitix/monfichier # pareil
+cat /etc/os-release >> /home/xitix/monfichier # pareil mais sans effacer ce qui était déjà présent dans monfichier
+```
+
+#### Erreurs (STDERR)
+
+rediriger erreur
+```bash
+cat 0< /etc/os-release 1> /home/xitix/monfichier 2> /home/xitix/fichierreur # envoie le résultat de la commande "cat" dans monfichier et les erreurs dans fichierreur.
+
+```
+Exemple : 
+```bash
+cat 0< /etc/os-reazeaze 1> /home/xitix/monfichier 2> /home/xitix/fichierreur
+```
+Voir dans fichierreur.
+
+#### grep
+
+Permet de chercher un pattern dans un fichier.
+
+Chercher "debian" dans le fichier os-release
+```bash
+grep debian /etc/os-release
+grep -n debian /etc/os-release # pareil mais avec les lignes
+grep -i debian /etc/os-release # pas sensible à la casse. Peut trouver "debian" et "DebiAn"
+grep -o debian /etc/os-release # affiche que le patterne rechercher
+grep -r debian /etc/* # récursif donc tout les fichier dans /etc/
+grep -nior debian /etc/* # tout
+```
+
+#### sed
+
+Permet de proposer des transformations des flux. 
+
+Remplacer un patterne par un autre
+```bash
+sed 's/Debian/Ubuntu/' /etc/os-release # remplace "Ubuntu" par "Debian" dans le fichier os-release. Ne modifie pas le fichier.
+sed 's/[D|d]ebian/Ubuntu/' # pareil mais pour "debian" et "Debian"
+sed -i 's/Debian/Ubuntu/' /etc/os-release # pour appliquer la modification. Modifie le fichier.
+```
+
+il existe aussi la commande **`awk`**.
+
+### Pipe (|)
+
+Permet de rediriger un flux, en sortie d'une commande, vers le canal d'entrée de la commande suivante. Et ainsi de suite. C'est pour faire plusieurs commande en 1 ligne.
+**`commande options arguments | commande options arguments | commande options arguments | ...`**
+![[Pasted image 20231016222310.png]]
+
+Commande `sort` pour trier les lignes d'un fichier. 
+Commande `cut` pour récupérer qu'une partie d'une ligne d'un fichier.
 

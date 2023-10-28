@@ -13,25 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Git.md",
+                "file": "MyWiki/OS/Linux/Commandes/Users et Accès.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "73e0630d2256c578",
+            "id": "13defdda0a41c792",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Git.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Edition fichiers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1dadd80d4536c91e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/OS/Linux/LinuxWiki/Droits.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -89,7 +102,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 323.5
   },
   "right": {
     "id": "1b34bab71917387e",
@@ -105,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Git.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Droits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Git.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Droits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Git.md"
+                "file": "MyWiki/OS/Linux/LinuxWiki/Droits.md"
               }
             }
           },
@@ -186,49 +199,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a3586b63dec0b232",
+  "active": "1dadd80d4536c91e",
   "lastOpenFiles": [
-    "MyWiki/Images/Résumé_git.png",
-    "MyWiki/Images/revertVSreset.jpg",
-    "MyWiki/Images/git_revert_HARD_etc.png",
-    "MyWiki/Images/git_reset.png",
-    "MyWiki/OS/Linux/LinuxWiki/Bases_linux.md",
+    "MyWiki/OS/Linux/LinuxWiki/Edition fichiers.md",
     "MyWiki/OS/Linux/LinuxWiki/Système.md",
-    "MyWiki/OS/Linux/LinuxWiki/Prompt et commandes.md",
+    "MyWiki/OS/Linux/LinuxWiki/Arborescence.md",
     "MyWiki/OS/Linux/LinuxWiki/Disques et partitions.md",
     "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
-    "MyWiki/Git.md",
-    "Pasted image 20231005213120.png",
-    "MyWiki/OS/Linux/Commandes/Commandes.md",
-    "MyWiki/OS/Linux/Commandes/Logs.md",
-    "MyWiki/OS/Linux/Commandes/SSH_linux.md",
-    "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
-    "MyWiki/Documentation_Obsidian.md",
-    "MyWiki/Trucs et astuces.md",
-    "MyWiki/oui.md",
-    "MyWiki/Images/git1.png",
-    "MyWiki/OS/Linux/Commandes/GitHub.md",
-    "MyWiki/OS/Linux/Commandes/Système_commandes.md",
+    "MyWiki/OS/Linux/LinuxWiki/Bases_linux.md",
+    "MyWiki/OS/Linux/LinuxWiki/Droits.md",
+    "MyWiki/Images/Pasted image 20231026230520.png",
+    "MyWiki/Images/Pasted image 20231026230314.png",
+    "MyWiki/Images/Pasted image 20231026230036.png",
+    "MyWiki/Images/Pasted image 20231026225914.png",
+    "MyWiki/Images/Pasted image 20231026222519.png",
     "MyWiki/OS/Linux/Commandes/Users et Accès.md",
-    "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
-    "MyWiki/OS/Linux/Procédures/Docker.md",
-    "MyWiki/OS/Linux/Procédures/Kubernetes.md",
-    "MyWiki/OS/Linux/Procédures/MySQL.md",
-    "MyWiki/OS/Linux/Procédures/RAID.md",
-    "MyWiki/OS/Linux/Procédures/Reset mdp Debian.md",
-    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
-    "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
     "MyWiki/FOSS/Messagerie.md",
-    "MyWiki/Images/image.png",
-    "MyWiki/Images/image-4.png",
-    "MyWiki/Images/image-3.png",
-    "MyWiki/Images/image-2.png",
-    "MyWiki/Images/image-1.png",
+    "MyWiki/Git.md",
+    "MyWiki/CTF/rootme/App-Script/Cha6_scriptPython.md",
+    "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
+    "MyWiki/OS/Linux/Commandes/Commandes.md",
+    "MyWiki/CTF/rootme/Stéganographie/Stéga Point à la ligne.md",
+    "MyWiki/CTF/rootme/Web-Serveur/HTTP-User-agent.md",
+    "MyWiki/CTF/rootme/Web-Client/Javascript-Authentification.md",
+    "MyWiki/CTF/rootme/App-Script",
+    "MyWiki/CTF/rootme/Web-Client/HTML - boutons désacrivés.md",
+    "MyWiki/CTF/rootme/Stéganographie",
+    "MyWiki/CTF/rootme/Web-Serveur",
+    "MyWiki/CTF/rootme/Web-Client",
+    "MyWiki/Cyber/Attaques Réseau.md",
+    "MyWiki/CTF/rootme/Poème.md",
+    "MyWiki/Programmation/Formats de données.md",
+    "MyWiki/CTF/rootme",
+    "MyWiki/CTF",
+    "MyWiki/Cyber/Généralités_Cyber.md",
+    "MyWiki/Cyber/Ingénierie Sociale.md",
+    "MyWiki/Cyber/Outils.md",
+    "MyWiki/OS/Linux/LinuxWiki/Prompt et commandes.md",
+    "MyWiki/OS/Linux/Commandes/Logs.md",
+    "MyWiki/OS/Linux/Commandes/Stéganographie.md",
+    "MyWiki/Images/Pasted image 20231016222310.png",
+    "MyWiki/Images/Pasted image 20231016211524.png",
+    "MyWiki/Images/Pasted image 20231014122445.png",
+    "MyWiki/Images/Pasted image 20231014122423.png",
+    "MyWiki/Images/Résumé_git.png",
     "MyWiki/FOSS",
     "Excalidraw",
     "Untitled.canvas",
     "MyWiki/Réseaux/VPN",
-    "MyWiki/Réseaux/VPN",
-    "MyWiki/Réseaux/Cisco"
+    "MyWiki/Réseaux/VPN"
   ]
 }

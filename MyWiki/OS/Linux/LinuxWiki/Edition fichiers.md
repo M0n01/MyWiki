@@ -84,3 +84,4 @@ Créer un lien symbolique
 ln -s fichier4 fichier5
 ```
 Ainsi on crée fichier5 qui est un "raccourci" pour fichier4. Dans l'inode de fichier5 on a pas simplement un bloc de données, on a l'adresse du fichier vers lequel on pointe, ici fichier4.
+`lrwxrwxrwx` -> le `l` signifie qu'il y a un lien symbolique

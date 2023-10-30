@@ -11,6 +11,7 @@ Les droits associés à ces objets sont donc définis pour :
 >Un processus lancé par un utilisateur hérite de ses droits même si ce processus n'en a pas forcément besoin.
 
 Seul root et le proprio du fichier peut modifier les droits de celui-ci.
+
 ### Les 3 bits
 
 - **`r`** -> read
@@ -49,6 +50,7 @@ Exemple :
 chmod 665 fichier1  # rw pour user et group, rx pour others
 ```
 
+Dans le cas où un fichier est accessible en lecture pour `others`, le répertoire dans lequel le fichier est situé doit avoir le bit **`x`** pour `others`. On dit que le bit **`x`** positionné sur le répertoire donne le droit de “**traverser**” le répertoire.
 ### Changer la  propriété d'un objet linux
 
 Faire en tant que root

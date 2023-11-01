@@ -2,7 +2,6 @@
 >[!Info]
 >La configuration du réseau sous Linux est un aspect qui varie fortement entre les distributions.
 
-
 ## Configurer nom réseau de la machine
 
 >[!Info]
@@ -103,7 +102,7 @@ systemctl restart networking.service
 
 **REDHAT**
 >[!Info]
->Pour les distributions REDHAT et dérivés (notamment CentOS), le répertoire de configuration des cartes est `**/etc/sysconfig/network-scripts/**`. Ce répertoire contient notamment un fichier préfixé `**ifcfg-**` pour chaque carte reconnue par le système.
+>Pour les distributions REDHAT et dérivés (notamment CentOS), le répertoire de configuration des cartes est `/etc/sysconfig/network-scripts/`. Ce répertoire contient notamment un fichier préfixé `ifcfg-` pour chaque carte reconnue par le système.
 
 Config une carte en ip static:
 Dans **`/etc/sysconfig/network-scripts/`** il y a 1 fichier par interface.

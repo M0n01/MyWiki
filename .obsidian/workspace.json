@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4024c05a886105b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/OS/Linux/LinuxWiki/Transfert fichier par réseau.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 323.5
+    "width": 323.5,
+    "collapsed": true
   },
   "right": {
     "id": "1b34bab71917387e",
@@ -93,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/SSH.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Transfert fichier par réseau.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/SSH.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Transfert fichier par réseau.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/SSH.md"
+                "file": "MyWiki/OS/Linux/LinuxWiki/Transfert fichier par réseau.md"
               }
             }
           },
@@ -174,9 +188,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "52e78223e1a7a375",
+  "active": "3291e9f318de3edc",
   "lastOpenFiles": [
     "MyWiki/OS/Linux/LinuxWiki/Cartes réseaux.md",
+    "MyWiki/OS/Linux/LinuxWiki/Transfert fichier par réseau.md",
     "MyWiki/OS/Linux/LinuxWiki/SSH.md",
     "MyWiki/OS/Linux/LinuxWiki/Edition fichiers.md",
     "MyWiki/OS/Linux/LinuxWiki/Droits.md",
@@ -212,7 +227,6 @@
     "MyWiki/CTF",
     "MyWiki/Cyber/Généralités_Cyber.md",
     "MyWiki/Cyber/Ingénierie Sociale.md",
-    "MyWiki/Cyber/Outils.md",
     "MyWiki/Images/Pasted image 20231016222310.png",
     "MyWiki/Images/Pasted image 20231016211524.png",
     "MyWiki/Images/Pasted image 20231014122445.png",

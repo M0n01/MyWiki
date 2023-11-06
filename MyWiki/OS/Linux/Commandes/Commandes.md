@@ -57,7 +57,7 @@ cp -R <source_folder> <destination_folder> // copier dossier
 
 history  // voir historique
 
-sudo apt-cache search nom_logiciel  // obtenir le nom du package
+sudo apt-cache search nom_commande  // obtenir le nom du package
 
 grep xitix /etc/password  // afficher le shell utilisé par le compte
 ```

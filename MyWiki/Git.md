@@ -143,6 +143,10 @@ git checkout main
 git merge nom_branche
 ```
 
+## Fetch
+
+- **La commande git fetch** va récupérer toutes les données des commits effectués sur la branche courante qui n'existent pas encore dans votre version en local. Ces données seront stockées dans le répertoire de travail local mais ne seront pas fusionnées avec votre branche locale. Si vous souhaitez fusionner ces données pour que votre branche soit à jour, vous devez utiliser ensuite la commande git merge.
+
 ## Merge Commits
 
 Au lieu de fusionner toute une branche avec une autre, on peut fusionner  1 ou plusieurs commit de cette branche.
@@ -168,6 +172,8 @@ git cherry-pick hash_du_commit
 >`git cherry-pick`  n'est pas une commande très appréciée dans la communauté des développeurs car elle duplique **des commits existants**. Il est plutôt conseillé de réaliser un merge.
 
 ## Pull
+
+**git pull** est en fait la commande qui regroupe les commandes git fetch suivie de git merge. Cette commande télécharge les données des commits qui n'ont pas encore été récupérées dans votre branche locale puis fusionne ensuite ces données.
 
 Cloner (copier) un dépôt distant en local
 ```bash

@@ -1,12 +1,31 @@
-#processus #cpu #processeur
+#processus #cpu #processeur #deamon
 
+Les "deamon" sont identifiés par la lettre "d" à la fin du nom du programme (sshd, systemd...).
+
+Lister les services avec systemctl
+```bash
+systemctl list-units --type=service
+```
+
+Connaître le type d'un service : 
+```bash
+cat /etc/systemd/system/syslog.service
+[Service]
+Type=notify
+```
 ## Listez les processus en cours sur le système
+
+**Etat possible pour les processus:**
+- Running
+- Waiting (waiting for an event or system resource)
+- Stopped
+- Zombie (stopped but still has an entry in the process table).
 
 Package **`procps`**, fournit beaucoup de commandes pour auditer l'activité du système :
 - **`ps`**
 - **`kill`**
 - **`top`**
-- etc
+- etc...
 
 Liste de tout les processus:
 ```bash
@@ -128,3 +147,38 @@ Tuer le processus père (force la fin du processus fils):
 ```bash
 kill -9 PID  # -2 pour SIGKILL
 ```
+
+## Arrière plan
+
+Mettre une tâche en arrière plan:
+```bash
+ping www.hackthebox.eu &
+```
+
+Afficher les tâches en arrière plan:
+```bash
+jobs
+```
+
+Interagir avec un process:
+```bash
+fg 1 # pour le process 1
+```
+
+## Info +
+
+|   |   |
+|---|---|
+|`1`|`SIGHUP` - This is sent to a process when the terminal that controls it is closed.|
+|`2`|`SIGINT` - Sent when a user presses `[Ctrl] + C` in the controlling terminal to interrupt a process.|
+|`3`|`SIGQUIT` - Sent when a user presses `[Ctrl] + D` to quit.|
+|`9`|`SIGKILL` - Immediately kill a process with no clean-up operations.|
+|`15`|`SIGTERM` - Program termination.|
+|`19`|`SIGSTOP` - Stop the program. It cannot be handled anymore.|
+|`20`|`SIGTSTP` - Sent when a user presses `[Ctrl] + Z` to request for a service to suspend. The user can handle it afterward.|
+
+
+
+
+
+

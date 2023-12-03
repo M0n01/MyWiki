@@ -12,6 +12,11 @@ Pour héberger un service réseau -> au moins une adresse IP. Chaque service ré
 ss -lptun
 ```
 
+Voir les services en écoute sur toute les interfaces, que les IPv4 (-4), sans localhost.
+```bash
+ss -l -4 | grep -v "127.0.0" | grep "LISTEN"
+```
+
 >[!Info]
 >La commande **`lsof`** (pour "list open files"), fournie par le package **`lsof`** du même nom, s'attache à relever tous les **fichiers ouverts**. Il est donc possible de retrouver ces éléments avec cette commande. (car sur Linux, tout est fichier)
 
@@ -64,5 +69,4 @@ Pour https, en mettant la capture dans un fichier (qu'on pourra ouvrir avec wire
 ```bash
 tcpdump port 443 -w /home/seb/capture443.dump
 ```
-
 

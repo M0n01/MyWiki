@@ -13,25 +13,86 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Commandes.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Bases_linux.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9a4a274992fcb195",
+            "id": "bd2381b92b160380",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/FOSS/Navigation_Web.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Bases_linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "90b6cf9ef41d27a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/OS/Linux/LinuxWiki/Activité processeur et processus.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eb5957bda785adb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/OS/Linux/LinuxWiki/Activité processeur et processus.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3807fa4ee65b3312",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/OS/Linux/LinuxWiki/NFS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bc237c0ce120fdb6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/Trucs et astuces.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4a44c0c8816dec36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MyWiki/OS/Linux/LinuxWiki/Shortcuts linux.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -105,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Commandes.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Shortcuts linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Commandes.md",
+                "file": "MyWiki/OS/Linux/LinuxWiki/Shortcuts linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/Commandes/Commandes.md"
+                "file": "MyWiki/OS/Linux/LinuxWiki/Shortcuts linux.md"
               }
             }
           },
@@ -186,36 +247,36 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "03bc48237bc33b9c",
+  "active": "4a44c0c8816dec36",
   "lastOpenFiles": [
-    "MyWiki/FOSS/Messagerie.md",
-    "MyWiki/OS/Linux/Commandes/CheatSheet_command.md",
-    "MyWiki/FOSS/Outils système et réseau.md",
-    "MyWiki/FOSS/Navigation_Web.md",
-    "MyWiki/OS/Linux/Commandes/Commandes.md",
-    "MyWiki/OS/Linux/LinuxWiki/CheatSheet_file_system.md",
+    "MyWiki/Trucs et astuces.md",
+    "MyWiki/OS/Linux/LinuxWiki/Shortcuts linux.md",
+    "MyWiki/OS/Linux/LinuxWiki/Backup, restore.md",
+    "MyWiki/OS/Linux/LinuxWiki/NFS.md",
     "MyWiki/oui.md",
-    "MyWiki/Git.md",
-    "Cours_ESNA/UTC505 - Réseaux et sécurité.md",
+    "MyWiki/OS/Linux/LinuxWiki/Git.md",
+    "MyWiki/OS/Linux/LinuxWiki/Packages.md",
+    "MyWiki/OS/Linux/LinuxWiki/Cron, Timer.md",
     "MyWiki/OS/Linux/LinuxWiki/Activité processeur et processus.md",
-    "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
     "MyWiki/OS/Linux/LinuxWiki/Bases_linux.md",
-    "MyWiki/OS/Linux/LinuxWiki/Activité réseau.md",
-    "MyWiki/Images/Pasted image 20231113093134.png",
-    "MyWiki/Réseaux/Protocoles.md",
-    "MyWiki/Réseaux/Syslog.md",
-    "MyWiki/Réseaux/Virtualisation.md",
-    "MyWiki/Réseaux/Secu Réseaux.md",
-    "MyWiki/Réseaux/Automatisation des réseaux.md",
-    "MyWiki/Réseaux/Bonnes pratiques pour la sécurité du réseau.md",
-    "MyWiki/Réseaux/Choix d'un commutateur.md",
-    "MyWiki/Réseaux/Cloud.md",
-    "MyWiki/Réseaux/Dépannage réseau.md",
-    "MyWiki/Réseaux/NAT et PAT.md",
-    "MyWiki/Réseaux/NTP.md",
     "MyWiki/OS/Linux/LinuxWiki/Arborescence.md",
-    "Cours_ESNA",
+    "MyWiki/OS/Linux/Commandes/CheatSheet_command.md",
+    "MyWiki/OS/Linux/LinuxWiki/Inspecter les fichiers.md",
+    "MyWiki/OS/Linux/LinuxWiki/Droits.md",
+    "MyWiki/OS/Linux/LinuxWiki/Activité réseau.md",
+    "MyWiki/Programmation/Assembleur.md",
     "MyWiki/OS/Linux/LinuxWiki/Analyse fichiers et logs.md",
+    "MyWiki/OS/Linux/LinuxWiki/Edition fichiers.md",
+    "MyWiki/OS/Linux/Commandes/Commandes.md",
+    "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
+    "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
+    "MyWiki/FOSS/Outils.md",
+    "MyWiki/CTF/rootme/Poème.md",
+    "MyWiki/Cyber/Outils.md",
+    "MyWiki/Cyber/Ingénierie Sociale.md",
+    "MyWiki/Cyber/Généralités_Cyber.md",
+    "MyWiki/Images/Pasted image 20231113093134.png",
+    "Cours_ESNA",
     "MyWiki/Images/Pasted image 20231026230520.png",
     "MyWiki/Images/Pasted image 20231026230314.png",
     "MyWiki/Images/Pasted image 20231026230036.png",

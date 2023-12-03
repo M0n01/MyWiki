@@ -1,7 +1,7 @@
 
 ### Répertoires
 ```bash
-mkdir nrepertoire                   // créer 1 répertoire
+mkdir repertoire                   // créer 1 répertoire
 
 mkdir -p /repertoire1/repertoire2   // plusieurs répertoires en même temps
 

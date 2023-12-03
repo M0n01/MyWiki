@@ -73,49 +73,6 @@ Le programme shell intègre :
 - La gestion des canaux entrée/sortie/erreur.
 - Un langage de programmation.
 
-## Fichiers
-
-#### cat
-
-`cat` est une commande historique qui permet de prendre un ou plusieurs flux de données en paramètre d'entrée, et de les afficher à l'écran sur le terminal.
-
->[!Info]
->"**cat**" provient de l'abréviation de "**catenate**" en anglais, qui signifie "concaténer". Il est effectivement possible de concaténer plusieurs flux de données passés en paramètre d'entrée avec cette commande.
-
-Exemple:
-```bash
-cat /etc/os-release /etc/passwd
-```
-
-Voir les numéro de ligne
-```bash
-cat -n /chemin_fichier
-```
-
-#### less
-
-La commande `less` permet également d'afficher un fichier mais de manière paginé. 
-
-Exemple:
-```bash
-less /etc/pam.d/login
-```
-- "barre espace"/"b" pour afficher la page suivante/précédente
-- "-N" pour afficher les lignes
-- "G" pour aller à la fin
-- "g" pour aller au début
-- "10g" pour se déplacer à la ligne 10
-- "10" pour avancer de 10 lignes
-- "/" pour rechercher des mots
-	- "n"/"N" pour aller aux occurrences suivantes/précédentes
-
-> Le fichier /etc/pam.d/login est le fichier de configuration du processus d'authentification.
-
-`less` a été codée après `more` par Mark Nudelman qui souhaitait apporter plus de fonctionnalités.. 
-
->[!Citation]
->“Less is more, but more more than more is, so more is less less, so use more less if you want less more.” - [**Slackware Linux Essentials**](https://www.slackbook.org/html/file-commands-pagers.html)
-
 ### Les canaux et flux de données
 
 Dans la majorité des cas, tous les programmes exécutés sous Linux disposent de 3 canaux de données :
@@ -153,33 +110,6 @@ Exemple :
 cat 0< /etc/os-reazeaze 1> /home/xitix/monfichier 2> /home/xitix/fichierreur
 ```
 Voir dans fichierreur.
-
-#### grep
-
-Permet de chercher un pattern dans un fichier.
-
-Chercher "debian" dans le fichier os-release
-```bash
-grep debian /etc/os-release
-grep -n debian /etc/os-release # pareil mais avec les lignes
-grep -i debian /etc/os-release # pas sensible à la casse. Peut trouver "debian" et "DebiAn"
-grep -o debian /etc/os-release # affiche que le patterne rechercher
-grep -r debian /etc/* # récursif donc tout les fichier dans /etc/
-grep -nior debian /etc/* # tout
-```
-
-#### sed
-
-Permet de proposer des transformations des flux. 
-
-Remplacer un patterne par un autre
-```bash
-sed 's/Debian/Ubuntu/' /etc/os-release # remplace "Ubuntu" par "Debian" dans le fichier os-release. Ne modifie pas le fichier.
-sed 's/[D|d]ebian/Ubuntu/' # pareil mais pour "debian" et "Debian"
-sed -i 's/Debian/Ubuntu/' /etc/os-release # pour appliquer la modification. Modifie le fichier.
-```
-
-il existe aussi la commande **`awk`**.
 
 ### Pipe (|)
 

@@ -12,6 +12,21 @@ Les droits associés à ces objets sont donc définis pour :
 
 Seul root et le proprio du fichier peut modifier les droits de celui-ci.
 
+```
+cry0l1t3@htb[/htb]$ ls -l /etc/passwd
+
+- rwx rw- r--   1 root root 1641 May  4 23:42 /etc/passwd
+- --- --- ---   |  |    |    |   |__________|
+|  |   |   |    |  |    |    |        |_ Date
+|  |   |   |    |  |    |    |__________ File Size
+|  |   |   |    |  |    |_______________ Group
+|  |   |   |    |  |____________________ User
+|  |   |   |    |_______________________ Number of hard links
+|  |   |   |_ Permission of others (read)
+|  |   |_____ Permissions of the group (read, write)
+|  |_________ Permissions of the owner (read, write, execute)
+|____________ File type (- = File, d = Directory, l = Link, ... )
+```
 ### Les 3 bits
 
 - **`r`** -> read
@@ -86,7 +101,8 @@ Pour mettre Sticky Bit, il faut ajouter `1` devant les autres droits.
 chmod 1744 fichier1  # droit 744 + Sticky Bit
 ```
 - Résultat: **-rwxr--r-T 1 seb seb**
-- **`T`** -> Sticky Bit
+- **`T`** -> Sticky Bit (tous les autres users n'ont pas la permission execute(x))
+- **`t`** -> Sticky Bit
 
 Il permet d'éviter que des comptes ayant des droits sur un fichier ne puisse le supprimer.
 

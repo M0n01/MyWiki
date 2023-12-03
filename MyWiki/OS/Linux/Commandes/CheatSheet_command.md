@@ -76,5 +76,35 @@
 | `chown` | Changes the owner and group of a file or directory. |
 
 
+```bash
+env | grep MAIL
+```
+
+Pour revenir dans le répertoire où on était juste avant
+```bash
+cd -
+```
+
+Liste tout + les inodes (numéro index)
+```bash
+ls -lai
+```
+
+Trouver les fichiers en ".conf" de plus de 20Ko plus récent que le 03/03/2020
+```shell-session
+find / -type f -name *.conf -size +20k -newermt 2020-03-03 -exec ls -al {} \; 2>/dev/null
+```
+- 2>/dev/null permet d'ignorer les sorties STDERR (les erreurs) comme "Permission denied" par exemple.
+
+Voir tout les packages installé (ignore les packages désinstaller)
+```bash
+dpkg --get-selections | grep -v deinstall
+```
+
+
+
+
+
+
 
 

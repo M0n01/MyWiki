@@ -1,4 +1,4 @@
-
+#réseau 
 >[!Info]
 >La configuration du réseau sous Linux est un aspect qui varie fortement entre les distributions.
 

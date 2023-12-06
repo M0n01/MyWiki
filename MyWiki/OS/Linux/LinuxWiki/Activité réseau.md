@@ -1,4 +1,13 @@
+#réseau 
 
+## Dépanner
+
+1. Ping
+2. Traceroute
+3. Netstat
+4. Tcpdump
+5. Wireshark
+6. Nmap
 ## Relever les services réseau
 
 Pour héberger un service réseau -> au moins une adresse IP. Chaque service réseau pourra alors ouvrir un port en écoute et l'associer à cette adresse IP.

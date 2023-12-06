@@ -1,4 +1,4 @@
-
+#dac 
 ## DAC = Discretionary Access Control
 
 Le contrôle d'accès sous les systèmes Unix, et par héritage sous Linux, est dit “**discrétionnaire**“ : tous les objets (répertoires, fichiers, processus, etc.) sont la propriété d'un compte utilisateur ou système, ainsi que d'un groupe de comptes utilisateurs et/ou système.

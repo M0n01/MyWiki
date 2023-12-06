@@ -1,4 +1,4 @@
-
+#shotcut
 #### Auto-Complete
 
 `[TAB]` - Initiates auto-complete. This will suggest to us different options based on the `STDIN` we provide. These can be specific suggestions like directories in our current working environment, commands starting with the same number of characters we already typed, or options.

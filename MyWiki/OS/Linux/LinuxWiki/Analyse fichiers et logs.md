@@ -1,6 +1,14 @@
 #logs #rsyslog 
 ## Consultez les répertoires des fichiers de traces de  `rsyslog`
 
+Il y a plusieurs types de log:
+
+- Kernel Logs
+- System Logs
+- Authentication Logs
+- Application Logs
+- Security Logs
+
 Le répertoire **`/var`** contient toutes les données variables du système et notamment les fichiers de traces dans le sous-répertoire **`/var/log`**.
 
 Chacun des processus du système proposant au noyau Linux de tracer ses activités déclenche le traitement de ses informations par un service particulier :**`rsyslog`**.
@@ -111,7 +119,15 @@ Affiche qui fait quoi
 w
 ```
 
+## Log des app
 
-
+|              |                                                                                                             |
+| ------------ | ----------------------------------------------------------------------------------------------------------- |
+| `Apache`     | Access logs are stored in the /var/log/apache2/access.log file (or similar, depending on the distribution). |
+| `Nginx`      | Access logs are stored in the /var/log/nginx/access.log file (or similar).                                  |
+| `OpenSSH`    | Access logs are stored in the /var/log/auth.log file on Ubuntu and in /var/log/secure on CentOS/RHEL.       |
+| `MySQL`      | Access logs are stored in the /var/log/mysql/mysql.log file.                                                |
+| `PostgreSQL` | Access logs are stored in the /var/log/postgresql/postgresql-version-main.log file.                         |
+| `Systemd`    | Access logs are stored in the /var/log/journal/ directory.                                                  |
 
 

@@ -1,4 +1,18 @@
 
+### Bases
+
+Il existe différentes applications et services tels que Snort, chkrootkit, rkhunter, Lynis et d'autres qui peuvent contribuer à la sécurité de Linux. De plus, certains paramètres de sécurité doivent être définis, tels que :
+
+- Supprimer ou désactiver tous les services et logiciels inutiles
+- Suppression de tous les services qui reposent sur des mécanismes d'authentification non chiffrés
+- Assurez-vous que NTP est activé et que Syslog est en cours d'exécution
+- Assurez-vous que chaque utilisateur dispose de son propre compte
+- Appliquer l'utilisation de mots de passe forts
+- Configurer le vieillissement des mots de passe et restreindre l'utilisation des mots de passe précédents
+- Verrouillage des comptes d'utilisateurs après des échecs de connexion
+- Désactivez tous les binaires SUID/SGID indésirables
+
+
 **NAC** = Network Access Control. Cela inclut : 
 ### Discretionary access control (DAC) voir [[Droits#DAC = Discretionary Access Control|Droits]]
 
@@ -54,4 +68,35 @@ Les wrappers TCP sont un mécanisme de contrôle d'accès au réseau basé sur l
 | 9.  | Configure TCP wrappers to deny access to a specific network service from a specific IP address.    |
 | 10. | Configure TCP wrappers to allow access to a specific network service from a range of IP addresses. |
 
+Les wrappers TCP utilisent les fichiers de configuration suivants :
 
+    /etc/hosts.allow
+
+    /etc/hosts.deny
+
+En bref, le fichier `/etc/hosts.allow` spécifie quels services et hôtes sont autorisés à accéder au système, tandis que le fichier `/etc/hosts.deny` spécifie quels services et hôtes ne sont pas autorisés à accéder.
+##### Exemples
+
+/etc/hosts.allow
+```bash
+# Allow access to SSH from the local network
+sshd : 10.129.14.0/24
+
+# Allow access to FTP from a specific host
+ftpd : 10.129.14.10
+
+# Allow access to Telnet from any host in the inlanefreight.local domain
+telnetd : .inlanefreight.local
+```
+
+/etc/hosts.deny
+```bash
+# Deny access to all services from any host in the inlanefreight.com domain
+ALL : .inlanefreight.com
+
+# Deny access to SSH from a specific host
+sshd : 10.129.22.22
+
+# Deny access to FTP from hosts with IP addresses in the range of 10.129.22.0 to 10.129.22.255
+ftpd : 10.129.22.0/24
+```

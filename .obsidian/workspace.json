@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "abc387961f0c2ffa",
+            "id": "4aaab115800ab8e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Analyse fichiers et logs.md",
+                "file": "MyWiki/CTF/rootme/App_Système/ELFx86_Buffer_Overflow_basic_1.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Analyse fichiers et logs.md",
+                "file": "MyWiki/CTF/rootme/App_Système/ELFx86_Buffer_Overflow_basic_1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Analyse fichiers et logs.md",
+                "file": "MyWiki/CTF/rootme/App_Système/ELFx86_Buffer_Overflow_basic_1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/OS/Linux/LinuxWiki/Analyse fichiers et logs.md"
+                "file": "MyWiki/CTF/rootme/App_Système/ELFx86_Buffer_Overflow_basic_1.md"
               }
             }
           },
@@ -174,8 +174,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "abc387961f0c2ffa",
+  "active": "4aaab115800ab8e4",
   "lastOpenFiles": [
+    "MyWiki/OS/Linux/LinuxWiki/Bases_linux.md",
+    "MyWiki/CTF/rootme/App_Système/ELFx86_Buffer_Overflow_basic_1.md",
+    "MyWiki/CTF/rootme/App_Système",
+    "MyWiki/OS/Linux/LinuxWiki/Analyse fichiers et logs.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/Firewall.md",
     "MyWiki/OS/Linux/Commandes/Réseaux Linux/réseaux.md",
     "MyWiki/OS/Linux/LinuxWiki/Sécurité Linux.md",
@@ -199,9 +203,6 @@
     "MyWiki/OS/Linux/LinuxWiki/Cartes réseaux.md",
     "MyWiki/OS/Linux/LinuxWiki/CheatSheet_file_system.md",
     "MyWiki/OS/Linux/LinuxWiki/Démarrage Système.md",
-    "MyWiki/FOSS/Navigation_Web.md",
-    "MyWiki/OS/Linux/LinuxWiki/Packages.md",
-    "MyWiki/OS/Linux/LinuxWiki/Backup, restore.md",
     "MyWiki/Images/Pasted image 20231113093134.png",
     "Cours_ESNA",
     "MyWiki/Images/Pasted image 20231026230520.png",
@@ -221,7 +222,6 @@
     "MyWiki/Images/Pasted image 20231014122423.png",
     "MyWiki/FOSS",
     "Excalidraw",
-    "Untitled.canvas",
-    "MyWiki/Réseaux/VPN"
+    "Untitled.canvas"
   ]
 }

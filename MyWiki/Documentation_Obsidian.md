@@ -20,6 +20,12 @@ Tableau :
 >[!INFO]
 >Pour faire des bulles
 
+>[!Important]
+>C'est important
+
+>[!Warning]
+>Il faut faire attention
+
 
 
 

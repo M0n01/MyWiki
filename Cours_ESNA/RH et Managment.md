@@ -92,7 +92,6 @@ Le partenaire stratégique de l’entreprise au même titre que la fonction fina
 • Augmenter le nombre de personnes formées et le nombre de formations.
 • Diminuer le coût des formations en les numérisant.
 • Diminuer le nombre d’incidents liés à la qualité
-
 ## Révisions
 
 ![](https://note.esna.re/uploads/59a09444-7e95-4150-8fff-151c247de47f.png)

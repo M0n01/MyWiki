@@ -67,6 +67,7 @@ grep -o debian /etc/os-release # affiche que le patterne rechercher
 grep -r debian /etc/* # récursif donc tout les fichier dans /etc/
 grep -nior debian /etc/* # tout
 grep -v "nologin\|false" /etc/passwd # exclu les lignes contenant "nologin" ou "false"
+grep -o 'https://www.inlanefreight.com/[a-z][^[:space:]]*' | sort -u | wc -l # pour trouver tout les chemin unique d'un url 
 ```
 
 ## sed

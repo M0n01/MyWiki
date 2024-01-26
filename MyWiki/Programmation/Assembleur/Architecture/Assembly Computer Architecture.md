@@ -1,4 +1,4 @@
-#assembleur #langages #programmation 
+#assembleur #langages #programmation #architecture 
 
 ==Langage Compilé== = Le code est traduit par la machine en langage machine et c'est ce code machine qui sera exécuter. Plus rapide.
 

@@ -17,5 +17,8 @@ CPU : AMD Ryzen 7 5800X
 GPU : MSI GT 710
 
 
+## Pour monter PC
+
+https://pcpartpicker.com/
 
 

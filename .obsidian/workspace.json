@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5ff6b31de80f28d9",
+            "id": "87efd8cbe1d37b13",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Programmation/Assembleur/Assembleur théorie.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "16703c696d43b17b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MyWiki/Programmation/Assembleur/Assembleur théorie.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1c3ee68de1aff6ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MyWiki/Programmation/Assembleur/Instruction Set Architectures (ISA).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c37dc61294f6d11d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "MyWiki/Programmation/Assembleur/Registres, adresses, data type.md",
+                "file": "MyWiki/CTF/rootme/Stéganographie/Points jaunes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +49,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -130,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Programmation/Assembleur/Registres, adresses, data type.md",
+                "file": "MyWiki/CTF/rootme/Stéganographie/Points jaunes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Programmation/Assembleur/Registres, adresses, data type.md",
+                "file": "MyWiki/CTF/rootme/Stéganographie/Points jaunes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Programmation/Assembleur/Registres, adresses, data type.md"
+                "file": "MyWiki/CTF/rootme/Stéganographie/Points jaunes.md"
               }
             }
           },
@@ -213,54 +176,53 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c37dc61294f6d11d",
+  "active": "87efd8cbe1d37b13",
   "lastOpenFiles": [
-    "MyWiki/Programmation/Assembleur/Instruction Set Architectures (ISA).md",
-    "MyWiki/Programmation/Assembleur/Assembleur théorie.md",
-    "MyWiki/Programmation/Assembleur/Assembleur code.md",
-    "MyWiki/Programmation/Assembleur/Registres, adresses, data type.md",
+    "MyWiki/CTF/rootme/Stéganographie/Stéga Point à la ligne.md",
+    "MyWiki/CTF/rootme/Stéganographie/Points jaunes.md",
+    "MyWiki/Images/Pasted image 20240126115827.png",
+    "MyWiki/Images/Pasted image 20240126115711.png",
+    "MyWiki/Images/Pasted image 20240126115436.png",
+    "Cours_ESNA/UTC502 - Systèmes/TP 7 Gestion des volumes et sauvegarde.md",
+    "Cours_ESNA/UTC502 - Systèmes/TP 1.md",
+    "MyWiki/OS/Linux/Commandes/Commandes.md",
+    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
+    "MyWiki/OS/Linux/Commandes/Fichiers et Répertoires.md",
+    "MyWiki/OS/Linux/Procédures/Déplacé dossier dans nouvelle partition.md",
+    "MyWiki/OS/Linux/Commandes/CheatSheet_command.md",
+    "MyWiki/OS/Linux/Procédures/Reset mdp Debian.md",
+    "Cours_ESNA/Steganographie/Steg.md",
+    "Cours_ESNA/UTC502 - Systèmes/TP 8 Gestion de l'alimentation.md",
+    "Cours_ESNA/UTC502 - Systèmes/Labs Memory.md",
+    "Cours_ESNA/UTC502 - Systèmes/Jour 1.md",
+    "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
+    "Cours_ESNA/Steganographie",
+    "MyWiki/CTF/Hackropole/Hardware",
+    "MyWiki/CTF/HackDay/Prog_A_Strange_Signal.md",
+    "MyWiki/CTF/Hackropole/Hardware/Dystylosaurus.md",
+    "MyWiki/CTF/Hackropole",
+    "MyWiki/CTF/HackDay/Prog_Guessing.md",
+    "MyWiki/CTF/HackDay",
+    "HACKDAY/Stega.md",
+    "MyWiki/Images/Pasted Image 20240115205343_027.png",
+    "MyWiki/Images/Pasted Image 20240115204752_885.jpg",
     "MyWiki/Documentation_Obsidian.md",
+    "MyWiki/CTF/rootme/Web-Client/HTML - boutons désacrivés.md",
+    "HACKDAY",
+    "MyWiki/CTF/rootme/Web-Client/Javascript-Authentification.md",
+    "MyWiki/CTF/rootme/Web-Client/Javascript - Native code.md",
+    "MyWiki/CTF/rootme/App_Système/ELFx86_Buffer_Overflow_basic_1.md",
+    "MyWiki/CTF/rootme/App-Script/Cha6_scriptPython.md",
+    "MyWiki/Programmation/Assembleur/Assembling and debugging",
+    "MyWiki/Programmation/Assembleur/Architecture",
+    "MyWiki/Images/Pasted image 20240107152956.png",
     "MyWiki/Images/Pasted image 20240106182056.png",
     "MyWiki/Images/Pasted image 20240106171509.png",
     "MyWiki/Programmation/Assembleur/Théorie",
-    "MyWiki/OS/Linux/Commandes/CheatSheet_command.md",
     "MyWiki/Images/Pasted image 20240106164034.png",
     "MyWiki/Images/Pasted image 20240106163907.png",
-    "MyWiki/Programmation/Langages Programmation.md",
-    "MyWiki/Programmation/Formats de données.md",
-    "MyWiki/Programmation/API.md",
-    "MyWiki/Images/Pasted image 20240106153204.png",
-    "MyWiki/Images/Pasted image 20240106152100.png",
     "MyWiki/Programmation/Assembleur",
-    "MyWiki/Images/Pasted image 20240106150907.png",
-    "MyWiki/OS/Linux/Commandes/Disques et stockage.md",
-    "Cours_ESNA/UTC502 - Systèmes/TP 7 Gestion des volumes et sauvegarde.md",
-    "Cours_ESNA/UTC502 - Systèmes/Labs Memory.md",
-    "Cours_ESNA/UTC502 - Systèmes/TP 8 Gestion de l'alimentation.md",
-    "MyWiki/Images/Pasted image 20231221150723.png",
-    "Cours_ESNA/UTC502 - Systèmes/TP 6  Mémoire et Processus.md",
-    "Cours_ESNA/UTC502 - Systèmes/TP 5 Gestion de la Mémoire Virtuelle.md",
-    "Cours_ESNA/UTC502 - Systèmes/TP 4 Gestion de la mémoire et du swap.md",
-    "Cours_ESNA/UTC502 - Systèmes/TP 3 Interblocage.md",
-    "Cours_ESNA/UTC502 - Systèmes/TP 2 Gestion des Processus.md",
-    "MyWiki/Images/Pasted image 20231221095859.png",
-    "MyWiki/Images/Pasted image 20231221095758.png",
-    "Cours_ESNA/UTC502 - Systèmes/Jour 2 Labs Processus.md",
-    "Cours_ESNA/UTC502 - Systèmes/TP 1.md",
-    "Cours_ESNA/UTC502 - Systèmes/Jour 1.md",
-    "MyWiki/oui.md",
-    "MyWiki/Trucs et astuces.md",
-    "MyWiki/OS/Linux/LinuxWiki/Droits.md",
-    "MyWiki/OS/Linux/Commandes/Commandes.md",
-    "MyWiki/OS/Linux/Commandes/Users et Accès.md",
     "Cours_ESNA/UTC502 - Systèmes",
-    "MyWiki/CTF/rootme/Réseau",
-    "MyWiki/CTF/rootme/App_Système",
-    "Cours_ESNA",
-    "MyWiki/CTF/rootme/App-Script",
-    "MyWiki/CTF/rootme/Stéganographie",
-    "MyWiki/CTF/rootme/Web-Serveur",
-    "MyWiki/CTF/rootme/Web-Client",
     "Untitled.canvas"
   ]
 }

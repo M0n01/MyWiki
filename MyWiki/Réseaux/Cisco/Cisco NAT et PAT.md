@@ -110,3 +110,4 @@ Rediriger un serveur DHCP
 ```
 Router(config)#ip nat inside source static udp 192.168.1.2 67 132.78.241.30 67
 ```
+

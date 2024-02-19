@@ -16,6 +16,7 @@ CPU : AMD Ryzen 7 5800X
 
 GPU : MSI GT 710
 
+https://www.amazon.fr/Intel-NUC-Barebone-Mini-i7-1165G7/dp/B0B1MMKM11/ref=sr_1_fkmr1_1?keywords=Intel%2BNUC%2B13%2BPro%2BNUC13ANHi7%2BArena%2BCanyon%2BMini%2BPC%2C%2BCore%2Bi7-1360P%2C%2B32GB%2BRAM%2C%2B1TB%2BSSD%2C%2BMini%2BComputers%2BWindows%2B11%2BPro%2Bfor%2BBusiness%2BHome%2BOffice%2C%2BSupport%2B8K%2F4K%2BQuad%2BDisplay%2FWiFi%2B6E%2FBT%2B5.3%2FThunderbolt%2B4&linkId=b7b6eb6368816c9c1526df0f38fa7735&sr=8-1-fkmr1&ufe=app_do%3Aamzn1.fos.49fccda8-a887-4188-817b-b9a64bb30e43&th=1
 
 ## Pour monter PC
 

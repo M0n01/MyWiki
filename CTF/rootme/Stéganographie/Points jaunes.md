@@ -22,7 +22,5 @@ java -jar stegsolve.jar
 
 - Message décodé :   5 11 27 7 14 30299260
 
-FLAG :  11:05 27/07/2014 06922930
-
 
 

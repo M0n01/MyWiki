@@ -9,3 +9,4 @@
 Le "cat" permet d'interrompre le code pour ne pas que le shell se ferme.
 
 Une fois dans le shell : cat .passwd
+

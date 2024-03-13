@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Programmation/Assembleur/Arithmetic Instructions.md",
+                "file": "Cours_ESNA/PWN/Pwn.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "78e439c97e63d7f6",
+            "id": "cb30958e23a68d51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MyWiki/Cyber/Online ressources.md",
+                "file": "MyWiki/Programmation/Assembleur/Exercices.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MyWiki/Cyber/Online ressources.md",
+                "file": "MyWiki/Programmation/Assembleur/Exercices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MyWiki/Cyber/Online ressources.md",
+                "file": "MyWiki/Programmation/Assembleur/Exercices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MyWiki/Cyber/Online ressources.md"
+                "file": "MyWiki/Programmation/Assembleur/Exercices.md"
               }
             }
           },
@@ -190,34 +190,36 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "78e439c97e63d7f6",
+  "active": "cb30958e23a68d51",
   "lastOpenFiles": [
-    "MyWiki/FOSS/Outils système et réseau.md",
-    "MyWiki/FOSS/Outils.md",
     "MyWiki/Programmation/Assembleur/ShellCode.md",
+    "MyWiki/Programmation/Assembleur/Architecture/Registres, adresses, data type.md",
+    "MyWiki/Programmation/Assembleur/Exercices.md",
     "MyWiki/Programmation/Assembleur/Fibonacci Asm.md",
-    "MyWiki/Programmation/Assembleur/Arithmetic Instructions.md",
+    "CTF/Hackropole/Hardware/Dystylosaurus.md",
+    "CTF/rootme/Stéganographie/Points jaunes.md",
+    "CTF/rootme/Stéganographie/WAV - Analyse spectrale.md",
+    "CTF/rootme/Stéganographie/Stéga Point à la ligne.md",
+    "CTF/HackDay/Prog_A_Strange_Signal.md",
+    "Cours_ESNA/Steganographie/Steg.md",
+    "MyWiki/Programmation/Assembleur/Cheatsheet-Assembly_x86_64.md",
     "MyWiki/Programmation/Assembleur/Assembleur code syntaxe.md",
     "MyWiki/Programmation/API.md",
     "MyWiki/Programmation/Formats de données.md",
     "MyWiki/Programmation/Python.md",
-    "Cours_ESNA/Steganographie/Steg.md",
-    "MyWiki/CTF/rootme/Stéganographie/Points jaunes.md",
-    "MyWiki/CTF/rootme/Stéganographie/WAV - Analyse spectrale.md",
-    "MyWiki/CTF/rootme/Stéganographie/Stéga Point à la ligne.md",
+    "Cours_ESNA/PWN/Exam PWN.md",
+    "Cours_ESNA/PWN/Pwn.md",
     "MyWiki/Trucs et astuces.md",
-    "MyWiki/Programmation/Assembleur/Cheatsheet-Assembly_x86_64.md",
-    "MyWiki/Cyber/Online ressources.md",
-    "MyWiki/Cyber/Lexique Cyber.md",
-    "MyWiki/Cyber/Ingénierie Sociale.md",
-    "MyWiki/Cyber/Généralités_Cyber.md",
-    "MyWiki/Cyber/Buffer Overflows.md",
-    "MyWiki/Cyber/Attaques Réseau.md",
-    "MyWiki/Programmation/Assembleur/Architecture/Registres, adresses, data type.md",
-    "MyWiki/Programmation/Assembleur/Architecture/Instruction Set Architectures (ISA).md",
-    "MyWiki/Programmation/Assembleur/Architecture/Assembly Computer Architecture.md",
-    "MyWiki/Programmation/Assembleur/Assembling and debugging/1) Assemble and disassemble.md",
-    "MyWiki/Programmation/Assembleur/Data Movement.md",
+    "Excalidraw/Drawing 2023-05-23 22.13.16.excalidraw.md",
+    "GCC.md",
+    "MyWiki/Programmation/Assembleur/Arithmetic Instructions.md",
+    "Cours_ESNA/RH et Managment.md",
+    "Cours_ESNA/RSX101 Réseau.md",
+    "Cours_ESNA/UTC505 - Réseaux et sécurité.md",
+    "MyWiki/OS/Linux/Arch linux.md",
+    "CTF/rootme/App_Système/ELFx86_Buffer_Overflow_basic_1.md",
+    "MyWiki/Images/Pasted Image 20240226195846_740.png",
+    "Cours_ESNA/PWN",
     "MyWiki/Programmation/Assembleur/1707933231288.canvas",
     "Pasted Image 20240130084905_275.png",
     "Pasted image 20240129090933.png",
@@ -225,9 +227,9 @@
     "MyWiki/Images/Pasted image 20240126115711.png",
     "MyWiki/Images/Pasted image 20240126115436.png",
     "Cours_ESNA/Steganographie",
-    "MyWiki/CTF/Hackropole/Hardware",
-    "MyWiki/CTF/Hackropole",
-    "MyWiki/CTF/HackDay",
+    "CTF/Hackropole/Hardware",
+    "CTF/Hackropole",
+    "CTF/HackDay",
     "MyWiki/Images/Pasted Image 20240115205343_027.png",
     "MyWiki/Images/Pasted Image 20240115204752_885.jpg",
     "HACKDAY",
@@ -235,10 +237,8 @@
     "MyWiki/Programmation/Assembleur/Architecture",
     "MyWiki/Images/Pasted image 20240107152956.png",
     "MyWiki/Images/Pasted image 20240106182056.png",
-    "MyWiki/Images/Pasted image 20240106171509.png",
     "MyWiki/Programmation/Assembleur/Théorie",
     "MyWiki/Programmation/Assembleur",
-    "Cours_ESNA/UTC502 - Systèmes",
     "Untitled.canvas"
   ]
 }

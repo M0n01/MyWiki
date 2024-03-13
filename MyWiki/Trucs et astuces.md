@@ -1,4 +1,4 @@
-#astuces
+#astuces #tools
 
 ## Page web bloqué si non abonné
 
@@ -22,4 +22,26 @@ https://www.amazon.fr/Intel-NUC-Barebone-Mini-i7-1165G7/dp/B0B1MMKM11/ref=sr_1_f
 
 https://pcpartpicker.com/
 
+
+### Tools 
+
+Radare2 (iaito ou cutter) -> reverse, debug...
+GDB avec GEF et ou pwndbg -> reverse, debug...
+Ghydra -> reverse, debug....
+
+Logic -> visualisation signaux (hardware)
+
+- Disque usage améliorer :
+https://github.com/bootandy/dust
+
+- Zellij
+https://zellij.dev/
+https://zellij.dev/documentation/configuration
+```bash
+nano .config/zellij/config.kdl
+```
+dé-commenter `mouse_mode false`
+
+- Historique améliorer
+https://atuin.sh/
 
